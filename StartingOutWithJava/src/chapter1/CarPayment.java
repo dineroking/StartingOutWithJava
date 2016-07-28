@@ -16,7 +16,7 @@
  * OUTPUT:  Display a dialog box that displays the monthly payment
  */
 
-package chapter2;
+package chapter1;
 
 import java.text.DecimalFormat;
 import javax.swing.JOptionPane;
