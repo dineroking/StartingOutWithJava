@@ -51,7 +51,7 @@ public class ReportCard {
 		//calculate the average score
 		averageScore = scores / numTest;
 						
-		// assign letter grade
+		// assign letter grade based on the following scale
 		/*
 		 * A: 90 - 100
 		 * B: 80 - 89
