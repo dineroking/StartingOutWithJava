@@ -72,11 +72,11 @@ public class ReportCard {
 			}else{
 				grade = 'F';
 			}
+			System.out.println(name + " has an average score of " + format.format(averageScore) + " or a(n) " + 
+					grade + " for the class.");
 		}else{
 			System.out.println("Invalid score entries!");
 		}
-		System.out.println(name + " has an average score of " + format.format(averageScore) + " or a(n) " + 
-		grade + " for the class.");
 		
 		keyboard.close();
 	}
