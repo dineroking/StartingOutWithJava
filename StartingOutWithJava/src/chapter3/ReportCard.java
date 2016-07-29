@@ -15,8 +15,8 @@
  * PROCESS: Store five test scores and divide by five test and calculate letter grade.
  * OUTPUT:  Display student's name, students average score and letter grade
  */
-package chapter3;
-//package gradebook;
+//package chapter3;
+package gradebook;
 
 import java.util.Scanner;
 import java.text.DecimalFormat;

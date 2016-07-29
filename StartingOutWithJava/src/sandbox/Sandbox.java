@@ -16,6 +16,7 @@ public class Sandbox {
 		new DecimalFormat("$,###,##0.000");
 		System.out.println(formatter.format(x));
 		
+		System.exit(0);
 		}
 
 }
