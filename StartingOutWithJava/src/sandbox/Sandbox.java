@@ -7,7 +7,7 @@ public class Sandbox {
 		
 		//this is a comment to see if it is transmitted to the remote repository
 		
-		int first = 3;
+		/*int first = 3;
 		double second = 4.5;
 		
 		first = (int)second;
@@ -30,6 +30,7 @@ public class Sandbox {
 		new DecimalFormat("$,###,##0.000");
 		System.out.println(formatter.format(x));
 		
+		*/
 		}
 
 }
