@@ -25,7 +25,7 @@ public class ReportCard {
 
 	public static void main(String[] args) {
 
-		//declare all variables for input and calculations
+		//declare all variables for input and calculation(s)
 		
 		String name;			// holds name of student
 		int numTest = 0;		// holds number of tests taken
