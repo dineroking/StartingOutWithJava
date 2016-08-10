@@ -1,5 +1,5 @@
 /*
- * ReportCard.java
+ * PaintingCompany.java
  * Ronny Rosabal
  * Programming Fundamentals I
  * COSC 1336 2003 6W2
