@@ -3,7 +3,7 @@
  * Ronny Rosabal
  * Programming Fundamentals I
  * COSC 1336 2003 6W2
- * 08.10.16
+ * 08.11.16
  * To calculate and display if a number is a prime number and a range of prime numbers.
  * */
 
@@ -23,12 +23,16 @@ import java.io.*;
 
 public class PrimeNumbers {
 
-	public static void main(String[] args){
+	public static void main(String[] args) throws IOException{
 		
 		displayOptions();
 
 	}
 	
+	
+	///////////////////////////////
+	// PRIME CALCULATIONS
+	///////////////////////////////
 	
 	/**
 	 * Calculates if a given number is prime.
@@ -37,82 +41,103 @@ public class PrimeNumbers {
 	 * @return true if number is prime or false if the number is not prime
 	 */
 	public static boolean isPrime( int number ){
-		// find half of number and store it as an integer in variable half 
-		int half = (int)(number / 2);
-		// assume number is prime so assign true to boolean isPrime
-		boolean isPrime = true;
-		// start a counter at 2
-		int counter = 2;
+		int half = (int)(number / 2);							// holds half of number so that counter only goes half way
+		boolean isPrime = true;									// assumes number is prime and if not the value is changed to false
+		int counter = 2;										// starts at 2 because 1 is not a prime number
 		
-		// while counter is less than or equal to half and a factor has not been found
 		while( counter <= half && isPrime ){
-			// if number divided by counter doesn't have a remainder
 			if( number % counter == 0 ){
-				// change isPrime to true
 				isPrime = false;
-				// break out of loop
 				break;
 			}
-			// increment counter by 1
 			counter++;
 		}		
-		//return isPrime
+		
 		return isPrime;
 	}
+	
+	
 	
 	/**
 	 * Checks the result of isPrime and returns the appropriate message
 	 * 
 	 * @param number - the number entered by the user that was tested
 	 * @param result - the results from the isPrime test
-	 * @return the appropriate message based on the results of the test
+	 * @return the appropriate message based on the results of the isPrime test
 	 */
 	public static String isPrimeMessage( int number, boolean result ){
 		return (result) ? number + " is a prime number." : number + " is not a prime number.";
 	}
 	
-	//TODO: finish the primeRange method
-	public static String primeRange(){
-		return "";
+	
+	
+	/**
+	 * Finds and displays all the prime numbers from 2 up to and including a given number
+	 * @param number - the number to find the range of prime numbers to
+	 * @return a list of all the prime numbers from 2 to a given number
+	 */
+	public static String primeRange( int number ){
+		String output = "Prime range for number " + number + ": ";	// holds the string that will be used for the list of primes
+		
+		for( int counter = 2; counter <= number; counter++ ){
+			if( isPrime( counter ) ){
+				output += (counter == 2) ? " " + counter: ", " + counter;
+			}
+		}
+		
+		return output;
 	}
 	
-	//TODO: finish the listPrime method
-	public static String listPrime(){
-		return "";
+	
+	
+	/**
+	 * Creates a file named Primes.txt and writes to it a list of 
+	 * 
+	 * @throws IOException
+	 */
+	public static void listPrime() throws IOException{
+		int listRange = 100;
+		PrintWriter output = new PrintWriter("Primes.txt");
+		output.println( primeRange( listRange ) );
+		output.close();
 	}
 	
+	///////////////////////////////
+	// MESSAGES AND OPTIONS
+	///////////////////////////////
 	
-	//TODO: finish option 2 and 3
-	public static void displayOptions(){
-		// create a message to display
-		String message = "1. Check a prime number.\n" +
+	/**
+	 * Displays a dialog box with options for the user to choose from
+	 * 
+	 * @throws IOException
+	 */
+	public static void displayOptions() throws IOException{
+		String message = "1. Check a prime number.\n" +								// holds the string with the options for the user
 						 "2. Check prime numbers in range.\n" +
 				         "3. Create list of prime numbers from 1 to 100.\n" +
 						 "4. Quit";
-		// display dialog box to user with the calculation options
 		String userInput = JOptionPane.showInputDialog(null, message);
 		int testNumber;
 		String results;
-		// store the selected option in userInput
 		
-		// while userInput is not 4
-		while( userInput != "4"){
-			// if user selects 1
+		while( !userInput.equals("4")){
 			switch( userInput ){
 			case "1":
-				// display dialog to get number to test and store it in testNumber
 				testNumber = Integer.parseInt(JOptionPane.showInputDialog(null, "Enter integer to test."));
-				// pass user selection to the method isPrime
-				// pass number and isPrime as an arguments to isPrimeMessage
-				// store results in results 
 				results = isPrimeMessage( testNumber, isPrime( testNumber ) );
-				// pass results to displayMessage
 				displayMessage( results );
 				break;
+			case "2":
+				testNumber = Integer.parseInt(JOptionPane.showInputDialog(null, "Enter integer for range."));
+				results = primeRange( testNumber );
+				displayMessage( results );
+				break;
+			case "3":
+				listPrime();
+				break;
 			}
-			
+			userInput = JOptionPane.showInputDialog(null, message);
 		}
-			
 	}
 	
 	/**
