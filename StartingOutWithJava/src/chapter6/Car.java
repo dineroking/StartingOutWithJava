@@ -8,7 +8,7 @@ public class Car {
 	private String make;
 	private int speed; 
 	
-	// CONSTRUCTOR
+	// CONSTRUCTORS
 	
 	/**
 	 * Sets the initial values for the year, make a speed
@@ -16,14 +16,52 @@ public class Car {
 	 * @param m - the model of the car
 	 * @param s - the speed of the car
 	 */
-	public Car( int y, String m, int s ){
+	public Car( int y, String m ){
 		yearModel = y;
 		make = m;
-		speed = s;
+		speed = 0;
 	}
 	
-	// MUTATORS
+	// SPEED CHANGERS
+	
+	/**
+	 * Adds 5 to the speed each time it is called.
+	 */
+	public void accelerate(){
+		speed += 5;
+	}
+	
+	/**
+	 * Adds 5 to the speed each time it is called.
+	 */
+	public void brake(){
+		speed -= 5;
+	}
 	
 	// ACCESSORS
+	
+	/**
+	 * Gets the yearModel of the car
+	 * @return the yearModel of the car
+	 */
+	public int getYearModel(){
+		return yearModel;
+	}
+	
+	/**
+	 * Gets the make of the car
+	 * @return the make of the car
+	 */
+	public String getMake(){
+		return make;
+	}
+	
+	/**
+	 * Gets the speed of the car
+	 * @return the speed of the car
+	 */
+	public int getSpeed(){
+		return speed;
+	}
 
 }
