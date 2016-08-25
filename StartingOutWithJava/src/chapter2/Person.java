@@ -17,12 +17,12 @@ public class Person {
 	private int age;							// the age of the person
 	
 	// CONSTRUCTORS
-	//TODO: decide if this is needed inside of the cunstructor
-	public Person( String fn, String ln, String g, int a ){
-		this.fName = fn;						
-		lName = ln;						
-		gender = g;						
-		age = a;
+	//TODO: decide if this is needed inside of the constructor
+	public Person( String firstName, String lastName, String gender, int age ){
+		this.fName = firstName;						
+		this.lName = lastName;						
+		this.gender = gender;						
+		this.age = age;
 		income = 0.0;
 		address = "";
 		city = "";
