@@ -1,10 +1,11 @@
 package chapter2;
 
+import java.text.DecimalFormat;
 public class Person {
 	
 	// FIELDS
 	
-	private double income;						// annual income of the person
+	private String income;						// annual income of the person
 	private String address,						// address of the person
 				   city,						// city of the person
 				   state,						// state of the person
@@ -15,6 +16,7 @@ public class Person {
 				   lName,						// last name of the person
 				   gender;						// gender of the person
 	private int age;							// the age of the person
+	private DecimalFormat currency = new DecimalFormat("$###,###.00");
 	
 	// CONSTRUCTORS
 	//TODO: decide if this is needed inside of the constructor
@@ -23,7 +25,7 @@ public class Person {
 		this.lName = lastName;						
 		this.gender = gender;						
 		this.age = age;
-		income = 0.0;
+		income = "0.0";
 		address = "";
 		city = "";
 		state = "";
@@ -39,7 +41,7 @@ public class Person {
 	 * @param income - annual income of the person
 	 */
 	public void setIncome(double income) {
-		this.income = income;
+		this.income = currency.format(income);
 	}
 
 	/**
@@ -128,7 +130,7 @@ public class Person {
 	 * Gets the income of the person
 	 * @return the income of the person
 	 */
-	public double getIncome() {
+	public String getIncome() {
 		return income;
 	}
 
