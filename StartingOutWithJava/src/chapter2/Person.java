@@ -14,6 +14,7 @@ public class Person {
 				   major,						// college major of the person
 				   fName,						// first name of the person
 				   lName,						// last name of the person
+				   mName,						// middle name of the person
 				   gender;						// gender of the person
 	private int age;							// the age of the person
 	private DecimalFormat currency = new DecimalFormat("$###,###.00");
@@ -32,6 +33,7 @@ public class Person {
 		zip = "";
 		phone = "";
 		major = "";
+		mName = "";
 	}
 
 	// MUTATORS
@@ -42,6 +44,14 @@ public class Person {
 	 */
 	public void setIncome(double income) {
 		this.income = currency.format(income);
+	}
+
+	/**
+	 * Sets the middle name of the person
+	 * @param mName - middle name of the person
+	 */
+	public void setmName(String mName) {
+		this.mName = mName;
 	}
 
 	/**
@@ -196,6 +206,14 @@ public class Person {
 	 */
 	public String getlName() {
 		return lName;
+	}
+
+	/**
+	 * Gets the middle name of the person
+	 * @return middle name of the person
+	 */
+	public String getmName() {
+		return mName;
 	}
 
 	/**
