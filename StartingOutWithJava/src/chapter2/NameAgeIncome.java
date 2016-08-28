@@ -1,3 +1,7 @@
+/*
+ * Challenge 1. Name, Age, and Annial Income
+ * Date: 08.27.16
+ */
 package chapter2;
 
 public class NameAgeIncome {
