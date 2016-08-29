@@ -24,6 +24,8 @@ public class SalesPrediction {
 		storeSales = sales * SALES_PERCENT;
 		
 		JOptionPane.showMessageDialog(null, currency.format(storeSales));
+		
+		System.exit(0);
 
 	}
 
