@@ -51,6 +51,14 @@ public class Circle {
 		}
 	}
 	
+	/**
+	 * Circle makes a copy of the circle object and assigns it to the radius.
+	 * @param circle - a Circle object
+	 */
+	public Circle( Circle circle ){
+		this.radius = circle.getRadius();
+	}
+	
 	
 	// ACCESSORS
 	
@@ -118,5 +126,39 @@ public class Circle {
 	 */
 	public double getArea(){
 		return PI * Math.pow(radius, 2);
+	}
+	
+	/**
+	 * equals compares two Circle objects and returns true if the values of the objects are the same
+	 * 		  false if they are not
+	 * @param circle2 - a Circle object
+	 * @return true if the objects are the same or false if they are not
+	 */
+	public boolean equals( Circle circle2 ){
+		
+		// assumes the values are not the same
+		boolean isEqual = false;
+		
+		// compares the values and if they are the same it changes isEqual to true
+		if( radius == circle2.radius ){
+			isEqual = true;
+		}
+		
+		//returns isEqual
+		return isEqual;
+	}
+	
+	public String toString(){
+		String message = "";
+		
+			   // build the message to be displayed
+			   message += "The radius of the circle is: " + radius;
+			   message += "\nThe diameter of the circle is: " + getDiameter();
+			   message += "\nThe circumference of the circle is: " + getCircumference();
+			   message += "\nThe area of the circle is: " + getArea();
+			   message += "\n\n----------------------------------------\n\n";			// create some space between each circle
+			   
+		// return the message
+		return message;
 	}
 }
