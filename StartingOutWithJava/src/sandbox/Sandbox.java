@@ -6,14 +6,16 @@ public class Sandbox {
 
 	public static void main(String[] args) {
 		
-		int x = 10, y = 20;
-		while (y < 100)
+		final int SUB = 12;
+		int[] x = new int[SUB];
+		int y = 20;
+		for(int i = 0; i < SUB; i++)
 		{
-		x += y;
-		y += 20;
+		x[i] = y;
+		y += 5;
 		}
 		
-		System.out.println( x );
+		System.out.println( x[8] );
 		
 	}
 }
