@@ -1,3 +1,11 @@
+/*
+ * Ronny Rosabal
+ * Programming Fundamentals II
+ * COSC 1337 2001
+ * 11.15.16
+ * Establishes the blueprint for creating a cylinder
+ */
+
 package circle;
 
 public class Cylinder {
