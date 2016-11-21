@@ -10,7 +10,8 @@ package chapter10;
 public abstract class Shape {
 
 	// VARIABLES 
-	private int sides;						// number of sides for the shape					
+	private int sides;										// number of sides for the shape
+	private static int numInstance = 0;		// holds number of instances of the class;
 	
 	
 	
@@ -20,7 +21,7 @@ public abstract class Shape {
 	 * Shape initializes sides to 0
 	 */
 	public Shape(){
-		sides = 0;
+		this( 1 );
 	}
 	
 	/**
@@ -29,6 +30,8 @@ public abstract class Shape {
 	 */
 	public Shape( int sides ){
 		this.sides = sides;
+		
+		numInstance++;
 	}
 	
 	/**
@@ -37,6 +40,8 @@ public abstract class Shape {
 	 */
 	public Shape( Shape s ){
 		sides = s.sides;
+		
+		numInstance++;
 	}
 	
 	
@@ -85,6 +90,14 @@ public abstract class Shape {
 			isEqual = true;
 		}
 		return isEqual;
+	}
+	
+	/**
+	 * getNumInstance return the number of instances of the class
+	 * @return number of instances
+	 */
+	public static int getNumInstance(){
+		return numInstance;
 	}
 	
 	

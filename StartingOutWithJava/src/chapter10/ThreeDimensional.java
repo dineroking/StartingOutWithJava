@@ -20,8 +20,7 @@ public abstract class ThreeDimensional extends Shape{
 	 * ThreeDimensional initializes the number of sides to 0 and the number of faces to 0
 	 */
 	public ThreeDimensional(){
-		super();
-		faces = 0;
+		this( 4, 1 );
 	}
 	
 	/**
@@ -34,15 +33,6 @@ public abstract class ThreeDimensional extends Shape{
 	public ThreeDimensional( int sides, int faces ){
 		super( sides );
 		this.faces = faces;
-	}
-	
-	/**
-	 * ThreeDimensional takes a single int argument and calls the two argument constructor
-	 * 					initializing sides to the argument value and faces to 1
-	 * @param sides
-	 */
-	public ThreeDimensional( int sides ){
-		this( sides, 1 );
 	}
 	
 	/**
@@ -110,12 +100,12 @@ public abstract class ThreeDimensional extends Shape{
 	
 	/**
 	 * toString overrides the toString method of the Object class to display a specific 
-	 * 			message
+	 * 			    message
 	 */
 	@Override
 	public String toString(){
-		String message = "";
-			   message = "This shape has " + faces + " faces.";
+		String message = super.toString() + "\n";
+			     message = "This shape has " + faces + " faces.";
 		return message;
 	}
 }

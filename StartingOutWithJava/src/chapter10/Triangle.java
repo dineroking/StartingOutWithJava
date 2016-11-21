@@ -4,8 +4,9 @@ public class Triangle extends Shape{
 	
 	// VARIABLES
 	
-	private double width,				// holds the width of the triangle 
-	 			   height;				// holds the height of the triangle
+	private double width,									// holds the width of the triangle 
+	 			   				height;								// holds the height of the triangle
+	private static int numInstance = 0; 	// holds number of instances of the class
 	
 	
 	
@@ -15,9 +16,9 @@ public class Triangle extends Shape{
 	 * Triangle initializes the number of sides to 3, width to 0 and height to 0
 	 */
 	public Triangle(){
-		super( 3 );
-		width = 0;
-		height = 0;
+		
+		// calls the Triangle constructor passing a width of 1, and height of 1
+		this( 1, 1 );
 	}
 	
 	/**
@@ -30,15 +31,22 @@ public class Triangle extends Shape{
 		super( 3 );
 		this.width = width;
 		this.height = height;
+		
+		// add an instance of the class 
+    numInstance++;
 	}
 	
 	/**
 	 * Triangle makes a copy of the Triangle object passed as the argument
-	 * @param triangle - a Tringle object
+	 * @param triangle - a Triangle object
 	 */
 	public Triangle( Triangle triangle ){
+		super( 3 );
 		width = triangle.width;
 		height = triangle.height;
+		
+		// add an instance of the class 
+    numInstance++;
 	}
 	
 	
@@ -109,6 +117,14 @@ public class Triangle extends Shape{
 		return isEqual;
 	}
 	
+	/**
+	 * getNumInstance return the number of instances of the class
+	 * @return number of instances
+	 */
+	public static int getNumInstance(){
+		return numInstance;
+	}
+	
 	
 	
 	// OUTPUT
@@ -120,12 +136,13 @@ public class Triangle extends Shape{
 	public String toString(){
 		
 		// initializes a message
-		String message = "";
+		String message = "Triangle\n";
 			   // creates message to be displayed
-			   message += "\nA triangle has " + getSides() + " sides.";
+			   message += super.toString();
 			   message += "\nIt's width is " + width;
 			   message += "\nIt's height is " + height;
 			   message += String.format( "\nIt's area is %1.2f", calcArea() );
+			   message += "\n\n----------------------------------------\n\n";
 		
 		// return the message
 		return message;

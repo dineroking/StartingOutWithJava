@@ -11,8 +11,9 @@ package chapter10;
 public class Rectangle extends Shape {
 	
 	// VARIABLES
-	private double width,			// holds the width of the rectangle
-				   height;			// holds the height of the rectangle
+	private double width,											// holds the width of the rectangle
+				   			 height;										// holds the height of the rectangle
+	private static int numInstance = 0;				// holds number of instances of the class
 	
 	
 	
@@ -22,9 +23,9 @@ public class Rectangle extends Shape {
 	 * Rectangle initializes the number of sides to 4, the width to 0 and the height to 0
 	 */
 	public Rectangle(){
-		super( 4 );
-		width = 0;
-		height = 0;
+		
+		// calls a Rectangle constructor passing a width of 1 and height of 1
+		this( 1, 1 );
 	}
 	
 	/**
@@ -37,6 +38,9 @@ public class Rectangle extends Shape {
 		super( 4 );
 		this.width = width;
 		this.height = height;
+		
+		// add an instance of the class
+		numInstance++;
 	}
 	
 	/**
@@ -44,8 +48,12 @@ public class Rectangle extends Shape {
 	 * @param r - a Rectangle object
 	 */
 	public Rectangle( Rectangle r ){
+		super( 4 );
 		width = r.width;
 		height = r.height;
+		
+		// add an instance of the class
+		numInstance++;
 	}
 	
 	
@@ -64,7 +72,7 @@ public class Rectangle extends Shape {
 	 * getheight returns the height of the rectangle
 	 * @return - the height of the rectangle
 	 */
-	public double getheight(){
+	public double getHeight(){
 		return height;
 	}
 	
@@ -133,6 +141,14 @@ public class Rectangle extends Shape {
 		return isEqual;
 	}
 	
+	/**
+	 * getNumInstance return the number of instances of the class
+	 * @return number of instances
+	 */
+	public static int getNumInstance(){
+		return numInstance;
+	}
+	
 	
 	
 	// OUTPUT
@@ -144,13 +160,14 @@ public class Rectangle extends Shape {
 	public String toString(){
 		
 		// initialize a message
-		String message = "";
+		String message = "Rectangle\n";
 			   // create the message to be displayed 
-			   message += "A rectangle has " + getSides() + " sides.";
+			   message += super.toString();
 			   message += "\nIt's width is " + width;
 			   message += "\nIt's height is " + height;
 			   message += "\nIt's perimeter is " + calcPerimeter();
 			   message += String.format( "\nIt's area is %1.2f", calcArea() ); 
+			   message += "\n\n----------------------------------------\n\n";
 			   
 		// return the message
 		return message;
