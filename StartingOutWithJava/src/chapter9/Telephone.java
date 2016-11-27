@@ -1,7 +1,12 @@
+/*
+ * Ronny Rosabal
+ * Programming Fundamentals II
+ * COSC 1337 2001
+ * 11.19.16
+ * Creates telephone objects
+ */
+
 package chapter9;
 
-/**
- * Created by ronnyrosabal on 11/27/16.
- */
 public class Telephone {
 }
