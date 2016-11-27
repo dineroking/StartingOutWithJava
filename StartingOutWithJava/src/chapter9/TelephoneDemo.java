@@ -3,7 +3,7 @@
  * Programming Fundamentals II
  * COSC 1337 2001
  * 11.27.16
- * Establishes the blueprint for creating a Telephone object
+ * Creates telephone objects
  */
 
 package chapter9;
