@@ -1,4 +1,6 @@
 package sandbox;
+
+import java.util.StringTokenizer;
 import java.text.DecimalFormat;
 import javax.swing.JOptionPane;
 
@@ -6,16 +8,18 @@ public class Sandbox {
 
 	public static void main(String[] args) {
 		
-		final int SUB = 12;
-		int[] x = new int[SUB];
-		int y = 20;
-		for(int i = 0; i < SUB; i++)
-		{
-		x[i] = y;
-		y += 5;
-		}
+		/*
+		 * this is a comment
+		 */
 		
-		System.out.println( x[8] );
+		// this is another comment
+		
+		
+		String str = "red$green&blue#orange";
+		String [] tokens = str.split("[$&#]");
+		for( String token : tokens){
+			System.out.println( token );
+		}
 		
 	}
 }
