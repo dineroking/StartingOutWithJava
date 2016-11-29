@@ -15,15 +15,20 @@ public class Sandbox {
 		String string4 = "305 343.8007";
 		String string5 = " (305)-343.8007 ";
 
-		String[] splitted1 = string1.split( "(|)| |.|-");
-    String[] splitted2 = string2.split( "(|)| |.|-");
-    String[] splitted3 = string3.split( "(|)| |.|-");
-    String[] splitted4 = string4.split( "(|)| |.|-");
-    String[] splitted5 = string5.split( "(|)| |.|-");
+		String[] splitted1 = string1.split( " |-");
+    String[] splitted2 = string2.split( " |-");
+    String[] splitted3 = string3.split( " |-|\\.");
+    String[] splitted4 = string4.split( " |-|\\.");
+    String[] splitted5 = string5.split( "[\\s()-.]+");
 
-    for( String token : splitted1 ){
+    for( String token : splitted5 ){
+      if( token == "" ){
+
+      }else{
+
+      }
       System.out.println("*" + token + "*");
     }
-		
+		System.out.println( splitted5.length );
 	}
 }
