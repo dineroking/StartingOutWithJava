@@ -5,5 +5,5 @@
  */
 package chapter11;
 
-public class FileReaderWriter {
+public class PasswordReaderWriter {
 }
