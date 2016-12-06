@@ -40,7 +40,7 @@ public class PasswordReaderWriter {
       this.fileName = fileName;
 
       //TODO: delete after testing
-      System.out.println( input.getAbsolutePath() );
+      System.out.println( "Path " + input.getAbsolutePath() );
 
       // create the file reader
       Scanner file = new Scanner( input );
