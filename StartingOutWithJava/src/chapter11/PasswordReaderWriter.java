@@ -60,7 +60,6 @@ public class PasswordReaderWriter {
       message += "\n" + input.getAbsolutePath();
 
       JOptionPane.showMessageDialog( null, message );
-      System.out.println( e.getCause() );
 
     }
 
