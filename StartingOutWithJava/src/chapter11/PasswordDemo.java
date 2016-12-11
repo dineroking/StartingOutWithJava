@@ -1,7 +1,9 @@
-/**
- * Created by Ronny Rosabal.
- * Date:      12/5/16
- * Objective:
+/*
+ * Ronny Rosabal
+ * Programming Fundamentals II
+ * COSC 1337 2001
+ * 12.10.16
+ * Executes the Strong password class
  */
 package chapter11;
 
@@ -13,11 +15,15 @@ public class PasswordDemo {
 
     // VARIABLES
 
+    // file containing passwords
     String file = "src/chapter11/strong.dat";
 
-    //TODO: delete after testing
-    PasswordReaderWriter myFile = new PasswordReaderWriter( file );
+    // create PasswordReaderWriter object with a file
+    PasswordReaderWriter pwdFile = new PasswordReaderWriter( file );
 
-    System.out.println( myFile );
+    // create Strong object
+    Strong pwdChecker = new Strong( pwdFile );
+
+    System.out.println( pwdChecker );
   }
 }

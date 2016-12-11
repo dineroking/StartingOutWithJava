@@ -1,7 +1,9 @@
-/**
- * Created by Ronny Rosabal.
- * Date:      12/5/16
- * Objective:
+/*
+ * Ronny Rosabal
+ * Programming Fundamentals II
+ * COSC 1337 2001
+ * 12.10.16
+ * Establishes the blueprint for creating a PasswordReaderWriter object
  */
 package chapter11;
 
@@ -16,9 +18,9 @@ public class PasswordReaderWriter {
 
   // VARIABLES
 
+  private File input;                                        // The file input from the user
   private String fileName;                                        // name of the file
   private ArrayList<String> passwords = new ArrayList<String>();  // array of untested password Strings
-  private ArrayList<String> results = new ArrayList<String>();    // array of results
 
 
 
@@ -34,13 +36,10 @@ public class PasswordReaderWriter {
     try{
 
       // open the file
-      File input = new File( fileName );
+      input = new File( fileName );
 
       // assign fileName to the string fileName
       this.fileName = fileName;
-
-      //TODO: delete after testing
-      System.out.println( "Path " + input.getAbsolutePath() );
 
       // create the file reader
       Scanner file = new Scanner( input );
@@ -57,7 +56,12 @@ public class PasswordReaderWriter {
       file.close();
     }catch( FileNotFoundException e ){
 
-      JOptionPane.showMessageDialog( null, "File entered was not found. Please check the path." );
+      // creates the error message to show the user
+      String message = "File entered was not found.";
+      message += "\nPlease check the path:";
+      message += "\n" + input.getAbsolutePath();
+
+      JOptionPane.showMessageDialog( null, message );
       System.out.println( e.getCause() );
 
     }
@@ -90,7 +94,9 @@ public class PasswordReaderWriter {
    * @return an ArrayList with all the passwords
    */
   public ArrayList<String> getPasswords(){
+
     return new ArrayList<String>( passwords );
+
   }
 
 
@@ -102,12 +108,9 @@ public class PasswordReaderWriter {
     try{
 
       // open the file
-      File input = new File( fileName );
+      input = new File( fileName );
 
       this.fileName = fileName;
-
-      //TODO: delete after testing
-      System.out.println( input.getAbsolutePath() );
 
       // create the file reader
       Scanner file = new Scanner( input );
@@ -124,8 +127,11 @@ public class PasswordReaderWriter {
       file.close();
     }catch( FileNotFoundException e ){
 
-      JOptionPane.showMessageDialog( null, "File entered was not found. Please check the path." );
-      System.out.println( e.getCause() );
+      // creates the error message to show the user
+      String message = "File entered was not found.";
+             message += "\nPlease check the path:";
+             message += "\n" + input.getAbsolutePath();
+      JOptionPane.showMessageDialog( null, message );
 
     }
 
