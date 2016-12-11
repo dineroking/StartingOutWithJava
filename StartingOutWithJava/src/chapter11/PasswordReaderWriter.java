@@ -7,8 +7,6 @@
  */
 package chapter11;
 
-import com.sun.codemodel.internal.JOp;
-
 import java.io.*;             // import file classes
 import java.util.ArrayList;
 import javax.swing.JOptionPane;
