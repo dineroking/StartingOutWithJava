@@ -82,6 +82,19 @@ public class Sandbox {
     System.out.println();
 
 
+    // FINAL EXAM STUDY
+
+    Day wednesday = Day.WEDNESDAY;
+
+    System.out.println( wednesday.ordinal() );
+
+    String str = "My name is Ronny Rosabal";
+
+    char [] name = str.toCharArray();
+
+    System.out.println( name[0] );
+
+
 	}
 
 	// RECURSION EXERCISES
