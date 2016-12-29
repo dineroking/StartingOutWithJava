@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="58e0bc3e-0a40-4888-9c9e-81ed5d5c90f5" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sandbox/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sandbox/sandbox.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HackReactor/prep/module0/main.js" afterPath="$PROJECT_DIR$/HackReactor/prep/module0/main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sandbox/sandbox.js" afterPath="$PROJECT_DIR$/sandbox/sandbox.js" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored mask="*.idea" />
@@ -36,26 +34,6 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/HackReactor/prep/module0/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="256">
-              <caret line="16" column="7" lean-forward="true" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/HackReactor/prep/module0/main.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="278">
-              <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sandbox/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="256">
@@ -65,11 +43,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sandbox.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="sandbox.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sandbox/sandbox.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="80">
-              <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+            <state relative-caret-position="480">
+              <caret line="30" column="2" lean-forward="true" selection-start-line="30" selection-start-column="2" selection-end-line="30" selection-end-column="2" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -119,8 +97,8 @@
         <option value="$PROJECT_DIR$/src/js/getSet.js" />
         <option value="$PROJECT_DIR$/HackReactor/prep/module0/index.html" />
         <option value="$PROJECT_DIR$/HackReactor/prep/module0/main.js" />
-        <option value="$PROJECT_DIR$/sandbox/sandbox.js" />
         <option value="$PROJECT_DIR$/sandbox/index.html" />
+        <option value="$PROJECT_DIR$/sandbox/sandbox.js" />
       </list>
     </option>
   </component>
@@ -707,12 +685,12 @@
       <workItem from="1482106985471" duration="225000" />
       <workItem from="1482166993455" duration="13779000" />
       <workItem from="1482546677729" duration="1307000" />
-      <workItem from="1482686773546" duration="9113000" />
+      <workItem from="1482686773546" duration="10888000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="87423000" />
+    <option name="totallyTimeSpent" value="89198000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1104,14 +1082,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/HackReactor/prep/module0/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="16" column="7" lean-forward="true" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/HackReactor/prep/module0/main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="278">
@@ -1120,13 +1090,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sandbox/sandbox.js">
+    <entry file="file://$PROJECT_DIR$/HackReactor/prep/module0/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
+        <state relative-caret-position="256">
+          <caret line="16" column="7" lean-forward="true" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1135,6 +1103,16 @@
         <state relative-caret-position="256">
           <caret line="16" column="7" lean-forward="true" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sandbox/sandbox.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="30" column="2" lean-forward="true" selection-start-line="30" selection-start-column="2" selection-end-line="30" selection-end-column="2" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
