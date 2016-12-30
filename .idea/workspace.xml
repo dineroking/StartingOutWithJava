@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8a4d4ee6-7df9-4251-bb59-07ba44d7f746" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/StartingOutWithJava/HackReactor/prep/module1/equal10.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/StartingOutWithJava/HackReactor/prep/module1/equal10.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/StartingOutWithJava/HackReactor/prep/module1/equal10.html" afterPath="$PROJECT_DIR$/StartingOutWithJava/HackReactor/prep/module1/equal10.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/StartingOutWithJava/HackReactor/prep/module1/equal10.js" afterPath="$PROJECT_DIR$/StartingOutWithJava/HackReactor/prep/module1/equal10.js" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -61,21 +61,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="equal10.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="equal10.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/StartingOutWithJava/HackReactor/prep/module1/equal10.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="29" lean-forward="false" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
+            <state relative-caret-position="136">
+              <caret line="8" column="35" lean-forward="false" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="equal10.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="equal10.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/StartingOutWithJava/HackReactor/prep/module1/equal10.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="13" lean-forward="true" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+            <state relative-caret-position="714">
+              <caret line="41" column="62" lean-forward="true" selection-start-line="41" selection-start-column="62" selection-end-line="41" selection-end-column="62" />
               <folding />
             </state>
           </provider>
@@ -111,8 +111,8 @@
         <option value="$PROJECT_DIR$/StartingOutWithJava/HackReactor/prep/module1/countWords.js" />
         <option value="$PROJECT_DIR$/StartingOutWithJava/HackReactor/prep/module1/extend.html" />
         <option value="$PROJECT_DIR$/StartingOutWithJava/HackReactor/prep/module1/extend.js" />
-        <option value="$PROJECT_DIR$/StartingOutWithJava/HackReactor/prep/module1/equal10.html" />
         <option value="$PROJECT_DIR$/StartingOutWithJava/HackReactor/prep/module1/equal10.js" />
+        <option value="$PROJECT_DIR$/StartingOutWithJava/HackReactor/prep/module1/equal10.html" />
       </list>
     </option>
   </component>
@@ -700,12 +700,12 @@
       <workItem from="1482297273614" duration="133000" />
       <workItem from="1482297421026" duration="2382000" />
       <workItem from="1482954619932" duration="22000" />
-      <workItem from="1482954705924" duration="13065000" />
+      <workItem from="1482954705924" duration="15072000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21493000" />
+    <option name="totallyTimeSpent" value="23500000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -718,7 +718,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="0" width="1284" height="1040" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -731,7 +731,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="WINDOWED" visible="false" show_stripe_button="true" weight="0.32903227" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" x="1275" y="31" width="637" height="481" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="WINDOWED" visible="true" show_stripe_button="true" weight="0.32903227" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" x="1274" y="551" width="638" height="481" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="WINDOWED" visible="true" show_stripe_button="true" weight="0.32903227" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" x="1274" y="551" width="638" height="481" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28312302" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -907,18 +907,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/StartingOutWithJava/HackReactor/prep/module1/equal10.html">
+    <entry file="file://$PROJECT_DIR$/StartingOutWithJava/HackReactor/prep/module1/equal10.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="29" lean-forward="false" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
+        <state relative-caret-position="714">
+          <caret line="41" column="62" lean-forward="true" selection-start-line="41" selection-start-column="62" selection-end-line="41" selection-end-column="62" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/StartingOutWithJava/HackReactor/prep/module1/equal10.js">
+    <entry file="file://$PROJECT_DIR$/StartingOutWithJava/HackReactor/prep/module1/equal10.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="13" lean-forward="true" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        <state relative-caret-position="136">
+          <caret line="8" column="35" lean-forward="false" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
           <folding />
         </state>
       </provider>
