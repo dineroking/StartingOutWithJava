@@ -26,15 +26,15 @@
 
 var arr = ['a', 'c', 'e'];
 var obj = {
-  a: 1,
-  b: 2,
-  c: 3,
-  d: 4
+  a : 1,
+  b : 2,
+  c : 3,
+  d : 4
 };
 
 function select( arr, obj ) {
-  return arr.reduce( function( result, value, index, array ){
-    if( value in obj ){
+  return arr.reduce( function( result, value, index, array ) {
+    if( value in obj ) {
       result[value] = obj[value];
     }
     return result;
