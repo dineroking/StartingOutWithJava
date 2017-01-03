@@ -15,7 +15,7 @@ public class SumOfNumbers {
     // VARIABLES
     
     String filePath;                           // holds the path of the file with the numbers
-    File file = new File("");        // opens the file name that holds the numbers
+    File file = new File( "" );        // opens the file name that holds the numbers
     int input = 0;                             // holds each integer from the file
     String output = "";                        // holds the output to be presented to the user
     Scanner reader = new Scanner( "" ); // use to read from a file
@@ -24,38 +24,42 @@ public class SumOfNumbers {
     // USER INPUT
     
     
-    
     filePath = "src/chapter4/numbers.txt";
     
     // open file
     try {
       file = new File( filePath );
       reader = new Scanner( file );
-      JOptionPane.showMessageDialog( null, "File Found!" );
-    } catch( FileNotFoundException e ) {
-      JOptionPane.showMessageDialog(null, "Could not find file " + file.getAbsolutePath() );
+    }
+    catch( FileNotFoundException e ) {
+      JOptionPane.showMessageDialog( null, "Could not find file " + file.getAbsolutePath() );
     }
     
     // read each integer from file
     try {
-      while( reader.hasNext() ){
+      while( reader.hasNext() ) {
         input = reader.nextInt();
-        output = numSequence( input );
+        output += "\n" + numSequence( input );
       }
-    } catch( InputMismatchException e ){
+    }
+    catch( InputMismatchException e ) {
       System.out.println( "'" + reader.nextLine() + "' is not an integer." );
+      reader.nextLine();
     }
     
     
-    
     // USER OUTPUT
+    
+    System.out.println( output );
   }
   
   // METHODS
   
-  public static String numSequence( int number ){
-    return "";
+  private static String numSequence( int number ) {
+    if( number <= 0 ){
+      return "0";
+    }else{
+      return number + " " + numSequence( number - 1 );
+    }
   }
-  
-  
 }
