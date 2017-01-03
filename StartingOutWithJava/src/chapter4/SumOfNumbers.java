@@ -19,12 +19,13 @@ public class SumOfNumbers {
     int input = 0;                             // holds each integer from the file
     String output = "";                        // holds the output to be presented to the user
     Scanner reader = new Scanner( "" ); // use to read from a file
+    FileWriter fWriter;
     
     
     // USER INPUT
     
     
-    filePath = "src/chapter4/numbers.txt";
+    filePath = "StartingOutWithJava/src/chapter4/numbers.txt";
     
     // open file
     try {
@@ -36,21 +37,30 @@ public class SumOfNumbers {
     }
     
     // read each integer from file
-    try {
-      while( reader.hasNext() ) {
+    while( reader.hasNext() ){
+      try {
         input = reader.nextInt();
         output += "\n" + numSequence( input );
+      }catch( InputMismatchException e ) {
+        System.out.println( "'" + reader.nextLine() + "' is not an integer." );
       }
     }
-    catch( InputMismatchException e ) {
-      System.out.println( "'" + reader.nextLine() + "' is not an integer." );
-      reader.nextLine();
-    }
+    
     
     
     // USER OUTPUT
     
+    try {
+      fWriter = new FileWriter( file, true );
+      PrintWriter oFile = new PrintWriter( fWriter );
+      oFile.println( output );
+      oFile.close();
+    }catch( FileNotFoundException e ) {
+      JOptionPane.showMessageDialog( null, "Could not find file " + file.getAbsolutePath() );
+    }
+    
     System.out.println( output );
+    reader.close();
   }
   
   // METHODS
