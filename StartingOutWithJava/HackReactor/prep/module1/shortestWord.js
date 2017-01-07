@@ -23,11 +23,11 @@ function findShortestWordAmongMixedElements( arr ) {
   return arr.reduce( function( shortest, elem, index, array ) {
     if( typeof elem === "string" && shortest.length === 0 ) {
       shortest = elem;
-    }else if( typeof elem === "string" && elem.length < shortest.length ) {
+    } else if( typeof elem === "string" && elem.length < shortest.length ) {
       shortest = elem;
     }
     return shortest;
   }, "" );
 }
 
-console.log( findShortestWordAmongMixedElements( [4, "two", 2, "three" ] ) );
+console.log( findShortestWordAmongMixedElements( [4, "two", 2, "three"] ) );
