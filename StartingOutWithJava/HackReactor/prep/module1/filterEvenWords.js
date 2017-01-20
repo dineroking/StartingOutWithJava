@@ -13,3 +13,10 @@
  var output = filterEvenLengthWords(['word', 'words', 'word', 'words']);
  console.log(output); // --> ['word', 'word']*/
 
+function filterEvenLengthWords( arr ) {
+  return arr.filter( function( word, index, array ){
+    return word.length % 2 === 0;
+  } );
+}
+
+console.log( filterEvenLengthWords(['word', 'words', 'word', 'words'] ) );
