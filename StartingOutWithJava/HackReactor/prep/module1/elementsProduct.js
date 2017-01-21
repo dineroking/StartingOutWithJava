@@ -15,3 +15,15 @@
  
  var output = computeProductOfAllElements([2, 5, 6]);
  console.log(output); // --> 60*/
+
+function computeProductOfAllElements( arr ) {
+  if( arr.length > 0 && Array.isArray( arr ) ) {
+    return arr.reduce( function( prod, num, index, array ) {
+      return prod * num;
+    } );
+  }
+  return 0
+}
+
+console.log( computeProductOfAllElements( [2, 5, 6] ) );
+console.log( computeProductOfAllElements( [] ) );
