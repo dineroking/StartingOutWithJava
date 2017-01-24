@@ -17,6 +17,16 @@
  var output = findShortestElement(['a', 'two', 'three']);
  console.log(output); // --> 'a'*/
 
-function findShortestElement( arr ){
-  
+function findShortestElement( arr ) {
+  return arr.reduce( function( shortest, elem, index, array ) {
+    if( array.length > 0 && index === 0 ) {
+      return elem;
+    } else if( elem.length < shortest.length ) {
+      return elem;
+    }
+    return shortest;
+  }, "" );
 }
+
+console.log( findShortestElement( ['a', 'two', 'three'] ) );
+console.log( findShortestElement( [] ) );
