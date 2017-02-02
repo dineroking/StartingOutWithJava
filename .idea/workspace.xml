@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8a4d4ee6-7df9-4251-bb59-07ba44d7f746" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/StartingOutWithJava/HackReactor/prep/module1/sumDigits.js" afterPath="$PROJECT_DIR$/StartingOutWithJava/HackReactor/prep/module1/sumDigits.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/StartingOutWithJava/src/chapter16/RecursiveDemo.java" afterPath="$PROJECT_DIR$/StartingOutWithJava/src/chapter16/RecursiveDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/StartingOutWithJava/HackReactor/prep/module1/getIndexOf.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/StartingOutWithJava/HackReactor/prep/module1/getIndexOf.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -30,31 +31,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="sumDigits.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/StartingOutWithJava/HackReactor/prep/module1/sumDigits.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="7" lean-forward="false" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sumDigits.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/StartingOutWithJava/HackReactor/prep/module1/sumDigits.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="663">
-              <caret line="38" column="34" lean-forward="true" selection-start-line="38" selection-start-column="34" selection-end-line="38" selection-end-column="34" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="RecursiveDemo.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/StartingOutWithJava/src/chapter16/RecursiveDemo.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="867">
               <caret line="55" column="14" lean-forward="true" selection-start-line="55" selection-start-column="14" selection-end-line="55" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="getIndexOf.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/StartingOutWithJava/HackReactor/prep/module1/getIndexOf.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="16" column="7" lean-forward="true" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="getIndexOf.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/StartingOutWithJava/HackReactor/prep/module1/getIndexOf.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="29" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -82,8 +83,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/StartingOutWithJava/HackReactor/prep/module1/oldEnough.html" />
-        <option value="$PROJECT_DIR$/StartingOutWithJava/HackReactor/prep/module1/oldEnough.js" />
         <option value="$PROJECT_DIR$/StartingOutWithJava/HackReactor/prep/module1/countWords.html" />
         <option value="$PROJECT_DIR$/StartingOutWithJava/HackReactor/prep/module1/countWords.js" />
         <option value="$PROJECT_DIR$/StartingOutWithJava/HackReactor/prep/module1/extend.html" />
@@ -133,6 +132,8 @@
         <option value="$PROJECT_DIR$/StartingOutWithJava/HackReactor/prep/module1/sumDigits.html" />
         <option value="$PROJECT_DIR$/StartingOutWithJava/src/chapter16/RecursiveDemo.java" />
         <option value="$PROJECT_DIR$/StartingOutWithJava/HackReactor/prep/module1/sumDigits.js" />
+        <option value="$PROJECT_DIR$/StartingOutWithJava/HackReactor/prep/module1/getIndexOf.html" />
+        <option value="$PROJECT_DIR$/StartingOutWithJava/HackReactor/prep/module1/getIndexOf.js" />
       </list>
     </option>
   </component>
@@ -252,25 +253,15 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="StartingOutWithJava" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="StartingOutWithJava" />
+              <option name="myItemId" value="HackReactor" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
+              <option name="myItemId" value="prep" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="chapter16" />
+              <option name="myItemId" value="module1" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -827,12 +818,12 @@
       <workItem from="1483468679002" duration="6112000" />
       <workItem from="1483476500680" duration="2485000" />
       <workItem from="1485286653914" duration="41000" />
-      <workItem from="1485286742330" duration="26523000" />
+      <workItem from="1485286742330" duration="28978000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="72997000" />
+    <option name="totallyTimeSpent" value="75452000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -893,20 +884,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/StartingOutWithJava/HackReactor/prep/module1/countWords.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="7" lean-forward="true" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/StartingOutWithJava/HackReactor/prep/module1/equal10.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="41" column="62" lean-forward="true" selection-start-line="41" selection-start-column="62" selection-end-line="41" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/StartingOutWithJava/HackReactor/prep/module1/extend.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="647">
@@ -1264,10 +1241,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/StartingOutWithJava/src/chapter16/RecursiveDemo.java">
+    <entry file="file://$PROJECT_DIR$/StartingOutWithJava/HackReactor/prep/module1/sumDigits.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="867">
-          <caret line="55" column="14" lean-forward="true" selection-start-line="55" selection-start-column="14" selection-end-line="55" selection-end-column="14" />
+        <state relative-caret-position="663">
+          <caret line="38" column="24" lean-forward="false" selection-start-line="38" selection-start-column="24" selection-end-line="38" selection-end-column="24" />
           <folding />
         </state>
       </provider>
@@ -1280,10 +1257,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/StartingOutWithJava/HackReactor/prep/module1/sumDigits.js">
+    <entry file="file://$PROJECT_DIR$/StartingOutWithJava/src/chapter16/RecursiveDemo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="38" column="34" lean-forward="true" selection-start-line="38" selection-start-column="34" selection-end-line="38" selection-end-column="34" />
+        <state relative-caret-position="867">
+          <caret line="55" column="14" lean-forward="true" selection-start-line="55" selection-start-column="14" selection-end-line="55" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StartingOutWithJava/HackReactor/prep/module1/getIndexOf.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="7" lean-forward="true" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StartingOutWithJava/HackReactor/prep/module1/getIndexOf.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="29" selection-end-column="1" />
           <folding />
         </state>
       </provider>
