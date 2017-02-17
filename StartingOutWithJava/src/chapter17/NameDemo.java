@@ -2,7 +2,7 @@
  * Ronny Rosabal
  * Programming Fundamentals III
  * COSC 2336 2801
- * 02.05.17
+ * 02.17.17
  * Sets the blue print for the Palindrome class
  */
 
