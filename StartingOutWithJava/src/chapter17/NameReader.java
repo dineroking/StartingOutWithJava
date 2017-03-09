@@ -18,8 +18,8 @@ public class NameReader {
   // VARIABLES
   
   private FileInputStream file = null;                              // opens the binary file to be read
-  private DataInputStream inputFile = null;                         // reads the binary file
-  private ArrayList<String> names = new ArrayList<String>();        // holds the list of names
+  private DataInputStream inputFile = null;                        // reads the binary file
+  private ArrayList<String> names = new ArrayList<String>();            // holds the list of names
   
   
   
