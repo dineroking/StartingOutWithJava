@@ -59,6 +59,9 @@ public class LinkedList<T> {
   
   // LINKEDLIST CONSTRUCTORS
   
+  /**
+   * LinkedList initializes the first and last variables to null
+   */
   public LinkedList() {
     first = null;
     last = null;
@@ -68,10 +71,18 @@ public class LinkedList<T> {
   
   // METHODS
   
+  /**
+   * isEmpty checks if the linked list is empty
+   * @return true if linked list is empty or false otherwise
+   */
   public boolean isEmpty(){
     return first == null;
   }
   
+  /**
+   * size checks for the number of elements in the linked list
+   * @return the number of elements in the linked list
+   */
   public int size() {
     int count = 0;
     Node p = first;
@@ -83,12 +94,16 @@ public class LinkedList<T> {
     return count;
   }
   
+  /**
+   * add adds an element to the end of the linked list
+   * @param e the element to be added to the linked list
+   */
   public void add( T e ) {
     
     if( isEmpty() ) {
       
       last = new Node( e );
-      first = first;
+      first = last;
     } else {
       
       last.next = new Node( e, null, last );
@@ -96,6 +111,11 @@ public class LinkedList<T> {
     }
   }
   
+  /**
+   * add adds element in a speified position in the linked list
+   * @param index the position in which the element should be added
+   * @param e the element to be added to the linked list
+   */
   public void add( int index, T e ) {
     
     if( index < 0 || index > size() ) {
@@ -132,6 +152,10 @@ public class LinkedList<T> {
     
   }
   
+  /**
+   * toString formats the list to be presented to the user
+   * @return the list to be presented to the used
+   */
   public String toString() {
     StringBuilder strBuilder = new StringBuilder();
     
@@ -143,6 +167,11 @@ public class LinkedList<T> {
     return strBuilder.toString();
   }
   
+  /**
+   * remove removes an element at a particular index
+   * @param index the index of the element to be removed
+   * @return the removed element
+   */
   public T remove( int index ) {
     if( index < 0 || index > size() ) {
       String message = String.valueOf( index );
@@ -172,6 +201,11 @@ public class LinkedList<T> {
     return element;
   }
   
+  /**
+   * remove() removes the specified element
+   * @param element the element to be removed
+   * @return true if the element was removed or false otherwise
+   */
   public boolean remove( T element ) {
     if( isEmpty() ) {
       return false;
@@ -202,5 +236,23 @@ public class LinkedList<T> {
     }
     
     return true;
+  }
+  
+  /**
+   * get() gets the element in the specified index
+   * @param index the index of the element to get
+   * @return the element
+   */
+  public T get( int index ) {
+    if( index < 0 || index > size() ) {
+      String message = String.valueOf( index );
+      throw new IndexOutOfBoundsException( message );
+    }
+    Node target = first;
+    for( int k = 1; k <= index; k++ ) {
+      target = target.next;
+    }
+    
+    return target.value;
   }
 }
