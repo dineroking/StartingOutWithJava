@@ -1,7 +1,7 @@
 /**
  * Created by Ronny Rosabal.
  * Date:      3/16/17
- * Objective:
+ * Objective: Main JavaScript file for Charles Darwin page
  */
 "use strict";
 
