@@ -52,7 +52,7 @@ public class StackCollection<T> {
   public T push( T elem ) {
     
     if( top == s.length ) {
-      throw new StackOverFlowException();
+      throw new StackOverFlowException( "Can not add an element to a full stack." );
     } else {
       s[top] = elem;
       top++;
@@ -67,7 +67,7 @@ public class StackCollection<T> {
   public T pop() {
     
     if( empty() ) {
-      throw new EmptyStackException();
+      throw new EmptyStackException( "Can not delete an element from an empty stack." );
     } else {
       T retVal = s[top - 1];
       s[top - 1] = null;
