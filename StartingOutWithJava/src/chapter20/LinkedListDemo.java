@@ -22,7 +22,7 @@ public class LinkedListDemo {
     LinkedList<String> list;        // holds the linked list of names
     
     // TODO: update path to match your system
-    fName = "src/chapter20/names.dat";
+    fName = "StartingOutWithJava/src/chapter20/names.dat";
     fileReader = new NameReader( fName );
     names = fileReader.getNames();
     list = new LinkedList<>();
