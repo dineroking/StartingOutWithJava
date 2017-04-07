@@ -12,8 +12,6 @@ package chapter21;
 // TODO: comment in package stacksAndQueues
 //package stacksAndQueues;
 
-import java.util.Objects;
-import java.util.Stack;
 
 public class StackCollection<T> {
   
