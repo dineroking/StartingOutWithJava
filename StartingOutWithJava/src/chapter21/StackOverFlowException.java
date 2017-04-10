@@ -14,6 +14,10 @@ package chapter21;
 
 public class StackOverFlowException extends RuntimeException {
   
+  /**
+   * StackOverFlowException() initializes the error message for when the stack is full.
+   * @param message the message to be displayed
+   */
   public StackOverFlowException( String message ) {
     
     System.out.println( "Error: " + message );

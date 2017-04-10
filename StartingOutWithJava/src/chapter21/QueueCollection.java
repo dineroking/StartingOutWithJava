@@ -14,19 +14,19 @@ package chapter21;
 
 public class QueueCollection<T> {
   
-  private T[] q;
-  private int front;
-  private int rear;
-  private int size;
+  private T[] q;                             // an array implemented as a queue
+  private int front;                         // points to the front of the queue
+  private int rear;                          // points to the rear of the queue
+  private int size;                          // the size of the queue
   
   // CONSTRUCTORS
   
   public QueueCollection( int capacity ) {
     
-    q = (T[]) new Object[capacity];
-    front = 0;
-    rear = 0;
-    size = 0;
+    q = (T[]) new Object[capacity];          // initialize the array to a type of T
+    front = 0;                               // initialize the front of the queue to 0
+    rear = 0;                                // initialize the rear of the queue to 0
+    size = 0;                                // initialize the size of the queue to 0
   }
   
   // METHODS
@@ -112,7 +112,6 @@ public class QueueCollection<T> {
   
   /**
    * empty() checks to see if queue is empty
-   *
    * @return true if queue is empty or false otherwise
    */
   public boolean empty() {

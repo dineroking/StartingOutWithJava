@@ -26,7 +26,7 @@ public class StackCollection<T> {
    */
   public StackCollection( int capacity ) {
     
-    s = ( T[] ) new Object[ capacity ];
+    s = ( T[] ) new Object [ capacity ];
     top = 0;
   }
   
@@ -69,6 +69,7 @@ public class StackCollection<T> {
     } else {
       T retVal = s[top - 1];
       s[top - 1] = null;
+      top--;
       return retVal;
     }
   }

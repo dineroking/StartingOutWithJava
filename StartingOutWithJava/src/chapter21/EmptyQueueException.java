@@ -14,6 +14,10 @@ package chapter21;
 
 public class EmptyQueueException extends RuntimeException {
   
+  /**
+   * EmptyQueueException() initializes the error message when the queue is empty
+   * @param message message to display
+   */
   public EmptyQueueException( String message ) {
     
     System.out.println( "Error: " + message );

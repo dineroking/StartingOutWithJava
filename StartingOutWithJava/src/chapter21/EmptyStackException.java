@@ -14,6 +14,10 @@ package chapter21;
 
 public class EmptyStackException extends RuntimeException {
   
+  /**
+   * EmptyStackException() initializes the error message for when the stack is empty
+   * @param message the message to be displayed
+   */
   public EmptyStackException( String message ) {
     
     System.out.println( "Error: " + message );

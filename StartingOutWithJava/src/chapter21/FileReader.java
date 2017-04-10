@@ -32,11 +32,23 @@ public class FileReader {
   public FileReader( String fileName ) throws IOException {
     
     charsCounter = 0;                       // initialize character/string counter to 0
+    list = new ArrayList<>(  );
     
     try {
       
       inputFile = new File( fileName );     // open file
       reader = new Scanner( inputFile );    // initialize reader with opened file
+      
+      try {
+        
+        while( reader.hasNext() ) {
+          
+          charsCounter++;
+          list.add( reader.next() );
+        }
+      } catch( InputMismatchException e ) {
+        list.add( String.valueOf( reader.next() ) );
+      }
       
     }
     catch( FileNotFoundException e ) {
@@ -48,39 +60,34 @@ public class FileReader {
   // ACCESSORS
   
   /**
-   * getCharsCounter
+   * getCharsCounter() gets the number of characters/strings in the file
    *
-   * @return
+   * @return the number of characters in the file
    */
   public int getCharsCounter() {
     
     return charsCounter;
   }
   
+  /**
+   * getList() get the ArrayList list
+   * @return the ArrayList list
+   */
   public ArrayList<String> getList() {
     
-    return list;
+    return new ArrayList<>( list );
   }
   
   
   // METHODS
   
-  public String getChar() {
-    
-    String item = "";
-    try {
-      
-      if( reader.hasNext() ) {
-        item = reader.next();
-      } else {
-        item = "eof";
-      }
-    }
-    catch( InputMismatchException e ) {
-      item = String.valueOf( reader.next() );  // if the char read is not a string convert it to a string
-    }
-    
-    return item;
+  /**
+   * getChar() returns a single character from the ArrayList
+   * @param index index which character/string should be returned
+   * @return a specified character/string
+   */
+  public String getChar( int index ) {
+    return list.get( index );
   }
   
   

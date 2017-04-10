@@ -14,6 +14,10 @@ package chapter21;
 
 public class QueueOverFlowException extends RuntimeException {
   
+  /**
+   * QueueOverFlowException() initializes the error message for when the queue is full
+   * @param message the message to be displayed
+   */
   public QueueOverFlowException( String message ) {
     
     System.out.println( "Error: " + message );
