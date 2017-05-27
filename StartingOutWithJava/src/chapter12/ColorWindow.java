@@ -54,6 +54,7 @@ public class ColorWindow extends JFrame {
     
     // make window visible
     setVisible( true );
+    
   }
   
   // CREATE PANEL AND COMPONENTS
@@ -123,7 +124,7 @@ public class ColorWindow extends JFrame {
     public void actionPerformed( ActionEvent e ) {
       
       panel.setBackground( Color.YELLOW );            // sets the panel color to yellow
-      
+      messageLabel.setForeground( Color.BLACK );      // sets the label color to black
     }
   }
   
