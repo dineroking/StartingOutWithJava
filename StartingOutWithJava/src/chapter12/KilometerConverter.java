@@ -6,6 +6,8 @@
 package chapter12;
 
 import javax.swing.*;                             // for all the swing classes
+import java.awt.event.*;                          // for event classes
+import java.awt.*;                                // For the Color class
 
 public class KilometerConverter extends JFrame {
   
@@ -52,7 +54,59 @@ public class KilometerConverter extends JFrame {
   }
   
   private void buildPanel() {
-    // TODO: finish the method from the book and delete this comments afterwards
+    
+    label = new JLabel( "Enter a distance " +
+                        "in kilometers" );                  // creates a label for user entry
+    
+    kiloText = new JTextField( 10 );               // text field with number of spaces
+    
+    calcButton = new JButton( "Calculate" );          // button to calculate the conversion
+    
+    calcButton.addActionListener( new ButtonListener() );  // register the event
+    calcButton.setForeground( Color.red );                 // set the text of the button to red
+    
+    panel = new JPanel();                                  // create the empty panel
+    
+    // add components to the panel
+    panel.add( label );
+    panel.add( kiloText );
+    panel.add( calcButton );
+    
+  }
+  
+  private class ButtonListener implements ActionListener {
+  
+    /**
+     * actionPerformed handles a click to the Calculate button
+     * @param e the event of
+     */
+    public void actionPerformed( ActionEvent e ) {
+      
+      final double CONVERSION = 0.6214;
+      String input;
+      double miles;
+      
+      input = kiloText.getText();
+      
+      try {
+        
+        miles = Double.parseDouble( input ) * CONVERSION;
+        JOptionPane.showMessageDialog( null, input + " kilometers is " +
+                                             miles + " miles." );
+        
+      }
+      catch( NullPointerException o ) {
+        
+        kiloText.setText( "Empty" );
+        
+      }
+      catch( NumberFormatException o ) {
+        
+        kiloText.setText( "Error" );
+        
+      }
+      
+    }
   }
   
   public static void main( String[] args ) {
