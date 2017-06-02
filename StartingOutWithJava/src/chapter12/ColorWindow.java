@@ -22,12 +22,12 @@ public class ColorWindow extends JFrame {
   private JPanel panel;                               // the panel to hold the components
   
   
-  
   // CONSTRUCTORS
   
   /**
    * ColorWindow creates the window, components and registers the event listeners to the buttons
-   * @param width the width of the window in pixels
+   *
+   * @param width  the width of the window in pixels
    * @param height the height of the window in pixels
    */
   public ColorWindow( int width, int height ) {
@@ -40,7 +40,7 @@ public class ColorWindow extends JFrame {
     // create window
     setTitle( "Colors" );                             // title of the window
     setSize( windowWidth, windowHeight );             // size of the window
-    setDefaultCloseOperation( JFrame.EXIT_ON_CLOSE);  // action when close button is clicked
+    setDefaultCloseOperation( WindowConstants.EXIT_ON_CLOSE );  // action when close button is clicked
     
     
     // create components
@@ -49,8 +49,11 @@ public class ColorWindow extends JFrame {
     
     // register events
     redButton.addActionListener( new RedButtonListener() );
+    redButton.addActionListener( new ButtonListener() );          // not needed just for testing
     blueButton.addActionListener( new BlueButtonListener() );
+    blueButton.addActionListener( new ButtonListener() );         // not needed just for testing
     yellowButton.addActionListener( new YellowButtonListener() );
+    yellowButton.addActionListener( new ButtonListener() );       // not needed just for testing
     
     // make window visible
     setVisible( true );
@@ -65,7 +68,7 @@ public class ColorWindow extends JFrame {
   private void buildPanel() {
     
     // create panel
-    panel = new JPanel(  );
+    panel = new JPanel();
     
     // create components
     messageLabel = new JLabel( "Click a button" + // message to be displayed
@@ -91,7 +94,7 @@ public class ColorWindow extends JFrame {
    * RedButtonListener creates a listener for when the red button is clicked
    */
   private class RedButtonListener implements ActionListener {
-  
+    
     @Override
     public void actionPerformed( ActionEvent e ) {
       
@@ -116,7 +119,7 @@ public class ColorWindow extends JFrame {
   }
   
   /**
-   * YellowButtonListener creates a listener fo when the yellow button is clicked
+   * YellowButtonListener creates a listener for when the yellow button is clicked
    */
   private class YellowButtonListener implements ActionListener {
     
@@ -125,10 +128,25 @@ public class ColorWindow extends JFrame {
       
       panel.setBackground( Color.YELLOW );            // sets the panel color to yellow
       messageLabel.setForeground( Color.BLACK );      // sets the label color to black
+      
     }
   }
   
-  public static void main( String [] args ) {
+  /**
+   * ButtonListener is used to determined which button was clicked
+   * This class is not needed. It is used only for testing.
+   */
+  private class ButtonListener implements ActionListener {
+    
+    public void actionPerformed( ActionEvent e ) {
+      
+      System.out.println( e.getActionCommand() );    // gets which button was pressed by showing the text of the button
+      System.out.println( e.getSource() );
+    }
+    
+  }
+  
+  public static void main( String[] args ) {
     
     new ColorWindow( 400, 200 );
     
