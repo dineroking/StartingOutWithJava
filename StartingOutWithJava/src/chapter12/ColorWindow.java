@@ -70,9 +70,6 @@ public class ColorWindow extends JFrame {
     // create panel
     panel = new JPanel();
     
-    setTitle( "Colors" );
-    setSize( windowWidth, windowHeight );
-    setDefaultCloseOperation( WindowConstants.EXIT_ON_CLOSE );
     messageLabel = new JLabel( "Click a button" +
                                " to select a color." );
     redButton = new JButton( "Red" );            // Button to turn panel red
@@ -80,7 +77,8 @@ public class ColorWindow extends JFrame {
     yellowButton = new JButton( "Yellow" );      // Button to turn panel yellow
     
     // color buttons text
-    redButton.setForeground( Color.RED );
+    Color purple = new Color( 200, 0, 200, 150);
+    redButton.setForeground( purple );
     blueButton.setForeground( Color.BLUE );
     yellowButton.setForeground( Color.YELLOW );
     
