@@ -21,16 +21,15 @@ public class ColorWindow extends JFrame {
   private JPanel panel;                               // the panel
   
   
-  
   // CONSTRUCTORS
   
-  public ColorWindow( ) {
+  public ColorWindow() {
     
     // CREATE THE WINDOW
     
     setTitle( "Colors" );
     setSize( windowWidth, windowHeight );
-    setDefaultCloseOperation( JFrame.EXIT_ON_CLOSE);
+    setDefaultCloseOperation( WindowConstants.EXIT_ON_CLOSE );
     messageLabel = new JLabel( "Click a button" +
                                " to select a color." );
     
