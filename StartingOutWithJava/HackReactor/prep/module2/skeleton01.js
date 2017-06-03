@@ -27,3 +27,39 @@
  {"name":"Dora","age":10}]
  
  Hint for testing: Given that the age for each student is random upon each run, we suggest that your tests check for age values of EITHER 10 or 11.*/
+
+
+function getRandomIntInclusive( min, max ) {
+  
+  min = Math.floor( min );
+  max = Math.floor( max );
+  return Math.floor( Math.random() * ( max - min + 1 ) ) + min;
+  
+}
+
+function decorateClassListWithAges( classList ) {
+  return classList.reduce( function( list, next, index, array ) {
+    list.push( { "name" : next, "age" : getRandomIntInclusive( 10, 11 ) } );
+    return list;
+  }, [] );
+}
+
+// UNIT TESTING
+
+function assertEqual( actual, expected1, expected2, testName ) {
+  if( actual === expected1 || actual === expected2 ) {
+    console.log( "Test passed." );
+  } else {
+    var message = "Failed [";
+    message += testName + "] expected \"" + expected1;
+    message += "\" or \"" + expected2 + "\" but got ";
+    message += actual;
+    console.log( message );
+  }
+}
+
+assertEqual( getRandomIntInclusive( 10, 11 ), 10, 11, "gets either 10 or 11 randomly" );
+assertEqual( getRandomIntInclusive( 10.3, 11 ), 10, 11, "gets either 10 or 11 randomly" );
+assertEqual( getRandomIntInclusive( 10, 11.3 ), 10, 11, "gets either 10 or 11 randomly" );
+
+console.log( decorateClassListWithAges( ["Ronny", "Christian", "Leslie"] ) );
