@@ -26,9 +26,9 @@ public class BorderPanelWindow extends JFrame {
     // create panels
     JPanel panel1 = new JPanel();
     JPanel panel2 = new JPanel();
-    JPanel panel3 = new JPanel(  );
-    JPanel panel4 = new JPanel(  );
-    JPanel panel5 = new JPanel(  );
+    JPanel panel3 = new JPanel();
+    JPanel panel4 = new JPanel();
+    JPanel panel5 = new JPanel();
     
     // create buttons
     JButton button1 = new JButton( "button1" );
@@ -36,7 +36,7 @@ public class BorderPanelWindow extends JFrame {
     JButton button3 = new JButton( "button3" );
     JButton button4 = new JButton( "button4" );
     JButton button5 = new JButton( "button5" );
-  
+    
     // add handlers to the buttons
     button1.addActionListener( new ButtonListener() );
     button2.addActionListener( new ButtonListener() );
@@ -57,14 +57,14 @@ public class BorderPanelWindow extends JFrame {
     add( panel3, BorderLayout.EAST );
     add( panel4, BorderLayout.WEST );
     add( panel5, BorderLayout.CENTER );
-  
+    
     // pack and display the window
     pack();
     setVisible( true );                           // make the window visible
     
   }
   
-  private class ButtonListener implements ActionListener{
+  private class ButtonListener implements ActionListener {
     
     public void actionPerformed( ActionEvent e ) {
       
