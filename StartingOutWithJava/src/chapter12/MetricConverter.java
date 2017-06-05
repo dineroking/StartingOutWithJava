@@ -6,25 +6,25 @@
 package chapter12;
 
 import javax.swing.*;                                    // for the Swing classes
-import java.awt.*;                                       // for
+import java.awt.*;                                       // for the Color class
 import java.awt.event.*;                                 // for event handling classes
 
 public class MetricConverter extends JFrame {
   
   // VARIABLES
   
-  final int WINDOW_WIDTH = 400;                          // the width of the window
-  final int WINDOW_HEIGHT = 200;                         // the height of the window
-  ButtonGroup radioButtons;                              // group that keeps the radio buttons together
-  JRadioButton miles;                                    // radio button for converting into miles
-  JRadioButton feet;                                     // radio button for converting into feet
-  JRadioButton inches;                                   // radio button for converting into inches
-  JPanel panel;                                          // panel to hold label and buttons components
-  JLabel message;                                        // label for user input
-  JTextField inputText;                                  // text field for the user to enter input
-  JCheckBox red;                                         // check box for the color red
-  JCheckBox green;                                       // check box for the color green
-  JCheckBox blue;                                        // check box for the color blue
+  final int WINDOW_WIDTH = 400;                                  // the width of the window
+  final int WINDOW_HEIGHT = 200;                                 // the height of the window
+  private ButtonGroup radioButtons;                              // group that keeps the radio buttons together
+  private JRadioButton miles;                                    // radio button for converting into miles
+  private JRadioButton feet;                                     // radio button for converting into feet
+  private JRadioButton inches;                                   // radio button for converting into inches
+  private JPanel panel;                                          // panel to hold label and buttons components
+  private JLabel message;                                        // label for user input
+  private JTextField inputText;                                  // text field for the user to enter input
+  private JCheckBox red;                                         // check box for the color red
+  private JCheckBox green;                                       // check box for the color green
+  private JCheckBox blue;                                        // check box for the color blue
   
   
   // CONSTRUCTORS
@@ -49,6 +49,11 @@ public class MetricConverter extends JFrame {
     red = new JCheckBox( "red" );
     green = new JCheckBox( "green" );
     blue = new JCheckBox( "blue" );
+    
+    // TODO: just for testing the border class. Delete after testing.
+    red.setBorder( BorderFactory.createLineBorder( new Color( 155, 0, 155, 200 ) ) ); // nothing appears
+    miles.setBorder( BorderFactory.createLineBorder( Color.RED, 4  ) );                   // nothing appears
+    panel.setBorder( BorderFactory.createLineBorder( Color.YELLOW, 4 ) );                 // yellow border
     
     // groups radio buttons
     radioButtons.add( miles );
