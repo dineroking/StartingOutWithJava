@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8a4d4ee6-7df9-4251-bb59-07ba44d7f746" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/StartingOutWithJava/src/chapter12/BrandisBagel/BagelPanel.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/StartingOutWithJava/src/chapter12/BrandisBagel/CoffeePanel.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/StartingOutWithJava/src/chapter12/BrandisBagel/GreetingsPanel.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/StartingOutWithJava/src/chapter12/BrandisBagel/OrderCalculator.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/StartingOutWithJava/src/chapter12/BrandisBagel/ToppingPanel.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/StartingOutWithJava/src/chapter12/MetricConverter.java" afterPath="$PROJECT_DIR$/StartingOutWithJava/src/chapter12/MetricConverter.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -30,14 +34,55 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MetricConverter.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/StartingOutWithJava/src/chapter12/MetricConverter.java">
+      <file leaf-file-name="GreetingsPanel.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/StartingOutWithJava/src/chapter12/BrandisBagel/GreetingsPanel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="445">
-              <caret line="61" column="4" lean-forward="true" selection-start-line="61" selection-start-column="4" selection-end-line="61" selection-end-column="4" />
+            <state relative-caret-position="170">
+              <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
-                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BagelPanel.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/StartingOutWithJava/src/chapter12/BrandisBagel/BagelPanel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="7" column="23" lean-forward="false" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ToppingPanel.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/StartingOutWithJava/src/chapter12/BrandisBagel/ToppingPanel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="7" column="25" lean-forward="false" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CoffeePanel.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/StartingOutWithJava/src/chapter12/BrandisBagel/CoffeePanel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="7" column="24" lean-forward="false" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="OrderCalculator.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/StartingOutWithJava/src/chapter12/BrandisBagel/OrderCalculator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="578">
+              <caret line="34" column="26" lean-forward="false" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="26" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -78,7 +123,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/StartingOutWithJava/HackReactor/prep/module1/oldEnoughDrinker.js" />
         <option value="$PROJECT_DIR$/StartingOutWithJava/HackReactor/prep/module1/oldEnoughDrinker.html" />
         <option value="$PROJECT_DIR$/StartingOutWithJava/src/chapter11/FileReader.java" />
         <option value="$PROJECT_DIR$/StartingOutWithJava/src/payroll/Payroll.java" />
@@ -129,6 +173,7 @@
         <option value="$PROJECT_DIR$/StartingOutWithJava/HackReactor/prep/module2/skeleton01.js" />
         <option value="$PROJECT_DIR$/StartingOutWithJava/src/chapter12/ColorWindow.java" />
         <option value="$PROJECT_DIR$/StartingOutWithJava/src/chapter12/MetricConverter.java" />
+        <option value="$PROJECT_DIR$/StartingOutWithJava/src/chapter12/BrandisBagel/OrderCalculator.java" />
       </list>
     </option>
   </component>
@@ -146,7 +191,7 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="width" value="1280" />
-    <option name="height" value="1045" />
+    <option name="height" value="1040" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -272,6 +317,28 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="StartingOutWithJava" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="StartingOutWithJava" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chapter12" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BrandisBagel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -301,27 +368,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.MetricConverter">
-    <configuration default="false" name="StackQueueDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="chapter21.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="chapter21.StackQueueDemo" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="StartingOutWithJava" />
-      <envs />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Application.OrderCalculator">
     <configuration default="false" name="ShowWindow" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -390,6 +437,26 @@
         </pattern>
       </extension>
       <option name="MAIN_CLASS_NAME" value="chapter12.MetricConverter" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="StartingOutWithJava" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="OrderCalculator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="chapter12.BrandisBagel.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="chapter12.BrandisBagel.OrderCalculator" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -806,19 +873,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Application.StackQueueDemo" />
-      <item index="1" class="java.lang.String" itemvalue="Application.ShowWindow" />
-      <item index="2" class="java.lang.String" itemvalue="Application.KilometerConverter" />
-      <item index="3" class="java.lang.String" itemvalue="Application.ColorWindow" />
-      <item index="4" class="java.lang.String" itemvalue="Application.MetricConverter" />
+      <item index="0" class="java.lang.String" itemvalue="Application.ShowWindow" />
+      <item index="1" class="java.lang.String" itemvalue="Application.KilometerConverter" />
+      <item index="2" class="java.lang.String" itemvalue="Application.ColorWindow" />
+      <item index="3" class="java.lang.String" itemvalue="Application.MetricConverter" />
+      <item index="4" class="java.lang.String" itemvalue="Application.OrderCalculator" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.MetricConverter" />
-        <item index="1" class="java.lang.String" itemvalue="Application.ColorWindow" />
-        <item index="2" class="java.lang.String" itemvalue="Application.KilometerConverter" />
-        <item index="3" class="java.lang.String" itemvalue="Application.ShowWindow" />
-        <item index="4" class="java.lang.String" itemvalue="Application.StackQueueDemo" />
+        <item index="0" class="java.lang.String" itemvalue="Application.OrderCalculator" />
+        <item index="1" class="java.lang.String" itemvalue="Application.MetricConverter" />
+        <item index="2" class="java.lang.String" itemvalue="Application.ColorWindow" />
+        <item index="3" class="java.lang.String" itemvalue="Application.KilometerConverter" />
+        <item index="4" class="java.lang.String" itemvalue="Application.ShowWindow" />
       </list>
     </recent_temporary>
   </component>
@@ -862,12 +929,12 @@
       <workItem from="1495652823367" duration="18195000" />
       <workItem from="1496364972166" duration="296000" />
       <workItem from="1496580814647" duration="977000" />
-      <workItem from="1496584431981" duration="11247000" />
+      <workItem from="1496584431981" duration="13639000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="174703000" />
+    <option name="totallyTimeSpent" value="177095000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -879,7 +946,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1280" height="1045" extended-state="0" />
+    <frame x="0" y="0" width="1280" height="1040" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -892,7 +959,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32903227" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="WINDOWED" visible="true" show_stripe_button="true" weight="0.32903227" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" x="1275" y="31" width="637" height="481" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="WINDOWED" visible="true" show_stripe_button="true" weight="0.32903227" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" x="1275" y="31" width="637" height="481" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="WINDOWED" visible="true" show_stripe_button="true" weight="0.32903227" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" x="1274" y="556" width="638" height="483" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -930,48 +997,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/StartingOutWithJava/HackReactor/prep/module1/joinDeepArrays.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="47" lean-forward="false" selection-start-line="22" selection-start-column="47" selection-end-line="22" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/StartingOutWithJava/HackReactor/prep/module1/joinDeepArrays.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="7" lean-forward="true" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/StartingOutWithJava/HackReactor/prep/module1/sumDigits.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="38" column="24" lean-forward="false" selection-start-line="38" selection-start-column="24" selection-end-line="38" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/StartingOutWithJava/HackReactor/prep/module1/sumDigits.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="7" lean-forward="false" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/StartingOutWithJava/src/chapter16/RecursiveDemo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="867">
-          <caret line="55" column="14" lean-forward="false" selection-start-line="55" selection-start-column="14" selection-end-line="55" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/StartingOutWithJava/HackReactor/prep/module1/getIndexOf.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="7" lean-forward="false" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/StartingOutWithJava/HackReactor/prep/module1/getIndexOf.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="544">
@@ -1294,6 +1319,58 @@
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_112/src.zip!/javax/swing/border/Border.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="341">
+          <caret line="63" column="17" lean-forward="false" selection-start-line="63" selection-start-column="17" selection-end-line="63" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StartingOutWithJava/src/chapter12/BrandisBagel/GreetingsPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StartingOutWithJava/src/chapter12/BrandisBagel/BagelPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="7" column="23" lean-forward="false" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StartingOutWithJava/src/chapter12/BrandisBagel/ToppingPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="7" column="25" lean-forward="false" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StartingOutWithJava/src/chapter12/BrandisBagel/CoffeePanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="7" column="24" lean-forward="false" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StartingOutWithJava/src/chapter12/BrandisBagel/OrderCalculator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="34" column="26" lean-forward="false" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="26" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>
