@@ -1,10 +1,13 @@
 /**
  * Created by Ronny Rosabal.
  * Date:      6/5/2017
- * Objective:
+ * Objective: The class that creates the toppings panel and the options of toppings in it.
  */
+
 package chapter12.BrandisBagel;
 
-public class ToppingPanel {
+import javax.swing.*;
+
+public class ToppingPanel extends JPanel {
   
 }
