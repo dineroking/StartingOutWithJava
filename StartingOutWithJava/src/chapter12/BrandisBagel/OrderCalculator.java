@@ -6,14 +6,14 @@
 package chapter12.BrandisBagel;
 
 import javax.swing.*;
+import java.awt.*;
 
-public class OrderCalculator  extends JFrame{
+public class OrderCalculator extends JFrame {
   
   // VARIABLES
   
   final int WINDOW_WIDTH = 400;
   final int WINDOW_HEIGHT = 200;
-  
   
   
   // CONSTRUCTORS
@@ -24,6 +24,11 @@ public class OrderCalculator  extends JFrame{
     setSize( WINDOW_WIDTH, WINDOW_HEIGHT );
     setTitle( "Order Calculator" );
     setDefaultCloseOperation( WindowConstants.EXIT_ON_CLOSE );
+    setLayout( new BorderLayout() );
+    
+    // add panels to content pane
+    add( new GreetingsPanel( "Welcome to Brandi's Bagel House" ), BorderLayout.NORTH );
+    add( new BagelPanel( "White", "Whole wheat" ), BorderLayout.WEST );
     
     // make window visible
     setVisible( true );
@@ -33,6 +38,7 @@ public class OrderCalculator  extends JFrame{
   public static void main( String[] args ) {
     
     new OrderCalculator();
+    
   }
   
 }
