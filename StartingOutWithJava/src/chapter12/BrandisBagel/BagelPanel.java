@@ -60,7 +60,7 @@ public class BagelPanel extends JPanel {
    * getBagelPrice returns the price of the bagel that was selected on the bagel panel in the order calculator
    * @return the price of the selected bagel
    */
-  public double getBagelPrice() {
+  public double getBagelCost() {
     
     if( bagel1RadioButton.isSelected() ) {
       return bagel1Price;
