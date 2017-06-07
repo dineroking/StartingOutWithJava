@@ -29,6 +29,7 @@ public class OrderCalculator extends JFrame {
     // add panels to content pane
     add( new GreetingsPanel( "Welcome to Brandi's Bagel House" ), BorderLayout.NORTH );
     add( new BagelPanel( "White", "Whole wheat" ), BorderLayout.WEST );
+    add( new CoffeePanel(), BorderLayout.EAST );
     
     // make window visible
     setVisible( true );
