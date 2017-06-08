@@ -12,6 +12,7 @@ var testBoard = "# \n #";
 
 // FUNCTIONS
 
+// my solution
 function buildBoard( columns, rows ) {
   
   var board = "";           // holds the pattern of the board
@@ -30,10 +31,28 @@ function buildBoard( columns, rows ) {
   return board;
 }
 
+// book solution
+function bookSolution( columns, rows ) {
+  var size = 8;
+  
+  var board = "";
+  
+  for( var y = 0; y < size; y++ ) {
+    for( var x = 0; x < size; x++ ) {
+      if( (x + y) % 2 === 0 ) {
+        board += " ";
+      } else {
+        board += "#";
+      }
+    }
+    board += "\n";
+  }
+}
+
 
 // ASSERTIONS
 
-function assertIsEqual( actual, expected, testName ){
+function assertIsEqual( actual, expected, testName ) {
   
   var failMessage;            // holds the message when the test fails
   
@@ -53,4 +72,4 @@ function assertIsEqual( actual, expected, testName ){
     
   }
 }
-assertIsEqual( buildBoard( 2, 2 ), testBoard, "builds a chessboard");
+assertIsEqual( buildBoard( 2, 2 ), testBoard, "builds a chessboard" );
