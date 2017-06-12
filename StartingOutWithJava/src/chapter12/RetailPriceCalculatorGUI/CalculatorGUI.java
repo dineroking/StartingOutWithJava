@@ -10,8 +10,11 @@ package chapter12.RetailPriceCalculatorGUI;
 import javax.swing.*;             // for the Swing classes
 import java.awt.*;                // for the BorderLayout class
 import java.awt.event.*;          // for the ActionListener interface
-import java.text.DecimalFormat;   // for the DecimalFormat class
+import java.text.*;               // for the DecimalFormat and NumberFormat class
 
+/**
+ * CalculatorGUI class puts all the components of the Retail Price Calculator together
+ */
 public class CalculatorGUI extends JFrame {
   
   // VARIABLES
@@ -27,11 +30,14 @@ public class CalculatorGUI extends JFrame {
   // formats
   DecimalFormat dollar;                 // the format for US dollar currency
   // TODO: check how to format a percentage
-  DecimalFormat percentage;             // the format to show a decimal as a percentage
+  NumberFormat percentage;             // the format to show a decimal as a percentage
   
   
   // CONSTRUCTORS
   
+  /**
+   * CalculatorGUI() builds the window and the panels
+   */
   public CalculatorGUI() {
     
     // set the layout manager
@@ -59,6 +65,9 @@ public class CalculatorGUI extends JFrame {
   
   // EVENT HANDLERS
   
+  /**
+   * ButtonListener() creates the the event handler for when the calculate and exit buttons are clicked
+   */
   private class ButtonListener implements ActionListener {
     
     public void actionPerformed( ActionEvent e ) {
@@ -85,15 +94,19 @@ public class CalculatorGUI extends JFrame {
           // calculate the markup
           totalPrice = ( productPrice * markupRate ) + productPrice;
           
-          // initialize currency format
+          // create formats
           dollar = new DecimalFormat( "$#0.00" );
+          percentage = NumberFormat.getPercentInstance();
+          percentage.setMinimumFractionDigits( 1 );
           
           // create the message to display
           outputMessage = productName;
           outputMessage += "\n\nPrice: " + dollar.format( productPrice );
-          outputMessage += "\nMarkup: " + markupRate;
-          outputMessage += "\nTotal: "
+          outputMessage += "\nMarkup: " + percentage.format( markupRate );
+          outputMessage += "\nTotal: " + dollar.format( totalPrice );
           
+          // display the message
+          JOptionPane.showMessageDialog( null, outputMessage );
           
         } catch( IllegalArgumentException o ) {
           
@@ -109,7 +122,9 @@ public class CalculatorGUI extends JFrame {
   
   // METHODS
   
-  // build the calculate and exit panel
+  /**
+   * buildPanel() builds the user input panel and the buttons panel
+   */
   private void buildPanels() {
     
     // create the panels
@@ -123,6 +138,10 @@ public class CalculatorGUI extends JFrame {
     // add buttons to the panel
     buttonsPanel.add( calculateButton );
     buttonsPanel.add( exitButton );
+    
+    // register the event handlers to the buttons
+    calculateButton.addActionListener( new ButtonListener() );
+    exitButton.addActionListener( new ButtonListener() );
     
   }
   

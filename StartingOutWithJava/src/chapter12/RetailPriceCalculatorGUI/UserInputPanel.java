@@ -8,6 +8,9 @@ package chapter12.RetailPriceCalculatorGUI;
 import javax.swing.*;     // for the Swing classes
 import java.awt.*;        // for FlowLayout class
 
+/**
+ * UserInputPanel class puts together all the components of the user input panel
+ */
 public class UserInputPanel extends JPanel {
   
   // VARIABLES
@@ -55,18 +58,31 @@ public class UserInputPanel extends JPanel {
   }
   
   
+  
   // METHODS
   
+  /**
+   * getProductInput() returns the name of the product entered by the user
+   * @return the name of product
+   */
   public String getProductInput() {
     
     return  productInput.getText();
   }
   
+  /**
+   * getPriceInput() returns the price of the product entered by the user
+   * @return the price of the product
+   */
   public String getPriceInput() {
     
     return priceInput.getText();
   }
   
+  /**
+   * getMarkupInput() returns the markup percentage of the product entered by the user
+   * @return the markup percentage of the product
+   */
   public String getMarkupInput() {
     
     return markupInput.getText();
