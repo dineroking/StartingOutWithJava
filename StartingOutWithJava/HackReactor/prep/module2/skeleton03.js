@@ -29,23 +29,76 @@
  The pseudocode style we want for this purpose is at the level of precise English. It also is not describing for-loops and whatnot. It also is only inside functions. Don't pseudocode functions, just write the functions as empty stubs. That saves you precious time later, with less rewriting.
  */
 
-function findMaxRepeatCountInWord(word) {
+function findMaxRepeatCountInWord( word ) {
   // Break up individual words into individual letters.
+  var letters = word.split( "" );
+  var maxRepeatedCount;
   // Count the instances of each letter
+  var letters = letters.reduce( function( obj, letter, index, array ) {
+    if( !( letter in obj ) ) {
+      obj[letter] = 1;
+    } else {
+      obj[letter]++;
+    }
+    return obj;
+  }, {} );
+  console.log( letters );
   // Iterate all the counts and find the highest
+  maxRepeatedCount = letters[word.charAt( 0 )];
+  for( var letter in letters ) {
+    if( letters.hasOwnProperty( letter ) && letters[letter] > maxRepeatedCount ) {
+      maxRepeatedCount = letters[letter];
+    }
+  }
   // Return this word's max repeat count
+  return maxRepeatedCount;
 }
 
-function findFirstWordWithMostRepeatedChars(text) {
+function findFirstWordWithMostRepeatedChars( text ) {
   var maxRepeatCountOverall = 0;
   var wordWithMaxRepeatCount = '';
   
   // Break up input text into words (space-delimited).
+  var wordList = text.split( " " );
   // For each word...
-  var repeatCountForWord = findMaxRepeatCountInWord(word)
-  //  If that max repeat count is higher than the overall max repeat count, then
-  //    update maxRepeatCountOverall
-  //    update wordWithMaxRepeatCount
+  for( var i = 0; i < wordList.length; i++ ) {
+    var repeatCountForWord = findMaxRepeatCountInWord( wordList[i] );
+    //  If that max repeat count is higher than the overall max repeat count, then
+    if( repeatCountForWord > maxRepeatCountOverall ) {
+      //    update maxRepeatCountOverall
+      maxRepeatCountOverall = repeatCountForWord;
+      //    update wordWithMaxRepeatCount
+      wordWithMaxRepeatCount = wordList[i];
+    }
+    
+  }
   
   return wordWithMaxRepeatCount;
 }
+
+
+
+// UNIT TESTING
+
+function assertIsEqual( actual, extected, testName ) {
+  
+  var outputMessage;        // holds the message with the results of the test
+  if( actual === extected ) {
+    
+    // create message for when the test passes
+    outputMessage = "Test passed.";
+    console.log( outputMessage );
+    
+  } else {
+    
+    // create message for when the test fails
+    outputMessage = "Failed: [" + testName + "] ";
+    outputMessage += " extected '" + extected + "'";
+    outputMessage += " and it got '" + actual + "'.";
+    console.log( outputMessage );
+  }
+}
+
+assertIsEqual( findMaxRepeatCountInWord("ronny"), 2, "it checks a word and finds the letter with the highest count");
+assertIsEqual( findFirstWordWithMostRepeatedChars( "it checks a word and finds the letter with the highest count" ),
+               "highest", "it finds the word with the most repeated characters.");
