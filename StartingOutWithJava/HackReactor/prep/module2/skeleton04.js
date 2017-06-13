@@ -27,7 +27,7 @@
  Notes:
  * Do not leave any methods unused.*/
 
-function PhoneNumberFormatter(numbers) {
+function PhoneNumberFormatter( numbers ) {
   this.numbers = numbers;
 }
 
@@ -49,10 +49,10 @@ PhoneNumberFormatter.prototype.getLineNumber = function() {
   // your code here
 };
 
-PhoneNumberFormatter.prototype.parenthesize = function(string) {
+PhoneNumberFormatter.prototype.parenthesize = function( string ) {
   return '(' + string + ')';
 };
 
-PhoneNumberFormatter.prototype.slice = function(start, end) {
-  return this.numbers.slice(start, end).join('');
+PhoneNumberFormatter.prototype.slice = function( start, end ) {
+  return this.numbers.slice( start, end ).join( '' );
 };
