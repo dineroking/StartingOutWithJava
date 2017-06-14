@@ -42,7 +42,6 @@ function findMaxRepeatCountInWord( word ) {
     }
     return obj;
   }, {} );
-  console.log( letters );
   // Iterate all the counts and find the highest
   maxRepeatedCount = letters[word.charAt( 0 )];
   for( var letter in letters ) {
@@ -77,7 +76,6 @@ function findFirstWordWithMostRepeatedChars( text ) {
 }
 
 
-
 // UNIT TESTING
 
 function assertIsEqual( actual, extected, testName ) {
@@ -99,6 +97,6 @@ function assertIsEqual( actual, extected, testName ) {
   }
 }
 
-assertIsEqual( findMaxRepeatCountInWord("ronny"), 2, "it checks a word and finds the letter with the highest count");
+assertIsEqual( findMaxRepeatCountInWord( "ronny" ), 2, "it checks a word and finds the letter with the highest count" );
 assertIsEqual( findFirstWordWithMostRepeatedChars( "it checks a word and finds the letter with the highest count" ),
-               "highest", "it finds the word with the most repeated characters.");
+               "highest", "it finds the word with the most repeated characters." );

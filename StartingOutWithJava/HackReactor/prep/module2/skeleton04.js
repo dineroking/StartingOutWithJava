@@ -34,19 +34,25 @@ function PhoneNumberFormatter( numbers ) {
 PhoneNumberFormatter.prototype.render = function() {
   var string = '';
   // your code here
+  string += this.parenthesize( this.getAreaCode() );
+  string += this.getExchangeCode();
+  string += this.getLineNumber();
   return string;
 };
 
 PhoneNumberFormatter.prototype.getAreaCode = function() {
   // your code here
+  return this.slice( 0, 3 );
 };
 
 PhoneNumberFormatter.prototype.getExchangeCode = function() {
   // your code here
+  return " " + this.slice( 3, 6 ) + "-";
 };
 
 PhoneNumberFormatter.prototype.getLineNumber = function() {
   // your code here
+  return this.slice( 6, 10 );
 };
 
 PhoneNumberFormatter.prototype.parenthesize = function( string ) {
@@ -56,3 +62,10 @@ PhoneNumberFormatter.prototype.parenthesize = function( string ) {
 PhoneNumberFormatter.prototype.slice = function( start, end ) {
   return this.numbers.slice( start, end ).join( '' );
 };
+
+
+// IMPLEMENTATION
+
+var myNumber = new PhoneNumberFormatter( [1, 2, 3, 4, 5, 6, 7, 8, 9, 0] );
+console.log( myNumber.numbers );
+console.log( myNumber.render() );
