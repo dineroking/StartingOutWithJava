@@ -34,7 +34,7 @@ function findMaxRepeatCountInWord( word ) {
   var letters = word.split( "" );
   var maxRepeatedCount;
   // Count the instances of each letter
-  var letters = letters.reduce( function( obj, letter, index, array ) {
+  letters = letters.reduce( function( obj, letter, index, array ) {
     if( !( letter in obj ) ) {
       obj[letter] = 1;
     } else {
