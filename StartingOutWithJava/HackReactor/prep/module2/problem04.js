@@ -78,6 +78,49 @@
 
 // FUNCTIONS
 
-function renderInventory(){
+function renderInventory( inventory ) {
+  
+  // run through all the designers in the inventory
+  return inventory.map( function( desinger, designerIndex, array ){
+    
+    // for each designer in the inventory, run to each of his/her shoes
+    // if the word is in the name of the shoe
+    // create an object that holds an array of the name of the shoe splitted
+    // add to the object 
+  } );
+  
+}
 
+function findWordInShoeName( name, word ) {
+  return name.indexOf( word ) !== -1;
+}
+
+function splitShoeName( name ) {
+  return name.split();
+}
+
+function getWordInNameIndex( name, word ) {
+  return name.indexOf( word );
+}
+
+
+// UNIT TESTS
+
+function assertIsEqual( actual, expected, testName ) {
+  
+  var message = "";       // holds the passed or failed message
+  if( actual === expected ) {
+    
+    // create the pass message
+    message = "Test passed.";
+  } else {
+    
+    // create the fail message
+    message = "Failed [" + testName + "], ";
+    message += "expected " + expected;
+    message += " and it got " + actual;
+  }
+  
+  // display the message
+  console.log( message );
 }
