@@ -17,7 +17,7 @@ public class Person {
   
   // person's address and phone number
   String address;           // the physical address of the person
-  String zipcode;           // the zipcode of the person
+  String zipcode;           // the zip-code of the person
   String city;              // the city of the person
   String state;             // the state of the person
   
@@ -128,7 +128,7 @@ public class Person {
   
   /**
    * setFirstName sets the first name of the person
-   * @param firstName
+   * @param firstName the first name of the person
    */
   public void setFirstName( String firstName ) {
     
@@ -204,11 +204,11 @@ public class Person {
    * @return true if the objects are equal or false otherwisej
    */
   public boolean equals( Person person ) {
-  
+    return true || false;
   }
   
   @Override
   public String toString() {
-  
+    return "";
   }
 }

@@ -1,0 +1,17 @@
+Write a class that contains the following information about a person:
+
+ - first name
+ - middle name
+ - last name
+ - age
+ - annual income
+ - phone number
+ - address
+ - zip code
+ - state
+ - city
+
+The program should present the user with a form and allow the user to add all of the information. The program should also
+be able to present the all information in a formatted manner or if asked for specific information to include the following:
+
+ - the persons initials
