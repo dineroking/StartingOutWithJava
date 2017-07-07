@@ -10,16 +10,16 @@ public class Person {
   // VARIABLES
   
   // person
-  String firstName;         // the first name of the person
-  String middleName;        // the middle name of the person
-  String lastName;          // the last name of the person
-  int age;                  // the age of the person
+  private String firstName;         // the first name of the person
+  private String middleName;        // the middle name of the person
+  private String lastName;          // the last name of the person
+  private int age;                  // the age of the person
   
   // person's address and phone number
-  String address;           // the physical address of the person
-  String zipcode;           // the zip-code of the person
-  String city;              // the city of the person
-  String state;             // the state of the person
+  private String address;           // the physical address of the person
+  private String zipcode;           // the zip-code of the person
+  private String city;              // the city of the person
+  private String state;             // the state of the person
   
   
   
