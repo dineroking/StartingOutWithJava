@@ -1,0 +1,37 @@
+This is the process to be used when using TDD.
+
+In this example, I'm creating a bank account class that has a balance variable and a withdraw and deposit methods.
+First I'll worry about the deposit method on its own before moving on to the withdraw method.
+
+With the deposit method the first thing to do is create the test that fails.
+
+The first thing that was done was to go the test class (BankAccountTest) and write a test method. Then a BankAccount
+object was written inside of the test and this of course gives a compiling error because there is no BankAccount class.
+I go and create a BankAccount class and the error is fixed and I can continue with the test. I then try to call the deposit
+method on the object and this also gives a compiling error because the method does not exist.
+
+I can then try to call the withdraw method from the test and it fails because the withdraw method does not exists in the
+production code. I have to go and create the method so that the test passes.
+
+Another important aspect of TDD is keeping some type of TO-DO list and questions that come up about the code as you progress.
+
+An example that relates to the BankAccount class that we are building is the following:
+
+create new BankAccount object
+
+deposit 50
+check balance is 50
+
+withdraw 30
+check balance is 20
+
+balance variable should be private
+
+what about negative amounts?
+any limits on max deposit?
+
+
+----------------------------------------------------------------------------
+
+Another important point is to make each test simple. Each test should only test for one thing. In the case of this example,
+there should be a test for deposits and a separate test for withdrawals.
