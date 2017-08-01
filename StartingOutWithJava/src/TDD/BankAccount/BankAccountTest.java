@@ -34,4 +34,14 @@ public class BankAccountTest {
     acc.withdraw( 20 );
     assertEquals( -15, acc.getBalance() );
   }
+  
+  @Test ( expected = IllegalArgumentException.class )
+  public void testDivisionException() {
+    
+    BankAccount acc = new BankAccount();
+    int a = 5, b = 0;
+    acc.divide( a, b );          // should throw an exception
+    
+  }
+  
 }

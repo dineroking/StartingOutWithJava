@@ -34,4 +34,9 @@ any limits on max deposit?
 ----------------------------------------------------------------------------
 
 Another important point is to make each test simple. Each test should only test for one thing. In the case of this example,
-there should be a test for deposits and a separate test for withdrawals.
+there should be a test for deposits and a separate test for withdrawals. Test should be independent from each other so each
+test can be perform at any time without the need for another test to run prior.
+
+There should also be a separate test class for each of the classes.
+
+"Test until fear turns to boredom"

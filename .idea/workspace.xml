@@ -2,29 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8a4d4ee6-7df9-4251-bb59-07ba44d7f746" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/StartingOutWithJava/TDD/BankAccount/BankAccount.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/StartingOutWithJava/TDD/BankAccount/BankAccountTest.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/StartingOutWithJava/TDD/Test.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/StartingOutWithJava/chapter12/BrandisBagel/BagelPanel.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/StartingOutWithJava/chapter12/BrandisBagel/CoffeePanel.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/StartingOutWithJava/chapter12/BrandisBagel/OrderCalculator$1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/StartingOutWithJava/chapter12/BrandisBagel/OrderCalculator$ButtonListener.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/StartingOutWithJava/chapter12/BrandisBagel/OrderCalculator.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/StartingOutWithJava/chapter12/RetailPriceCalculatorGUI/CalculatorGUI$1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/StartingOutWithJava/chapter12/RetailPriceCalculatorGUI/CalculatorGUI$ButtonListener.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/StartingOutWithJava/chapter12/RetailPriceCalculatorGUI/CalculatorGUI.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/StartingOutWithJava/chapter12/RetailPriceCalculatorGUI/UserInputPanel.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/StartingOutWithJava/chapter2/personalInfo/AddressPanel.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/StartingOutWithJava/chapter2/personalInfo/Person.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/StartingOutWithJava/chapter2/personalInfo/PersonPanel.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/StartingOutWithJava/chapter2/personalInfo/PersonalInfoForm.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/StartingOutWithJava/src/TDD/BankAccount/BankAccount" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/StartingOutWithJava/src/TDD/BankAccount/BankAccount.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/StartingOutWithJava/src/TDD/BankAccount/BankAccountTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/StartingOutWithJava/src/TDD/Test.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/StartingOutWithJava/TDD/BankAccount/BankAccount" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/StartingOutWithJava/StartingOutWithJava.iml" afterPath="$PROJECT_DIR$/StartingOutWithJava/StartingOutWithJava.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/StartingOutWithJava/src/TDD/BankAccount/BankAccount.java" afterPath="$PROJECT_DIR$/StartingOutWithJava/src/TDD/BankAccount/BankAccount.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/StartingOutWithJava/src/TDD/BankAccount/BankAccountTest.java" afterPath="$PROJECT_DIR$/StartingOutWithJava/src/TDD/BankAccount/BankAccountTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -53,27 +33,23 @@
       <file leaf-file-name="BankAccount.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/StartingOutWithJava/src/TDD/BankAccount/BankAccount.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="36" column="19" lean-forward="false" selection-start-line="36" selection-start-column="19" selection-end-line="36" selection-end-column="19" />
+            <state relative-caret-position="697">
+              <caret line="49" column="18" lean-forward="true" selection-start-line="49" selection-start-column="18" selection-end-line="49" selection-end-column="18" />
               <folding>
                 <element signature="e#218#219#0" expanded="true" />
                 <element signature="e#237#238#0" expanded="true" />
                 <element signature="e#286#287#0" expanded="true" />
                 <element signature="e#321#322#0" expanded="true" />
-                <element signature="e#369#370#0" expanded="true" />
-                <element signature="e#393#394#0" expanded="true" />
-                <element signature="e#434#435#0" expanded="true" />
-                <element signature="e#461#462#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BankAccountTest.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="BankAccountTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/StartingOutWithJava/src/TDD/BankAccount/BankAccountTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="578">
-              <caret line="34" column="42" lean-forward="true" selection-start-line="34" selection-start-column="42" selection-end-line="34" selection-end-column="42" />
+            <state relative-caret-position="760">
+              <caret line="45" column="2" lean-forward="true" selection-start-line="45" selection-start-column="2" selection-end-line="45" selection-end-column="2" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -81,7 +57,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BankAccount" pinned="false" current-in-tab="true">
+      <file leaf-file-name="BankAccount" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/StartingOutWithJava/src/TDD/BankAccount/BankAccount">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="663">
@@ -176,9 +152,9 @@
         <option value="$PROJECT_DIR$/StartingOutWithJava/src/chapter2/personalInfo/PersonalInfoFormTest.java" />
         <option value="$PROJECT_DIR$/StartingOutWithJava/src/TDD/BankAccountTest.java" />
         <option value="$PROJECT_DIR$/StartingOutWithJava/src/TDD/TDD.txt" />
-        <option value="$PROJECT_DIR$/StartingOutWithJava/src/TDD/BankAccount/BankAccountTest.java" />
-        <option value="$PROJECT_DIR$/StartingOutWithJava/src/TDD/BankAccount/BankAccount.java" />
         <option value="$PROJECT_DIR$/StartingOutWithJava/src/TDD/BankAccount/BankAccount" />
+        <option value="$PROJECT_DIR$/StartingOutWithJava/src/TDD/BankAccount/BankAccount.java" />
+        <option value="$PROJECT_DIR$/StartingOutWithJava/src/TDD/BankAccount/BankAccountTest.java" />
       </list>
     </option>
   </component>
@@ -276,8 +252,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
-      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -313,8 +289,8 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
+      <pane id="AndroidView" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -928,23 +904,12 @@
       <workItem from="1499948695629" duration="1207000" />
       <workItem from="1500924959694" duration="199000" />
       <workItem from="1500925692151" duration="1198000" />
-      <workItem from="1501178879062" duration="10443000" />
+      <workItem from="1501178879062" duration="11192000" />
+      <workItem from="1501611536738" duration="2170000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="BankAccountTest - 2017.07.28 at 17h 15m 55s.xml">
-      <configuration name="BankAccountTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BankAccountTest - 2017.07.28 at 17h 18m 19s.xml">
-      <configuration name="BankAccountTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BankAccountTest - 2017.07.28 at 17h 24m 49s.xml">
-      <configuration name="BankAccountTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BankAccountTest - 2017.07.28 at 17h 25m 25s.xml">
-      <configuration name="BankAccountTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="BankAccountTest - 2017.07.28 at 17h 26m 33s.xml">
       <configuration name="BankAccountTest" configurationId="JUnit" />
     </history-entry>
@@ -957,6 +922,18 @@
     <history-entry file="BankAccountTest - 2017.07.28 at 17h 37m 20s.xml">
       <configuration name="BankAccountTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="BankAccountTest - 2017.08.01 at 14h 26m 24s.xml">
+      <configuration name="BankAccountTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BankAccountTest - 2017.08.01 at 14h 27m 16s.xml">
+      <configuration name="BankAccountTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BankAccountTest - 2017.08.01 at 14h 31m 38s.xml">
+      <configuration name="BankAccountTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BankAccountTest - 2017.08.01 at 14h 31m 52s.xml">
+      <configuration name="BankAccountTest" configurationId="JUnit" />
+    </history-entry>
     <history-entry file="BankAccountTest_test - 2017.07.27 at 16h 58m 39s.xml">
       <configuration name="BankAccountTest.test" configurationId="AndroidJUnit" />
     </history-entry>
@@ -965,7 +942,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="214204000" />
+    <option name="totallyTimeSpent" value="217123000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -978,7 +955,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="0" width="1287" height="1040" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -990,7 +966,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="WINDOWED" visible="true" show_stripe_button="true" weight="0.32903227" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" x="1275" y="31" width="637" height="492" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="WINDOWED" visible="true" show_stripe_button="true" weight="0.32903227" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" x="1274" y="556" width="638" height="483" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="WINDOWED" visible="true" show_stripe_button="true" weight="0.32903227" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" x="1274" y="556" width="638" height="483" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16443746" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -1019,7 +995,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="3" />
+      <option name="time" value="4" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1257,9 +1233,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1267,9 +1240,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1277,9 +1247,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2312">
           <caret line="142" column="119" lean-forward="false" selection-start-line="142" selection-start-column="119" selection-end-line="142" selection-end-column="119" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1287,7 +1254,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="595">
           <caret line="41" column="23" lean-forward="false" selection-start-line="41" selection-start-column="23" selection-end-line="41" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1295,7 +1261,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="16" column="10" lean-forward="false" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1303,7 +1268,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="845">
           <caret line="62" column="39" lean-forward="false" selection-start-line="62" selection-start-column="39" selection-end-line="62" selection-end-column="39" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1311,26 +1275,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="680">
           <caret line="40" column="2" lean-forward="false" selection-start-line="40" selection-start-column="2" selection-end-line="40" selection-end-column="2" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/StartingOutWithJava/src/chapter2/personalInfo/PersonalInfoFormTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="27" lean-forward="false" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/StartingOutWithJava/src/chapter2/personalInfo/PersonalInfoFormTest.java" />
     <entry file="file://$PROJECT_DIR$/StartingOutWithJava/src/chapter2/personalInfo/AddressPanel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="10" column="40" lean-forward="true" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1338,9 +1290,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="21" column="21" lean-forward="false" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1348,36 +1297,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="544">
           <caret line="32" column="31" lean-forward="false" selection-start-line="32" selection-start-column="31" selection-end-line="32" selection-end-column="31" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/StartingOutWithJava/src/TDD/BankAccount/BankAccount/BankAccount.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="7" column="24" lean-forward="true" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/StartingOutWithJava/src/TDD/BankAccount/BankAccount/BankAccountTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/StartingOutWithJava/src/TDD/BankAccount/BankAccount/BankAccount.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/StartingOutWithJava/src/TDD/BankAccount/BankAccount/BankAccount.java" />
+    <entry file="file://$PROJECT_DIR$/StartingOutWithJava/src/TDD/BankAccount/BankAccount/BankAccountTest.java" />
+    <entry file="file://$PROJECT_DIR$/StartingOutWithJava/src/TDD/BankAccount/BankAccount/BankAccount.txt" />
     <entry file="file://$PROJECT_DIR$/StartingOutWithJava/src/TDD/Test.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -1386,38 +1311,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/StartingOutWithJava/src/TDD/BankAccount/BankAccount">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="39" column="67" lean-forward="false" selection-start-line="39" selection-start-column="67" selection-end-line="39" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/StartingOutWithJava/src/TDD/BankAccount/BankAccount.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="36" column="19" lean-forward="false" selection-start-line="36" selection-start-column="19" selection-end-line="36" selection-end-column="19" />
+        <state relative-caret-position="697">
+          <caret line="49" column="18" lean-forward="true" selection-start-line="49" selection-start-column="18" selection-end-line="49" selection-end-column="18" />
           <folding>
             <element signature="e#218#219#0" expanded="true" />
             <element signature="e#237#238#0" expanded="true" />
             <element signature="e#286#287#0" expanded="true" />
             <element signature="e#321#322#0" expanded="true" />
-            <element signature="e#369#370#0" expanded="true" />
-            <element signature="e#393#394#0" expanded="true" />
-            <element signature="e#434#435#0" expanded="true" />
-            <element signature="e#461#462#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/StartingOutWithJava/src/TDD/BankAccount/BankAccountTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="34" column="42" lean-forward="true" selection-start-line="34" selection-start-column="42" selection-end-line="34" selection-end-column="42" />
+        <state relative-caret-position="760">
+          <caret line="45" column="2" lean-forward="true" selection-start-line="45" selection-start-column="2" selection-end-line="45" selection-end-column="2" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/StartingOutWithJava/src/TDD/BankAccount/BankAccount">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="39" column="67" lean-forward="false" selection-start-line="39" selection-start-column="67" selection-end-line="39" selection-end-column="67" />
-          <folding />
         </state>
       </provider>
     </entry>

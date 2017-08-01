@@ -38,4 +38,16 @@ public class BankAccount {
     }
   }
   
+  public double divide( int a, int b ) {
+    
+    double result;
+    try {
+      result = a / b;
+    } catch( IllegalArgumentException e ) {
+      System.out.println( "Can not divide a number by 0." );
+      result = 0;
+    }
+    return result;
+  }
+  
 }
