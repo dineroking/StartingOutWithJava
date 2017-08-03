@@ -44,7 +44,8 @@ public class Person {
   
   /**
    * Person initializes all of the person's information from a form's input
-   * @param person
+   * @param person the persons information from the PersonPanel
+   * @param address the person's address information from the AddressPanel
    */
   public Person( PersonPanel person, AddressPanel address ) {
     
@@ -53,6 +54,11 @@ public class Person {
     middleName = person.getMiddleNameText();
     lastName = person.getLastNameText();
     age = person.getAgeText();
+    
+    this.address = address.getAddressText();
+    zipcode = address.getZipcodeText();
+    city = address.getCityText();
+    state = address.getStateDrop();
     
   }
   
@@ -207,14 +213,35 @@ public class Person {
   /**
    * equals compares two person objects
    * @param person the object to compare to
-   * @return true if the objects are equal or false otherwisej
+   * @return true if the objects are equal or false otherwise
    */
   public boolean equals( Person person ) {
-    return true || false;
+    
+    boolean areEqual = false;
+    
+    if( firstName.equals( person.firstName ) &&
+        lastName.equals( person.lastName ) &&
+        middleName.equals( person.middleName ) &&
+        age == person.age &&
+        address.equals( person.address ) &&
+        city.equals( person.city )  &&
+        zipcode.equals( person.zipcode ) &&
+        state.equals( person.state )) {
+      
+      areEqual = true;
+      
+    }
+    return areEqual;
   }
   
   @Override
   public String toString() {
-    return "";
+    
+    // message to be displayed to the user
+    String message;
+    message = firstName + " " + middleName + " " + lastName + "\n";
+    message += address + "\n";
+    message += city + ", " + state + " " + zipcode;
+    return message;
   }
 }
