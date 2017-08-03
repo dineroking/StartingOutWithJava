@@ -2,13 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8a4d4ee6-7df9-4251-bb59-07ba44d7f746" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/StartingOutWithJava/src/chapter2/personalInfo/PersonTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/StartingOutWithJava/chapter2/personalInfo/AddressPanel.class" afterPath="$PROJECT_DIR$/out/production/StartingOutWithJava/chapter2/personalInfo/AddressPanel.class" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/index_SORT_BY_BLOCK.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/index_SORT_BY_BLOCK_DESC.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/index_SORT_BY_CLASS.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/index_SORT_BY_CLASS_DESC.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/index_SORT_BY_LINE.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/index_SORT_BY_LINE_DESC.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/index_SORT_BY_METHOD.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/index_SORT_BY_METHOD_DESC.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/index_SORT_BY_NAME_DESC.html" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/StartingOutWithJava/chapter2/personalInfo/Person.class" afterPath="$PROJECT_DIR$/out/production/StartingOutWithJava/chapter2/personalInfo/Person.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/StartingOutWithJava/chapter2/personalInfo/PersonPanel.class" afterPath="$PROJECT_DIR$/out/production/StartingOutWithJava/chapter2/personalInfo/PersonPanel.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/StartingOutWithJava/chapter2/personalInfo/PersonalInfoForm.class" afterPath="$PROJECT_DIR$/out/production/StartingOutWithJava/chapter2/personalInfo/PersonalInfoForm.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/StartingOutWithJava/src/chapter2/personalInfo/AddressPanel.java" afterPath="$PROJECT_DIR$/StartingOutWithJava/src/chapter2/personalInfo/AddressPanel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/StartingOutWithJava/src/chapter2/personalInfo/Person.java" afterPath="$PROJECT_DIR$/StartingOutWithJava/src/chapter2/personalInfo/Person.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/StartingOutWithJava/src/chapter2/personalInfo/PersonalInfoForm.java" afterPath="$PROJECT_DIR$/StartingOutWithJava/src/chapter2/personalInfo/PersonalInfoForm.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -42,43 +49,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Person.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/StartingOutWithJava/src/chapter2/personalInfo/Person.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3927">
-              <caret line="231" column="6" lean-forward="false" selection-start-line="231" selection-start-column="6" selection-end-line="231" selection-end-column="6" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PersonPanel.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/StartingOutWithJava/src/chapter2/personalInfo/PersonPanel.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="573">
-              <caret line="68" column="33" lean-forward="false" selection-start-line="68" selection-start-column="33" selection-end-line="68" selection-end-column="33" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AddressPanel.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/StartingOutWithJava/src/chapter2/personalInfo/AddressPanel.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-838">
-              <caret line="4" column="3" lean-forward="true" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PersonalInfoForm.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="PersonalInfoForm.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/StartingOutWithJava/src/chapter2/personalInfo/PersonalInfoForm.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="79" lean-forward="true" selection-start-line="16" selection-start-column="79" selection-end-line="16" selection-end-column="79" />
+            <state relative-caret-position="459">
+              <caret line="42" column="44" lean-forward="false" selection-start-line="42" selection-start-column="44" selection-end-line="42" selection-end-column="44" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="imports" expanded="true" />
@@ -90,7 +65,7 @@
       <file leaf-file-name="CalculatorGUI.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/StartingOutWithJava/src/chapter12/RetailPriceCalculatorGUI/CalculatorGUI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-107">
+            <state relative-caret-position="-1071">
               <caret line="36" column="2" lean-forward="true" selection-start-line="36" selection-start-column="2" selection-end-line="36" selection-end-column="2" />
               <folding />
             </state>
@@ -186,7 +161,6 @@
         <option value="$PROJECT_DIR$/StartingOutWithJava/src/chapter12/BrandisBagel/ToppingPanel.java" />
         <option value="$PROJECT_DIR$/StartingOutWithJava/src/chapter12/BrandisBagel/OrderCalculator.java" />
         <option value="$PROJECT_DIR$/StartingOutWithJava/HackReactor/prep/module2/problem04.js" />
-        <option value="$PROJECT_DIR$/StartingOutWithJava/src/chapter2/personalInfo/PersonalInfoForm.java" />
         <option value="$PROJECT_DIR$/StartingOutWithJava/src/chapter2/personalInfo/PersonalInfoFormTest.java" />
         <option value="$PROJECT_DIR$/StartingOutWithJava/src/TDD/BankAccountTest.java" />
         <option value="$PROJECT_DIR$/StartingOutWithJava/src/TDD/TDD.txt" />
@@ -197,6 +171,7 @@
         <option value="$PROJECT_DIR$/StartingOutWithJava/src/chapter2/personalInfo/AddressPanel.java" />
         <option value="$PROJECT_DIR$/StartingOutWithJava/src/chapter2/personalInfo/PersonTest.java" />
         <option value="$PROJECT_DIR$/StartingOutWithJava/src/chapter2/personalInfo/Person.java" />
+        <option value="$PROJECT_DIR$/StartingOutWithJava/src/chapter2/personalInfo/PersonalInfoForm.java" />
       </list>
     </option>
   </component>
@@ -358,7 +333,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.MetricConverter">
+  <component name="RunManager" selected="Application.PersonalInfoForm">
     <configuration name="BankAccountTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -870,8 +845,8 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.MetricConverter" />
-        <item index="1" class="java.lang.String" itemvalue="Application.PersonalInfoForm" />
+        <item index="0" class="java.lang.String" itemvalue="Application.PersonalInfoForm" />
+        <item index="1" class="java.lang.String" itemvalue="Application.MetricConverter" />
         <item index="2" class="java.lang.String" itemvalue="JUnit.BankAccountTest" />
         <item index="3" class="java.lang.String" itemvalue="Android JUnit.BankAccountTest.test" />
         <item index="4" class="java.lang.String" itemvalue="Application.OrderCalculator" />
@@ -931,7 +906,7 @@
       <workItem from="1501611536738" duration="2328000" />
       <workItem from="1501764040642" duration="24000" />
       <workItem from="1501764107488" duration="880000" />
-      <workItem from="1501785178011" duration="8196000" />
+      <workItem from="1501785178011" duration="8993000" />
     </task>
     <servers />
   </component>
@@ -968,7 +943,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="226381000" />
+    <option name="totallyTimeSpent" value="227178000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -992,7 +967,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32903227" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="WINDOWED" visible="true" show_stripe_button="true" weight="0.32903227" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" x="1275" y="31" width="637" height="492" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="WINDOWED" visible="true" show_stripe_button="true" weight="0.32903227" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" x="1275" y="31" width="637" height="492" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296617" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="WINDOWED" visible="true" show_stripe_button="true" weight="0.32903227" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" x="1274" y="556" width="638" height="483" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1032,34 +1007,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/StartingOutWithJava/src/chapter2/CircuitBoardProfit.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="20" column="13" lean-forward="false" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/StartingOutWithJava/src/chapter18/Generics.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/StartingOutWithJava/src/chapter17/names.dat">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="0" column="529" lean-forward="true" selection-start-line="0" selection-start-column="529" selection-end-line="0" selection-end-column="529" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/StartingOutWithJava/src/chapter18/Point.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/StartingOutWithJava/src/chapter17/NameReader.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
@@ -1326,22 +1273,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/StartingOutWithJava/src/chapter2/personalInfo/PersonPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="573">
-          <caret line="68" column="33" lean-forward="false" selection-start-line="68" selection-start-column="33" selection-end-line="68" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/StartingOutWithJava/src/chapter2/personalInfo/AddressPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-838">
-          <caret line="4" column="3" lean-forward="true" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/StartingOutWithJava/src/chapter12/RetailPriceCalculatorGUI/UserInputPanel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="335">
@@ -1350,22 +1281,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/StartingOutWithJava/src/chapter12/RetailPriceCalculatorGUI/CalculatorGUI.java">
+    <entry file="file://$PROJECT_DIR$/index_SORT_BY_NAME_DESC.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-107">
-          <caret line="36" column="2" lean-forward="true" selection-start-line="36" selection-start-column="2" selection-end-line="36" selection-end-column="2" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/StartingOutWithJava/src/chapter2/personalInfo/PersonalInfoForm.java">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="79" lean-forward="true" selection-start-line="16" selection-start-column="79" selection-end-line="16" selection-end-column="79" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="595">
+          <caret line="35" column="5" lean-forward="true" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index_SORT_BY_BLOCK.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StartingOutWithJava/StartingOutWithJava.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StartingOutWithJava/src/chapter2/personalInfo/AddressPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="36" column="4" lean-forward="true" selection-start-line="36" selection-start-column="4" selection-end-line="36" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StartingOutWithJava/src/chapter2/personalInfo/PersonPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="573">
+          <caret line="68" column="33" lean-forward="false" selection-start-line="68" selection-start-column="33" selection-end-line="68" selection-end-column="33" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1375,6 +1335,25 @@
           <caret line="231" column="6" lean-forward="false" selection-start-line="231" selection-start-column="6" selection-end-line="231" selection-end-column="6" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StartingOutWithJava/src/chapter12/RetailPriceCalculatorGUI/CalculatorGUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1071">
+          <caret line="36" column="2" lean-forward="true" selection-start-line="36" selection-start-column="2" selection-end-line="36" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StartingOutWithJava/src/chapter2/personalInfo/PersonalInfoForm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="42" column="44" lean-forward="false" selection-start-line="42" selection-start-column="44" selection-end-line="42" selection-end-column="44" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
