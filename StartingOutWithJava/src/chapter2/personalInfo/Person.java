@@ -46,8 +46,14 @@ public class Person {
    * Person initializes all of the person's information from a form's input
    * @param person
    */
-  public Person( PersonalInfoForm person ) {
-  
+  public Person( PersonPanel person, AddressPanel address ) {
+    
+    // initialize each variable
+    firstName = person.getFirstNameText();
+    middleName = person.getMiddleNameText();
+    lastName = person.getLastNameText();
+    age = person.getAgeText();
+    
   }
   
   
