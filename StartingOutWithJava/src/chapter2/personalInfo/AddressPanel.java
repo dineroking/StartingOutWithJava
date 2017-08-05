@@ -65,10 +65,11 @@ public class AddressPanel extends JPanel {
   }
   
   
-  // METHODS
+  // GETTERS
   
   /**
    * getAddressText() returns a string with the address of the house of the person
+   *
    * @return the address of the person
    */
   public String getAddressText() {
@@ -78,6 +79,7 @@ public class AddressPanel extends JPanel {
   
   /**
    * getCityText() returns a string with the city of the person
+   *
    * @return the city of the person
    */
   public String getCityText() {
@@ -87,6 +89,7 @@ public class AddressPanel extends JPanel {
   
   /**
    * getZipcodeText() returns a string with the zipcode of the person
+   *
    * @return the zipcode of the person
    */
   public String getZipcodeText() {
@@ -96,10 +99,54 @@ public class AddressPanel extends JPanel {
   
   /**
    * getStateDrop() returns a string with the living state of the person
+   *
    * @return the living state of the person
    */
   public String getStateDrop() {
     
     return (String) stateDrop.getSelectedItem();
+  }
+  
+  
+  // SETTERS
+  
+  /**
+   * setAddressText() changes the address that appears in the address field
+   *
+   * @param addressText the new address to be displayed
+   */
+  public void setAddressText( String addressText ) {
+    
+    this.addressText.setText( addressText );
+  }
+  
+  /**
+   * setCityText() changes the city that appears in the address field
+   *
+   * @param cityText the new city for the city field
+   */
+  public void setCityText( String cityText ) {
+    
+    this.cityText.setText( cityText );
+  }
+  
+  /**
+   * setZipcodeText() changes the zip code that appears in the zipcode field
+   *
+   * @param zipcodeText the new zipcode for the zipcode field
+   */
+  public void setZipcodeText( String zipcodeText ) {
+    
+    this.zipcodeText.setText( zipcodeText );
+  }
+  
+  /**
+   * setStateDrop() changes the State selection that appears in the state drop down field
+   *
+   * @param selectedIndex the new state for the state drop down field
+   */
+  public void setStateDrop( int selectedIndex ) {
+    
+    this.stateDrop.setSelectedIndex( selectedIndex );
   }
 }

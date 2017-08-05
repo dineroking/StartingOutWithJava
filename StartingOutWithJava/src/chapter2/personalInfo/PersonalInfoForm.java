@@ -54,11 +54,23 @@ public class PersonalInfoForm extends JFrame {
     public void actionPerformed( ActionEvent e ) {
       
       if( e.getSource() == submitButton ) {
+        
+        //TODO: finish submitButton event
       
       } else if( e.getSource() == resetButton ) {
         
-        //TODO: reset the text field
-      
+        // reset the person panel
+        personPanel.setFirstNameText( "" );
+        personPanel.setLastNameText( "" );
+        personPanel.setMiddleNameText( "" );
+        personPanel.setAgeText( "" );
+        
+        // reset the address panel
+        addressPanel.setAddressText( "" );
+        addressPanel.setCityText( "" );
+        addressPanel.setZipcodeText( "" );
+        addressPanel.setStateDrop( 0 );
+        
       } else if( e.getSource() == exitButton ) {
         System.exit( 0 );
       }
@@ -74,12 +86,12 @@ public class PersonalInfoForm extends JFrame {
     // create the panels
     personPanel = new PersonPanel();
     addressPanel = new AddressPanel();
-    buttonsPanel = new JPanel(  );
+    buttonsPanel = new JPanel();
     
     // create the buttons
     submitButton = new JButton( "Submit" );
     resetButton = new JButton( "Reset" );
-    exitButton = new JButton(  "Exit" );
+    exitButton = new JButton( "Exit" );
     
     // add the buttons to the buttons panel
     buttonsPanel.add( submitButton );
@@ -92,6 +104,7 @@ public class PersonalInfoForm extends JFrame {
     exitButton.addActionListener( new ButtonListener() );
     
   }
+  
   // execute program
   public static void main( String[] args ) {
     
