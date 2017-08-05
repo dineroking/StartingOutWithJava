@@ -1,5 +1,7 @@
 package TDD.BankAccount;
 
+import org.junit.After;
+import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
@@ -11,37 +13,55 @@ import static org.junit.Assert.*;
  */
 public class BankAccountTest {
   
+  BankAccount acc;
+  
   @Test
   public void testDeposits() {
     
-    BankAccount acc = new BankAccount();
-    acc.deposit( 50 );
-    assertEquals( 50, acc.getBalance() );
+    BankAccount acc = new BankAccount();                // Arrange
+    acc.deposit( 50 );                          // Act
+    assertEquals( 50, acc.getBalance() );     // Assert
   }
   
   @Test
-  public void testWithdrawals() {
+  public void testWithdrawal() {
     
-    BankAccount acc = new BankAccount( 75 );
+    assertFalse( acc.withdraw( 10000 ) );         // check that no amounts greater than 1000 are withdrawed
+    assertEquals( 100, acc.getBalance() );          // verify that the balance was unchanged
+    
     acc.withdraw( 50 );
-    assertEquals( 25, acc.getBalance() );
+    assertEquals( 50, acc.getBalance() );
   }
   
   @Test
   public void testWithdrawalsWithPenalty( ) {
   
-    BankAccount acc = new BankAccount( 10 );
-    acc.withdraw( 20 );
+    acc.withdraw( 110 );
     assertEquals( -15, acc.getBalance() );
   }
   
+  // the following line tells JUnit that if during the test an IllegalArgumentException is thrown to still pass the test
+  // but any other types of exceptions should fail the test
   @Test ( expected = IllegalArgumentException.class )
   public void testDivisionException() {
     
-    BankAccount acc = new BankAccount();
     int a = 5, b = 0;
     acc.divide( a, b );          // should throw an exception
     
+  }
+  
+  
+  
+  @Before
+  public void setup( ) {
+  
+    acc = new BankAccount( 100 );
+    
+  }
+  
+  @After
+  public void teardown() {
+  
   }
   
 }

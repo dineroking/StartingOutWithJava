@@ -40,3 +40,80 @@ test can be perform at any time without the need for another test to run prior.
 There should also be a separate test class for each of the classes.
 
 "Test until fear turns to boredom"
+
+
+The process of a single unit test can be described with these three words: Arrange, Act, Assert.
+
+example
+
+public void withdraw() {
+  BankAccount acc = new BankAccount( 100 );  // Arrange
+  acc.withdraw( 10 );                        // Act
+  assertEquals( acc.getBalance(), 90 );      // Assert
+}
+
+Arrange: We get something setup to manipulate. In the above case is the BankAccount object.
+Act:     We change it or do something to it.
+Assert:  We check that it worked.
+
+Something to keep in mind is that is some case each state, Arrange, Act, Assert, could take more than one line to setup.
+
+
+Because many of the tests methods end up requiring the same information to be setup in order to do the test, testing frameworks
+like JUnit have specific methods called setup and teardown methods that facilitate the construction and deconstruction of the
+tests. The name of the setup and teardown method do not really matter, what matters is that above the method headers
+@Before is included before the setup method and @After is included before the teardown method. The setup method runs before
+each test and the teardown method runs after.
+
+If what you want to do is have a setup method that runs once and then all of the test methods run and then have the teardown
+method runs at the end. Using the annotations @BeforeClass for the setup method and the @AfterClass for the teardown method.
+
+Q & A
+
+Should getters and setters be tested?
+A typical getter or setter should not need to be tested, unless there is some deeper logic within the getter or setter
+that needs to be tested.
+
+Should private methods be tested?
+Although some testing frameworks do provide ways to test private methods, it is better to test the public method that
+implements the private method enough to make sure that the implementation of the private method is correct.
+
+Can I combine multiple test classes?
+Yes. This is what is commonly known as a Test Suite.
+
+How can i control the order of the unit tests?
+You never want to control the order of the unit tests because that leads to dependencies.
+
+What should I test in a method?
+- a test for every branch
+  if / else / and / or / case / for / while / polymorphism
+- test unil fear turns to boredom
+
+END OF Q & A
+
+Mock objects are created to allow for unit testing when the code that is being tested depends on other objects that may
+not exist yet or might give unreliable data.
+
+Typical reasons for creating Mock objects.
+
+- Real object has not been written yet.
+- What you are calling has a UI/ needs human interaction.
+- Slow or difficult to setup.
+- External resources: file system, database, network, printer
+- Non-deterministic behaviour: like calling a web server
+
+
+public void testWeatherLookup() {
+  // instantiate a mock object
+  WeatherService ws = new MockWeatherService();
+
+  // optional: mock object can be told to expect a certain value
+  ws.expectZip( 85253 );
+
+  // use mock object for repeatable results
+  String forecast = ws.getForecast( myZip );
+}
+
+
+EMMA is the tool that is used by intelliJ for code coverage.
+

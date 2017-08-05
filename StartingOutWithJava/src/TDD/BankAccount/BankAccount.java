@@ -31,22 +31,29 @@ public class BankAccount {
     balance += amount;
   }
   
-  public void withdraw( int amount ) {
+  public boolean withdraw( int amount ) {
+    
+    if( amount > 1000 ) {
+      return false;
+    }
+    
     balance -= amount;
     if( balance < 0 ) {
       balance -= 5;
     }
+    return true;
   }
   
   public double divide( int a, int b ) {
     
     double result;
-    try {
+    
+    if( b == 0 ) {
+      throw new IllegalArgumentException( "Zero cannot be used as a denominator." );
+    } else {
       result = a / b;
-    } catch( IllegalArgumentException e ) {
-      System.out.println( "Can not divide a number by 0." );
-      result = 0;
     }
+    
     return result;
   }
   
