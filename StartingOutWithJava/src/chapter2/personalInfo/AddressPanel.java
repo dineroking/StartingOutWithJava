@@ -5,6 +5,8 @@
  */
 package chapter2.personalInfo;
 
+import javafx.scene.control.ComboBox;
+
 import javax.swing.*;             // for the swing classes
 import java.awt.*;                // for the BorderLayout manager
 
@@ -65,4 +67,39 @@ public class AddressPanel extends JPanel {
   
   // METHODS
   
+  /**
+   * getAddressText() returns a string with the address of the house of the person
+   * @return the address of the person
+   */
+  public String getAddressText() {
+    
+    return addressText.getText();
+  }
+  
+  /**
+   * getCityText() returns a string with the city of the person
+   * @return the city of the person
+   */
+  public String getCityText() {
+    
+    return cityText.getText();
+  }
+  
+  /**
+   * getZipcodeText() returns a string with the zipcode of the person
+   * @return the zipcode of the person
+   */
+  public String getZipcodeText() {
+    
+    return zipcodeText.getText();
+  }
+  
+  /**
+   * getStateDrop() returns a string with the living state of the person
+   * @return the living state of the person
+   */
+  public String getStateDrop() {
+    
+    return (String) stateDrop.getSelectedItem();
+  }
 }

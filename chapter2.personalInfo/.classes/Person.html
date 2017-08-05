@@ -1,0 +1,315 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html id="htmlId">
+<head>
+  <title>Coverage Report :: Person</title>
+  <style type="text/css">
+    @import "../../.css/coverage.css";
+  </style>
+</head>
+
+<body>
+<div class="header"></div>
+
+<div class="content">
+<div class="breadCrumbs">
+    [ <a href="../../index.html">all classes</a> ]
+    [ <a href="../index.html">chapter2.personalInfo</a> ]
+</div>
+
+<h1>Coverage Summary for Class: Person (chapter2.personalInfo)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Class, %
+</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">Person</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/ 1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/ 20)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/ 36)
+  </span>
+</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<div class="sourceCode"><i>1</i>&nbsp;/**
+<i>2</i>&nbsp; * Created by Ronny Rosabal.
+<i>3</i>&nbsp; * Date:      6/19/17
+<i>4</i>&nbsp; * Objective: Holds the information of a person.
+<i>5</i>&nbsp; */
+<i>6</i>&nbsp;package chapter2.personalInfo;
+<i>7</i>&nbsp;
+<i>8</i>&nbsp;public class Person {
+<i>9</i>&nbsp;  
+<i>10</i>&nbsp;  // VARIABLES
+<i>11</i>&nbsp;  
+<i>12</i>&nbsp;  // person
+<i>13</i>&nbsp;  private String firstName;         // the first name of the person
+<i>14</i>&nbsp;  private String middleName;        // the middle name of the person
+<i>15</i>&nbsp;  private String lastName;          // the last name of the person
+<i>16</i>&nbsp;  private int age;                  // the age of the person
+<i>17</i>&nbsp;  
+<i>18</i>&nbsp;  // person&#39;s address and phone number
+<i>19</i>&nbsp;  private String address;           // the physical address of the person
+<i>20</i>&nbsp;  private String zipcode;           // the zip-code of the person
+<i>21</i>&nbsp;  private String city;              // the city of the person
+<i>22</i>&nbsp;  private String state;             // the state of the person
+<i>23</i>&nbsp;  
+<i>24</i>&nbsp;  
+<i>25</i>&nbsp;  
+<i>26</i>&nbsp;  // CONSTRUCTORS
+<i>27</i>&nbsp;  
+<i>28</i>&nbsp;  /**
+<i>29</i>&nbsp;   * Person initializes all of the person&#39;s information to empty values.
+<i>30</i>&nbsp;   */
+<b class="nc"><i>31</i>&nbsp;  public Person() {</b>
+<i>32</i>&nbsp;    
+<i>33</i>&nbsp;    // initialize each variable
+<b class="nc"><i>34</i>&nbsp;    firstName = &quot;&quot;;</b>
+<b class="nc"><i>35</i>&nbsp;    middleName = &quot;&quot;;</b>
+<b class="nc"><i>36</i>&nbsp;    lastName = &quot;&quot;;</b>
+<b class="nc"><i>37</i>&nbsp;    age = 0;</b>
+<b class="nc"><i>38</i>&nbsp;    address = &quot;&quot;;</b>
+<b class="nc"><i>39</i>&nbsp;    zipcode = &quot;&quot;;</b>
+<b class="nc"><i>40</i>&nbsp;    city = &quot;&quot;;</b>
+<b class="nc"><i>41</i>&nbsp;    state = &quot;&quot;;</b>
+<i>42</i>&nbsp;    
+<i>43</i>&nbsp;  }
+<i>44</i>&nbsp;  
+<i>45</i>&nbsp;  /**
+<i>46</i>&nbsp;   * Person initializes all of the person&#39;s information from a form&#39;s input
+<i>47</i>&nbsp;   * @param person the persons information from the PersonPanel
+<i>48</i>&nbsp;   * @param address the person&#39;s address information from the AddressPanel
+<i>49</i>&nbsp;   */
+<b class="nc"><i>50</i>&nbsp;  public Person( PersonPanel person, AddressPanel address ) {</b>
+<i>51</i>&nbsp;    
+<i>52</i>&nbsp;    // initialize each variable
+<b class="nc"><i>53</i>&nbsp;    firstName = person.getFirstNameText();</b>
+<b class="nc"><i>54</i>&nbsp;    middleName = person.getMiddleNameText();</b>
+<b class="nc"><i>55</i>&nbsp;    lastName = person.getLastNameText();</b>
+<b class="nc"><i>56</i>&nbsp;    age = person.getAgeText();</b>
+<i>57</i>&nbsp;    
+<b class="nc"><i>58</i>&nbsp;    this.address = address.getAddressText();</b>
+<b class="nc"><i>59</i>&nbsp;    zipcode = address.getZipcodeText();</b>
+<b class="nc"><i>60</i>&nbsp;    city = address.getCityText();</b>
+<b class="nc"><i>61</i>&nbsp;    state = address.getStateDrop();</b>
+<i>62</i>&nbsp;    
+<i>63</i>&nbsp;  }
+<i>64</i>&nbsp;  
+<i>65</i>&nbsp;  
+<i>66</i>&nbsp;  
+<i>67</i>&nbsp;  // METHODS
+<i>68</i>&nbsp;  
+<i>69</i>&nbsp;  /**
+<i>70</i>&nbsp;   * getFirstName returns the first name of the person
+<i>71</i>&nbsp;   * @return the first name of the person
+<i>72</i>&nbsp;   */
+<i>73</i>&nbsp;  public String getFirstName() {
+<i>74</i>&nbsp;    
+<b class="nc"><i>75</i>&nbsp;    return firstName;</b>
+<i>76</i>&nbsp;  }
+<i>77</i>&nbsp;  
+<i>78</i>&nbsp;  /**
+<i>79</i>&nbsp;   * getMiddleName returns the middle name of the person
+<i>80</i>&nbsp;   * @return the middle name of the person
+<i>81</i>&nbsp;   */
+<i>82</i>&nbsp;  public String getMiddleName() {
+<i>83</i>&nbsp;    
+<b class="nc"><i>84</i>&nbsp;    return middleName;</b>
+<i>85</i>&nbsp;  }
+<i>86</i>&nbsp;  
+<i>87</i>&nbsp;  /**
+<i>88</i>&nbsp;   * getLastName returns the last name of the person
+<i>89</i>&nbsp;   * @return the last name of the person
+<i>90</i>&nbsp;   */
+<i>91</i>&nbsp;  public String getLastName() {
+<i>92</i>&nbsp;    
+<b class="nc"><i>93</i>&nbsp;    return lastName;</b>
+<i>94</i>&nbsp;  }
+<i>95</i>&nbsp;  
+<i>96</i>&nbsp;  /**
+<i>97</i>&nbsp;   * getAge returns the age of the person
+<i>98</i>&nbsp;   * @return the age of the person
+<i>99</i>&nbsp;   */
+<i>100</i>&nbsp;  public int getAge() {
+<i>101</i>&nbsp;    
+<b class="nc"><i>102</i>&nbsp;    return age;</b>
+<i>103</i>&nbsp;  }
+<i>104</i>&nbsp;  
+<i>105</i>&nbsp;  /**
+<i>106</i>&nbsp;   * getAddress returns the physical address of the person
+<i>107</i>&nbsp;   * @return the address of the person
+<i>108</i>&nbsp;   */
+<i>109</i>&nbsp;  public String getAddress() {
+<i>110</i>&nbsp;    
+<b class="nc"><i>111</i>&nbsp;    return address;</b>
+<i>112</i>&nbsp;  }
+<i>113</i>&nbsp;  
+<i>114</i>&nbsp;  /**
+<i>115</i>&nbsp;   * getZipcode returns the zipcode of the person
+<i>116</i>&nbsp;   * @return the zipcode of the person
+<i>117</i>&nbsp;   */
+<i>118</i>&nbsp;  public String getZipcode() {
+<i>119</i>&nbsp;    
+<b class="nc"><i>120</i>&nbsp;    return zipcode;</b>
+<i>121</i>&nbsp;  }
+<i>122</i>&nbsp;  
+<i>123</i>&nbsp;  /**
+<i>124</i>&nbsp;   * getCity returns the city name of the person
+<i>125</i>&nbsp;   * @return the city name of the person
+<i>126</i>&nbsp;   */
+<i>127</i>&nbsp;  public String getCity() {
+<i>128</i>&nbsp;    
+<b class="nc"><i>129</i>&nbsp;    return city;</b>
+<i>130</i>&nbsp;  }
+<i>131</i>&nbsp;  
+<i>132</i>&nbsp;  /**
+<i>133</i>&nbsp;   * getState returns the state of the person
+<i>134</i>&nbsp;   * @return the state of the person
+<i>135</i>&nbsp;   */
+<i>136</i>&nbsp;  public String getState() {
+<i>137</i>&nbsp;    
+<b class="nc"><i>138</i>&nbsp;    return state;</b>
+<i>139</i>&nbsp;  }
+<i>140</i>&nbsp;  
+<i>141</i>&nbsp;  /**
+<i>142</i>&nbsp;   * setFirstName sets the first name of the person
+<i>143</i>&nbsp;   * @param firstName the first name of the person
+<i>144</i>&nbsp;   */
+<i>145</i>&nbsp;  public void setFirstName( String firstName ) {
+<i>146</i>&nbsp;    
+<b class="nc"><i>147</i>&nbsp;    this.firstName = firstName;</b>
+<i>148</i>&nbsp;  }
+<i>149</i>&nbsp;  
+<i>150</i>&nbsp;  /**
+<i>151</i>&nbsp;   * setMiddleName sets the middle name of the person
+<i>152</i>&nbsp;   * @param middleName the middle name of the person
+<i>153</i>&nbsp;   */
+<i>154</i>&nbsp;  public void setMiddleName( String middleName ) {
+<i>155</i>&nbsp;    
+<b class="nc"><i>156</i>&nbsp;    this.middleName = middleName;</b>
+<i>157</i>&nbsp;  }
+<i>158</i>&nbsp;  
+<i>159</i>&nbsp;  /**
+<i>160</i>&nbsp;   * setLastName sets the last name of the person
+<i>161</i>&nbsp;   * @param lastName the last name of the person
+<i>162</i>&nbsp;   */
+<i>163</i>&nbsp;  public void setLastName( String lastName ) {
+<i>164</i>&nbsp;    
+<b class="nc"><i>165</i>&nbsp;    this.lastName = lastName;</b>
+<i>166</i>&nbsp;  }
+<i>167</i>&nbsp;  
+<i>168</i>&nbsp;  /**
+<i>169</i>&nbsp;   * setAge sets the age of the person
+<i>170</i>&nbsp;   * @param age the age of the person
+<i>171</i>&nbsp;   */
+<i>172</i>&nbsp;  public void setAge( int age ) {
+<i>173</i>&nbsp;    
+<b class="nc"><i>174</i>&nbsp;    this.age = age;</b>
+<i>175</i>&nbsp;  }
+<i>176</i>&nbsp;  
+<i>177</i>&nbsp;  /**
+<i>178</i>&nbsp;   * setAddress sets the address of the person
+<i>179</i>&nbsp;   * @param address the address of the person
+<i>180</i>&nbsp;   */
+<i>181</i>&nbsp;  public void setAddress( String address ) {
+<i>182</i>&nbsp;    
+<b class="nc"><i>183</i>&nbsp;    this.address = address;</b>
+<i>184</i>&nbsp;  }
+<i>185</i>&nbsp;  
+<i>186</i>&nbsp;  /**
+<i>187</i>&nbsp;   * setZipcode sets the zipcode of the person
+<i>188</i>&nbsp;   * @param zipcode the zipcode of the person
+<i>189</i>&nbsp;   */
+<i>190</i>&nbsp;  public void setZipcode( String zipcode ) {
+<i>191</i>&nbsp;    
+<b class="nc"><i>192</i>&nbsp;    this.zipcode = zipcode;</b>
+<i>193</i>&nbsp;  }
+<i>194</i>&nbsp;  
+<i>195</i>&nbsp;  /**
+<i>196</i>&nbsp;   * setCity sets the city name of the person
+<i>197</i>&nbsp;   * @param city the city name of the person
+<i>198</i>&nbsp;   */
+<i>199</i>&nbsp;  public void setCity( String city ) {
+<i>200</i>&nbsp;    
+<b class="nc"><i>201</i>&nbsp;    this.city = city;</b>
+<i>202</i>&nbsp;  }
+<i>203</i>&nbsp;  
+<i>204</i>&nbsp;  /**
+<i>205</i>&nbsp;   * setState sets the state of the person
+<i>206</i>&nbsp;   * @param state the state of the person
+<i>207</i>&nbsp;   */
+<i>208</i>&nbsp;  public void setState( String state ) {
+<i>209</i>&nbsp;    
+<b class="nc"><i>210</i>&nbsp;    this.state = state;</b>
+<i>211</i>&nbsp;  }
+<i>212</i>&nbsp;  
+<i>213</i>&nbsp;  /**
+<i>214</i>&nbsp;   * equals compares two person objects
+<i>215</i>&nbsp;   * @param person the object to compare to
+<i>216</i>&nbsp;   * @return true if the objects are equal or false otherwisej
+<i>217</i>&nbsp;   */
+<i>218</i>&nbsp;  public boolean equals( Person person ) {
+<b class="nc"><i>219</i>&nbsp;    return true || false;</b>
+<i>220</i>&nbsp;  }
+<i>221</i>&nbsp;  
+<i>222</i>&nbsp;  @Override
+<i>223</i>&nbsp;  public String toString() {
+<b class="nc"><i>224</i>&nbsp;    </b>
+<i>225</i>&nbsp;    // message to be displayed to the user
+<i>226</i>&nbsp;    String message;
+<i>227</i>&nbsp;    message = firstName + &quot; &quot; + middleName + &quot; &quot; + lastName + &quot;\n&quot;;
+<i>228</i>&nbsp;    message += address + &quot;\n&quot;;
+<i>229</i>&nbsp;    message += city + &quot; &quot; + state + &quot; &quot; + zipcode;
+<i>230</i>&nbsp;    return &quot;&quot;;
+<i>231</i>&nbsp;  }
+<i>232</i>&nbsp;}
+</div>
+</div>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2017-08-03 15:42</div>
+</div>
+</body>
+</html>

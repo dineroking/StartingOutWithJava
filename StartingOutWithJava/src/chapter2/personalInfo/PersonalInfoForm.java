@@ -7,14 +7,21 @@ package chapter2.personalInfo;
 
 import javax.swing.*;               // for all the swing classes
 import java.awt.*;                  // for the BorderLayout manager
+import java.awt.event.*;            // for buttons event handling
 
 public class PersonalInfoForm extends JFrame {
   
   // VARIABLES
   
   // panels
-  PersonPanel personPanel;          // holds the panel for the person's personal info
-  AddressPanel addressPanel;        // holds the panel for the person's address
+  private PersonPanel personPanel;          // holds the panel for the person's personal info
+  private AddressPanel addressPanel;        // holds the panel for the person's address
+  private JPanel buttonsPanel;              // holds the panel that holds the submit and reset buttons
+  
+  // buttons
+  private JButton submitButton;
+  private JButton resetButton;
+  private JButton exitButton;
   
   
   // CONSTRUCTORS
@@ -34,10 +41,28 @@ public class PersonalInfoForm extends JFrame {
     // add panels to the frame
     add( personPanel, BorderLayout.NORTH );
     add( addressPanel, BorderLayout.CENTER );
+    add( buttonsPanel, BorderLayout.SOUTH );
     
     // pack and make window visible
     pack();
     setVisible( true );
+    
+  }
+  
+  private class ButtonListener implements ActionListener {
+    
+    public void actionPerformed( ActionEvent e ) {
+      
+      if( e.getSource() == submitButton ) {
+      
+      } else if( e.getSource() == resetButton ) {
+        
+        //TODO: reset the text field
+      
+      } else if( e.getSource() == exitButton ) {
+        System.exit( 0 );
+      }
+    }
   }
   
   
@@ -49,6 +74,22 @@ public class PersonalInfoForm extends JFrame {
     // create the panels
     personPanel = new PersonPanel();
     addressPanel = new AddressPanel();
+    buttonsPanel = new JPanel(  );
+    
+    // create the buttons
+    submitButton = new JButton( "Submit" );
+    resetButton = new JButton( "Reset" );
+    exitButton = new JButton(  "Exit" );
+    
+    // add the buttons to the buttons panel
+    buttonsPanel.add( submitButton );
+    buttonsPanel.add( resetButton );
+    buttonsPanel.add( exitButton );
+    
+    // registers events to the buttons
+    submitButton.addActionListener( new ButtonListener() );
+    resetButton.addActionListener( new ButtonListener() );
+    exitButton.addActionListener( new ButtonListener() );
     
   }
   // execute program

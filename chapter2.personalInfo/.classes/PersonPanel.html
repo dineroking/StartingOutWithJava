@@ -1,0 +1,181 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html id="htmlId">
+<head>
+  <title>Coverage Report :: PersonPanel</title>
+  <style type="text/css">
+    @import "../../.css/coverage.css";
+  </style>
+</head>
+
+<body>
+<div class="header"></div>
+
+<div class="content">
+<div class="breadCrumbs">
+    [ <a href="../../index.html">all classes</a> ]
+    [ <a href="../index.html">chapter2.personalInfo</a> ]
+</div>
+
+<h1>Coverage Summary for Class: PersonPanel (chapter2.personalInfo)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Class, %
+</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">PersonPanel</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (1/ 1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    20%
+  </span>
+  <span class="absValue">
+    (1/ 5)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    82.6%
+  </span>
+  <span class="absValue">
+    (19/ 23)
+  </span>
+</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<div class="sourceCode"><i>1</i>&nbsp;/**
+<i>2</i>&nbsp; * Created by Ronny Rosabal.
+<i>3</i>&nbsp; * Date:      6/28/2017
+<i>4</i>&nbsp; * Objective: Creates the panel for the information of the person such as name and age
+<i>5</i>&nbsp; */
+<i>6</i>&nbsp;package chapter2.personalInfo;
+<i>7</i>&nbsp;
+<i>8</i>&nbsp;import javax.swing.*;           // for all the swing classes
+<i>9</i>&nbsp;import java.awt.*;              // for the GridLayout Manager
+<i>10</i>&nbsp;
+<i>11</i>&nbsp;public class PersonPanel extends JPanel {
+<i>12</i>&nbsp;  
+<i>13</i>&nbsp;  
+<i>14</i>&nbsp;  // VARIABLES
+<i>15</i>&nbsp;  
+<i>16</i>&nbsp;  // labels
+<i>17</i>&nbsp;  private JLabel firstNameLabel;
+<i>18</i>&nbsp;  private JLabel lastNameLabel;
+<i>19</i>&nbsp;  private JLabel middleNameLabel;
+<i>20</i>&nbsp;  private JLabel ageLabel;
+<i>21</i>&nbsp;  
+<i>22</i>&nbsp;  // text fields
+<i>23</i>&nbsp;  private JTextField firstNameText;
+<i>24</i>&nbsp;  private JTextField lastNameText;
+<i>25</i>&nbsp;  private JTextField middleNameText;
+<i>26</i>&nbsp;  private JTextField ageText;
+<i>27</i>&nbsp;  
+<i>28</i>&nbsp;  
+<i>29</i>&nbsp;  // CONSTRUCTORS
+<i>30</i>&nbsp;  
+<b class="fc"><i>31</i>&nbsp;  public PersonPanel() {</b>
+<i>32</i>&nbsp;    
+<i>33</i>&nbsp;    // create flow manager
+<b class="fc"><i>34</i>&nbsp;    setLayout( new GridLayout( 4, 2 ) );</b>
+<i>35</i>&nbsp;    
+<i>36</i>&nbsp;    // create the labels
+<b class="fc"><i>37</i>&nbsp;    firstNameLabel = new JLabel( &quot;first name:&quot; );</b>
+<b class="fc"><i>38</i>&nbsp;    lastNameLabel = new JLabel( &quot;last name:&quot; );</b>
+<b class="fc"><i>39</i>&nbsp;    middleNameLabel = new JLabel( &quot;middle name:&quot; );</b>
+<b class="fc"><i>40</i>&nbsp;    ageLabel = new JLabel( &quot;age:&quot; );</b>
+<i>41</i>&nbsp;    
+<i>42</i>&nbsp;    // create text fields
+<b class="fc"><i>43</i>&nbsp;    firstNameText = new JTextField( 20 );</b>
+<b class="fc"><i>44</i>&nbsp;    lastNameText = new JTextField( 20 );</b>
+<b class="fc"><i>45</i>&nbsp;    middleNameText = new JTextField( 20 );</b>
+<b class="fc"><i>46</i>&nbsp;    ageText = new JTextField( 4 );</b>
+<i>47</i>&nbsp;    
+<i>48</i>&nbsp;    // add components to the panel
+<b class="fc"><i>49</i>&nbsp;    add( firstNameLabel );</b>
+<b class="fc"><i>50</i>&nbsp;    add( firstNameText );</b>
+<b class="fc"><i>51</i>&nbsp;    add( middleNameLabel );</b>
+<b class="fc"><i>52</i>&nbsp;    add( middleNameText );</b>
+<b class="fc"><i>53</i>&nbsp;    add( lastNameLabel );</b>
+<b class="fc"><i>54</i>&nbsp;    add( lastNameText );</b>
+<b class="fc"><i>55</i>&nbsp;    add( ageLabel );</b>
+<b class="fc"><i>56</i>&nbsp;    add( ageText );</b>
+<i>57</i>&nbsp;    
+<b class="fc"><i>58</i>&nbsp;  }</b>
+<i>59</i>&nbsp;  
+<i>60</i>&nbsp;  
+<i>61</i>&nbsp;  // METHODS
+<i>62</i>&nbsp;  
+<i>63</i>&nbsp;  /**
+<i>64</i>&nbsp;   * getFirstNameText() returns a string with the first name of the person
+<i>65</i>&nbsp;   * @return the name of the person
+<i>66</i>&nbsp;   */
+<i>67</i>&nbsp;  public String getFirstNameText() {
+<i>68</i>&nbsp;    
+<b class="nc"><i>69</i>&nbsp;    return firstNameText.getText();</b>
+<i>70</i>&nbsp;  }
+<i>71</i>&nbsp;  
+<i>72</i>&nbsp;  /**
+<i>73</i>&nbsp;   * getLastNameText() returns a string with the last name of the person
+<i>74</i>&nbsp;   * @return the last name of the person
+<i>75</i>&nbsp;   */
+<i>76</i>&nbsp;  public String getLastNameText() {
+<i>77</i>&nbsp;    
+<b class="nc"><i>78</i>&nbsp;    return lastNameText.getText();</b>
+<i>79</i>&nbsp;  }
+<i>80</i>&nbsp;  
+<i>81</i>&nbsp;  /**
+<i>82</i>&nbsp;   * getMiddleNameText() returns a string with the middle name of the person
+<i>83</i>&nbsp;   * @return the middle name of the person
+<i>84</i>&nbsp;   */
+<i>85</i>&nbsp;  public String getMiddleNameText() {
+<i>86</i>&nbsp;    
+<b class="nc"><i>87</i>&nbsp;    return middleNameText.getText();</b>
+<i>88</i>&nbsp;  }
+<i>89</i>&nbsp;  
+<i>90</i>&nbsp;  /**
+<i>91</i>&nbsp;   * getAgeText() returns an integer with the age of the person
+<i>92</i>&nbsp;   * @return the age of the person
+<i>93</i>&nbsp;   */
+<i>94</i>&nbsp;  public int getAgeText() {
+<i>95</i>&nbsp;    
+<b class="nc"><i>96</i>&nbsp;    return Integer.parseInt( ageText.getText() );</b>
+<i>97</i>&nbsp;  }
+<i>98</i>&nbsp;}
+</div>
+</div>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2017-08-03 15:42</div>
+</div>
+</body>
+</html>

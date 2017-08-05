@@ -60,4 +60,39 @@ public class PersonPanel extends JPanel {
   
   // METHODS
   
+  /**
+   * getFirstNameText() returns a string with the first name of the person
+   * @return the name of the person
+   */
+  public String getFirstNameText() {
+    
+    return firstNameText.getText();
+  }
+  
+  /**
+   * getLastNameText() returns a string with the last name of the person
+   * @return the last name of the person
+   */
+  public String getLastNameText() {
+    
+    return lastNameText.getText();
+  }
+  
+  /**
+   * getMiddleNameText() returns a string with the middle name of the person
+   * @return the middle name of the person
+   */
+  public String getMiddleNameText() {
+    
+    return middleNameText.getText();
+  }
+  
+  /**
+   * getAgeText() returns an integer with the age of the person
+   * @return the age of the person
+   */
+  public int getAgeText() {
+    
+    return Integer.parseInt( ageText.getText() );
+  }
 }
