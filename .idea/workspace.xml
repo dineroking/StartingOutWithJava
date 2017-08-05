@@ -2,19 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8a4d4ee6-7df9-4251-bb59-07ba44d7f746" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/index_SORT_BY_BLOCK.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/index_SORT_BY_BLOCK_DESC.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/index_SORT_BY_CLASS.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/index_SORT_BY_CLASS_DESC.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/index_SORT_BY_LINE.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/index_SORT_BY_LINE_DESC.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/index_SORT_BY_METHOD.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/index_SORT_BY_METHOD_DESC.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/index_SORT_BY_NAME_DESC.html" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/StartingOutWithJava/chapter2/personalInfo/Person.class" afterPath="$PROJECT_DIR$/out/production/StartingOutWithJava/chapter2/personalInfo/Person.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/StartingOutWithJava/chapter2/personalInfo/PersonalInfoForm.class" afterPath="$PROJECT_DIR$/out/production/StartingOutWithJava/chapter2/personalInfo/PersonalInfoForm.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/StartingOutWithJava/src/chapter2/personalInfo/PersonalInfoForm.java" afterPath="$PROJECT_DIR$/StartingOutWithJava/src/chapter2/personalInfo/PersonalInfoForm.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -52,8 +39,8 @@
       <file leaf-file-name="PersonalInfoForm.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/StartingOutWithJava/src/chapter2/personalInfo/PersonalInfoForm.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="42" column="44" lean-forward="false" selection-start-line="42" selection-start-column="44" selection-end-line="42" selection-end-column="44" />
+            <state relative-caret-position="391">
+              <caret line="23" column="2" lean-forward="true" selection-start-line="23" selection-start-column="2" selection-end-line="23" selection-end-column="2" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="imports" expanded="true" />
@@ -65,7 +52,7 @@
       <file leaf-file-name="CalculatorGUI.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/StartingOutWithJava/src/chapter12/RetailPriceCalculatorGUI/CalculatorGUI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1071">
+            <state relative-caret-position="459">
               <caret line="36" column="2" lean-forward="true" selection-start-line="36" selection-start-column="2" selection-end-line="36" selection-end-column="2" />
               <folding />
             </state>
@@ -906,7 +893,7 @@
       <workItem from="1501611536738" duration="2328000" />
       <workItem from="1501764040642" duration="24000" />
       <workItem from="1501764107488" duration="880000" />
-      <workItem from="1501785178011" duration="8993000" />
+      <workItem from="1501785178011" duration="9914000" />
     </task>
     <servers />
   </component>
@@ -943,7 +930,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="227178000" />
+    <option name="totallyTimeSpent" value="228099000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -967,7 +954,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32903227" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="WINDOWED" visible="true" show_stripe_button="true" weight="0.32903227" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" x="1275" y="31" width="637" height="492" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="WINDOWED" visible="true" show_stripe_button="true" weight="0.32903227" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" x="1275" y="31" width="637" height="492" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296617" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="WINDOWED" visible="true" show_stripe_button="true" weight="0.32903227" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" x="1274" y="556" width="638" height="483" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1341,7 +1328,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/StartingOutWithJava/src/chapter12/RetailPriceCalculatorGUI/CalculatorGUI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1071">
+        <state relative-caret-position="459">
           <caret line="36" column="2" lean-forward="true" selection-start-line="36" selection-start-column="2" selection-end-line="36" selection-end-column="2" />
           <folding />
         </state>
@@ -1349,8 +1336,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/StartingOutWithJava/src/chapter2/personalInfo/PersonalInfoForm.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="42" column="44" lean-forward="false" selection-start-line="42" selection-start-column="44" selection-end-line="42" selection-end-column="44" />
+        <state relative-caret-position="391">
+          <caret line="23" column="2" lean-forward="true" selection-start-line="23" selection-start-column="2" selection-end-line="23" selection-end-column="2" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="imports" expanded="true" />
