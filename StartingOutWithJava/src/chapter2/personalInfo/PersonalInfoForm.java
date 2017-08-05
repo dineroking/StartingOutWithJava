@@ -7,6 +7,7 @@ package chapter2.personalInfo;
 
 import javax.swing.*;               // for all the swing classes
 import java.awt.*;                  // for the BorderLayout manager
+import java.awt.event.*;            // for buttons event handling
 
 public class PersonalInfoForm extends JFrame {
   
@@ -46,7 +47,22 @@ public class PersonalInfoForm extends JFrame {
     pack();
     setVisible( true );
     
-    //TODO: add the button listeners
+  }
+  
+  private class ButtonListener implements ActionListener {
+    
+    public void actionPerformed( ActionEvent e ) {
+      
+      if( e.getSource() == submitButton ) {
+      
+      } else if( e.getSource() == resetButton ) {
+        
+        //TODO: reset the text field
+      
+      } else if( e.getSource() == exitButton ) {
+        System.exit( 0 );
+      }
+    }
   }
   
   
@@ -69,6 +85,11 @@ public class PersonalInfoForm extends JFrame {
     buttonsPanel.add( submitButton );
     buttonsPanel.add( resetButton );
     buttonsPanel.add( exitButton );
+    
+    // registers events to the buttons
+    submitButton.addActionListener( new ButtonListener() );
+    resetButton.addActionListener( new ButtonListener() );
+    exitButton.addActionListener( new ButtonListener() );
     
   }
   // execute program
