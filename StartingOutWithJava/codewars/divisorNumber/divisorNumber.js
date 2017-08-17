@@ -39,3 +39,6 @@ function getDivisors( number ) {
   
   return divisors;
 }
+
+
+// ES6 SOLUTION
