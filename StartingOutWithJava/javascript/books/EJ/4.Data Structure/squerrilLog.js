@@ -5,7 +5,7 @@
  */
 "use strict";
 
-var journal = [];
+let journal = [];
 
 function addEntry( events, didIConvertToSquerral ) {
   
@@ -85,7 +85,7 @@ function correlationEquation( journalEntries, eventToTest ) {
 
 // ASSERTIONS
 
-function assertEqual( actual, expected, testName ) {
+function assertEquals( actual, expected, testName ) {
   let message = "";
   if( actual === expected ) {
     message += "Passed";
