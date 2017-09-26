@@ -11,7 +11,7 @@
 function testRangeWithNoStep() {
   
   let actual = range( 1, 10 );
-  let expected = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ];
+  let expected = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
   
   assertArrayEquals( actual, expected, "it creates an array with elements from 1 to 10 with single steps" );
   
@@ -20,32 +20,32 @@ function testRangeWithNoStep() {
 function testRangeWithPositiveStep() {
   
   let actual = range( 1, 10, 3 );
-  let expected = [ 1, 4, 7, 10 ];
+  let expected = [1, 4, 7, 10];
   
   assertArrayEquals( actual, expected, "it creates an array with elements from 1 to 10 with three steps" );
-
+  
 }
 
 function testRangeWithNegativeStep() {
   
   let actual = range( 10, 1, -3 );
-  let expected = [ 10, 7, 4, 1 ];
+  let expected = [10, 7, 4, 1];
   
   assertArrayEquals( actual, expected, "it creates an array with elements from 10 to 1 with three steps" );
-
+  
 }
 
-function testRangeSumWithPositiveElements(){
+function testRangeSumWithPositiveElements() {
   
-  let actual = rangeSum( range( 1, 10) );
+  let actual = rangeSum( range( 1, 10 ) );
   let expected = 55;
   
   assertEquals( actual, expected, "it adds all the elements in an array with elements from 1 to 10" );
 }
 
-function testRangeSumWithNegativeElements(){
+function testRangeSumWithNegativeElements() {
   
-  let actual = rangeSum( range( -1,  -10, -1 ) );
+  let actual = rangeSum( range( -1, -10, -1 ) );
   let expected = -55;
   
   assertEquals( actual, expected, "it add all the elements in an array with elements from -1 to -10" );
@@ -101,7 +101,6 @@ function assertArrayEquals( actual, expected, testName ) {
   
   console.log( message );
 }
-
 
 
 // CALLS TESTS
