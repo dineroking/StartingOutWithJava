@@ -25,14 +25,14 @@ function testReverseArrayWithOddNumberElements() {
 }
 
 function testReverseArrayInPlaceWithEvenNumberElements() {
-  let actual = reverseArray( [2, 4, 5, 8] );
+  let actual = reverseArrayInPlace( [2, 4, 5, 8] );
   let expected = [8, 5, 4, 2];
   assertArrayEquals( actual, expected, "it reverses the elements of an array with even number of elements by" +
                                        " modifying the original array" );
 }
 
 function testReverseArrayInPlaceWithOddNumberElements() {
-  let actual = reverseArray( [2, 4, 5, 8, 9] );
+  let actual = reverseArrayInPlace( [2, 4, 5, 8, 9] );
   let expected = [9, 8, 5, 4, 2];
   assertArrayEquals( actual, expected, "it reverses the elements of an array with even number of elements by" +
                                        " modifying the original array" );

@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8a4d4ee6-7df9-4251-bb59-07ba44d7f746" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/StartingOutWithJava/javascript/books/EJ/4.Data Structure/exercises/reverseAnArray/reverseAnArray.js" afterPath="$PROJECT_DIR$/StartingOutWithJava/javascript/books/EJ/4.Data Structure/exercises/reverseAnArray/reverseAnArray.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/StartingOutWithJava/javascript/books/EJ/4.Data Structure/exercises/reverseAnArray/reverseAnArrayTest.js" afterPath="$PROJECT_DIR$/StartingOutWithJava/javascript/books/EJ/4.Data Structure/exercises/reverseAnArray/reverseAnArrayTest.js" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -39,18 +40,18 @@
       <file leaf-file-name="reverseAnArray.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/StartingOutWithJava/javascript/books/EJ/4.Data Structure/exercises/reverseAnArray/reverseAnArray.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="85">
+              <caret line="5" column="72" lean-forward="true" selection-start-line="5" selection-start-column="72" selection-end-line="5" selection-end-column="72" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="reverseAnArray.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="reverseAnArray.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/StartingOutWithJava/javascript/books/EJ/4.Data Structure/exercises/reverseAnArray/reverseAnArray.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="663">
+              <caret line="35" column="1" lean-forward="true" selection-start-line="35" selection-start-column="1" selection-end-line="35" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -59,38 +60,8 @@
       <file leaf-file-name="reverseAnArrayTest.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/StartingOutWithJava/javascript/books/EJ/4.Data Structure/exercises/reverseAnArray/reverseAnArrayTest.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sumOfRange.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/StartingOutWithJava/javascript/books/EJ/4.Data Structure/exercises/sumOfRange/sumOfRange.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="7" lean-forward="true" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sumOfRange.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/StartingOutWithJava/javascript/books/EJ/4.Data Structure/exercises/sumOfRange/sumOfRange.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="782">
-              <caret line="42" column="1" lean-forward="true" selection-start-line="42" selection-start-column="1" selection-end-line="42" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="testSumOfRange.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/StartingOutWithJava/javascript/books/EJ/4.Data Structure/exercises/sumOfRange/testSumOfRange.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="714">
+              <caret line="42" column="13" lean-forward="true" selection-start-line="42" selection-start-column="13" selection-end-line="42" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -116,12 +87,14 @@
       <find>arr</find>
       <find>Button</find>
       <find>JTextField</find>
+      <find>i</find>
     </findStrings>
     <replaceStrings>
       <replace>endOfFile</replace>
       <replace>list</replace>
       <replace>Box</replace>
       <replace>String</replace>
+      <replace>startIndex</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -135,10 +108,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/StartingOutWithJava/HackReactor/prep/module1/getStringLength.html" />
-        <option value="$PROJECT_DIR$/StartingOutWithJava/HackReactor/prep/module1/getStringLength.js" />
-        <option value="$PROJECT_DIR$/StartingOutWithJava/src/sandbox/Sorts.java" />
-        <option value="$PROJECT_DIR$/StartingOutWithJava/src/chapter16/Recursion.java" />
         <option value="$PROJECT_DIR$/StartingOutWithJava/src/chapter17/NameDemo.java" />
         <option value="$PROJECT_DIR$/StartingOutWithJava/HackReactor/prep/module0/transformFirstAndLast.html" />
         <option value="$PROJECT_DIR$/StartingOutWithJava/HackReactor/prep/module0/transformFirstAndLast.js" />
@@ -186,6 +155,10 @@
         <option value="$PROJECT_DIR$/StartingOutWithJava/codewars/nextPrime/nextPrime.html" />
         <option value="$PROJECT_DIR$/StartingOutWithJava/codewars/nextPrime/nextPrimeTest.js" />
         <option value="$PROJECT_DIR$/StartingOutWithJava/codewars/nextPrime/nextPrime.js" />
+        <option value="$PROJECT_DIR$/StartingOutWithJava/javascript/books/EJ/4.Data Structure/exercises/sumOfRange/testSumOfRange.js" />
+        <option value="$PROJECT_DIR$/StartingOutWithJava/javascript/books/EJ/4.Data Structure/exercises/sumOfRange/sumOfRange.js" />
+        <option value="$PROJECT_DIR$/StartingOutWithJava/javascript/books/EJ/4.Data Structure/exercises/reverseAnArray/reverseAnArrayTest.js" />
+        <option value="$PROJECT_DIR$/StartingOutWithJava/javascript/books/EJ/4.Data Structure/exercises/reverseAnArray/reverseAnArray.js" />
       </list>
     </option>
   </component>
@@ -969,7 +942,7 @@
       <workItem from="1504380617875" duration="757000" />
       <workItem from="1504564312849" duration="14000" />
       <workItem from="1506424443301" duration="34000" />
-      <workItem from="1506424516539" duration="1657000" />
+      <workItem from="1506424516539" duration="6127000" />
     </task>
     <servers />
   </component>
@@ -1006,7 +979,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="262160000" />
+    <option name="totallyTimeSpent" value="266630000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1347,34 +1320,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/StartingOutWithJava/javascript/books/EJ/4.Data Structure/exercises/reverseAnArray/reverseAnArray.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/StartingOutWithJava/javascript/books/EJ/4.Data Structure/exercises/reverseAnArray/reverseAnArray.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/StartingOutWithJava/javascript/books/EJ/4.Data Structure/exercises/reverseAnArray/reverseAnArrayTest.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/StartingOutWithJava/javascript/books/EJ/4.Data Structure/exercises/sumOfRange/testSumOfRange.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="-458">
+          <caret line="38" column="2" lean-forward="false" selection-start-line="38" selection-start-column="2" selection-end-line="38" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StartingOutWithJava/javascript/books/EJ/4.Data Structure/exercises/sumOfRange/sumOfRange.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="42" column="1" lean-forward="false" selection-start-line="42" selection-start-column="1" selection-end-line="42" selection-end-column="1" />
           <folding />
         </state>
       </provider>
@@ -1382,15 +1339,31 @@
     <entry file="file://$PROJECT_DIR$/StartingOutWithJava/javascript/books/EJ/4.Data Structure/exercises/sumOfRange/sumOfRange.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
-          <caret line="17" column="7" lean-forward="true" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
+          <caret line="17" column="7" lean-forward="false" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/StartingOutWithJava/javascript/books/EJ/4.Data Structure/exercises/sumOfRange/sumOfRange.js">
+    <entry file="file://$PROJECT_DIR$/StartingOutWithJava/javascript/books/EJ/4.Data Structure/exercises/reverseAnArray/reverseAnArray.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="782">
-          <caret line="42" column="1" lean-forward="true" selection-start-line="42" selection-start-column="1" selection-end-line="42" selection-end-column="1" />
+        <state relative-caret-position="85">
+          <caret line="5" column="72" lean-forward="true" selection-start-line="5" selection-start-column="72" selection-end-line="5" selection-end-column="72" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StartingOutWithJava/javascript/books/EJ/4.Data Structure/exercises/reverseAnArray/reverseAnArrayTest.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="42" column="13" lean-forward="true" selection-start-line="42" selection-start-column="13" selection-end-line="42" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StartingOutWithJava/javascript/books/EJ/4.Data Structure/exercises/reverseAnArray/reverseAnArray.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="35" column="1" lean-forward="true" selection-start-line="35" selection-start-column="1" selection-end-line="35" selection-end-column="1" />
           <folding />
         </state>
       </provider>
