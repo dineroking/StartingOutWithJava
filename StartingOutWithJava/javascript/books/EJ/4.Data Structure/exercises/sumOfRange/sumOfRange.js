@@ -36,8 +36,8 @@ function range( start, end, step ) {
 
 function rangeSum( range ) {
   
-  return range.reduce( function( sum, elem ){
+  return range.reduce( function( sum, elem ) {
     return sum + elem;
   }, 0 );
-
+  
 }
