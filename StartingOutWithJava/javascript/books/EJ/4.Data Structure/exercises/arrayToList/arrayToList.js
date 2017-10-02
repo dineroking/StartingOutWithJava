@@ -23,4 +23,18 @@ Write a function arrayToList that builds up a data structure like the previous o
 If you haven’t already, also write a recursive version of nth.
 */
 
+function arrayToList( arr, arrIndex ) {
+  // if arrLength is 0
+  console.log( arrIndex );
+  if( arr.length === 0 ) {
+    return {};
+  } else if( arrIndex === arr.length - 1 ) {
+    return { "value" : arr[arrIndex], "list" : null };
+  } else {
+    return { "value" : arr[arrIndex], "list" : arrayToList( arr, ++arrIndex ) }
+  }
+}
 
+function listToArray( obj ) {
+
+}
