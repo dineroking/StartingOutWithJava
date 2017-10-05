@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8a4d4ee6-7df9-4251-bb59-07ba44d7f746" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dictionaries/ronny.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/StartingOutWithJava/javascript/books/EJ/4.Data Structure/exercises/arrayToList/arrayToList.html" afterPath="$PROJECT_DIR$/StartingOutWithJava/javascript/books/EJ/4.Data Structure/exercises/arrayToList/arrayToList.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/StartingOutWithJava/javascript/books/EJ/4.Data Structure/exercises/arrayToList/arrayToList.js" afterPath="$PROJECT_DIR$/StartingOutWithJava/javascript/books/EJ/4.Data Structure/exercises/arrayToList/arrayToList.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/StartingOutWithJava/javascript/books/EJ/4.Data Structure/exercises/arrayToList/arrayToListTest.js" afterPath="$PROJECT_DIR$/StartingOutWithJava/javascript/books/EJ/4.Data Structure/exercises/arrayToList/arrayToListTest.js" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -50,21 +46,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="arrayToList.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="arrayToList.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/StartingOutWithJava/javascript/books/EJ/4.Data Structure/exercises/arrayToList/arrayToList.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="27" column="26" lean-forward="false" selection-start-line="27" selection-start-column="26" selection-end-line="27" selection-end-column="26" />
+            <state relative-caret-position="629">
+              <caret line="37" column="1" lean-forward="true" selection-start-line="37" selection-start-column="1" selection-end-line="37" selection-end-column="1" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="arrayToListTest.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="arrayToListTest.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/StartingOutWithJava/javascript/books/EJ/4.Data Structure/exercises/arrayToList/arrayToListTest.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="40" lean-forward="false" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
+            <state relative-caret-position="238">
+              <caret line="14" column="24" lean-forward="true" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -160,8 +156,8 @@
         <option value="$PROJECT_DIR$/StartingOutWithJava/javascript/books/EJ/4.Data Structure/exercises/reverseAnArray/reverseAnArrayTest.js" />
         <option value="$PROJECT_DIR$/StartingOutWithJava/javascript/books/EJ/4.Data Structure/exercises/reverseAnArray/reverseAnArray.js" />
         <option value="$PROJECT_DIR$/StartingOutWithJava/javascript/books/EJ/4.Data Structure/exercises/arrayToList/arrayToList.html" />
-        <option value="$PROJECT_DIR$/StartingOutWithJava/javascript/books/EJ/4.Data Structure/exercises/arrayToList/arrayToList.js" />
         <option value="$PROJECT_DIR$/StartingOutWithJava/javascript/books/EJ/4.Data Structure/exercises/arrayToList/arrayToListTest.js" />
+        <option value="$PROJECT_DIR$/StartingOutWithJava/javascript/books/EJ/4.Data Structure/exercises/arrayToList/arrayToList.js" />
       </list>
     </option>
   </component>
@@ -264,9 +260,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -274,72 +267,20 @@
               <item name="StartingOutWithJava" type="b2602c69:ProjectViewProjectNode" />
               <item name="StartingOutWithJava" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="StartingOutWithJava" type="b2602c69:ProjectViewProjectNode" />
-              <item name="StartingOutWithJava" type="462c0819:PsiDirectoryNode" />
-              <item name="javascript" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="StartingOutWithJava" type="b2602c69:ProjectViewProjectNode" />
-              <item name="StartingOutWithJava" type="462c0819:PsiDirectoryNode" />
-              <item name="javascript" type="462c0819:PsiDirectoryNode" />
-              <item name="books" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="StartingOutWithJava" type="b2602c69:ProjectViewProjectNode" />
-              <item name="StartingOutWithJava" type="462c0819:PsiDirectoryNode" />
-              <item name="javascript" type="462c0819:PsiDirectoryNode" />
-              <item name="books" type="462c0819:PsiDirectoryNode" />
-              <item name="EJ" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="StartingOutWithJava" type="b2602c69:ProjectViewProjectNode" />
-              <item name="StartingOutWithJava" type="462c0819:PsiDirectoryNode" />
-              <item name="javascript" type="462c0819:PsiDirectoryNode" />
-              <item name="books" type="462c0819:PsiDirectoryNode" />
-              <item name="EJ" type="462c0819:PsiDirectoryNode" />
-              <item name="4.Data Structure" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="StartingOutWithJava" type="b2602c69:ProjectViewProjectNode" />
-              <item name="StartingOutWithJava" type="462c0819:PsiDirectoryNode" />
-              <item name="javascript" type="462c0819:PsiDirectoryNode" />
-              <item name="books" type="462c0819:PsiDirectoryNode" />
-              <item name="EJ" type="462c0819:PsiDirectoryNode" />
-              <item name="4.Data Structure" type="462c0819:PsiDirectoryNode" />
-              <item name="exercises" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="StartingOutWithJava" type="b2602c69:ProjectViewProjectNode" />
-              <item name="StartingOutWithJava" type="462c0819:PsiDirectoryNode" />
-              <item name="javascript" type="462c0819:PsiDirectoryNode" />
-              <item name="books" type="462c0819:PsiDirectoryNode" />
-              <item name="EJ" type="462c0819:PsiDirectoryNode" />
-              <item name="4.Data Structure" type="462c0819:PsiDirectoryNode" />
-              <item name="exercises" type="462c0819:PsiDirectoryNode" />
-              <item name="arrayToList" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="StartingOutWithJava" type="b2602c69:ProjectViewProjectNode" />
-              <item name="StartingOutWithJava" type="462c0819:PsiDirectoryNode" />
-              <item name="javascript" type="462c0819:PsiDirectoryNode" />
-              <item name="books" type="462c0819:PsiDirectoryNode" />
-              <item name="EJ" type="462c0819:PsiDirectoryNode" />
-              <item name="4.Data Structure" type="462c0819:PsiDirectoryNode" />
-              <item name="exercises" type="462c0819:PsiDirectoryNode" />
-              <item name="sumOfRange" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="settings.editor.selected.configurable" value="editing.templates" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -350,7 +291,7 @@
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="create.test.in.the.same.root" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="C:/Program Files/Git/bin/git.exe" />
     <property name="node.js.path.for.package.jscs" value="project" />
     <property name="node.js.detected.package.jscs" value="true" />
     <property name="node.js.selected.package.jscs" value="" />
@@ -964,6 +905,7 @@
       <workItem from="1506424516539" duration="15705000" />
       <workItem from="1506963294092" duration="45000" />
       <workItem from="1506963377901" duration="264000" />
+      <workItem from="1507171960952" duration="1437000" />
     </task>
     <servers />
   </component>
@@ -1000,7 +942,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="276517000" />
+    <option name="totallyTimeSpent" value="277954000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1026,7 +968,7 @@
       <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="true" show_stripe_button="true" weight="0.32286024" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" x="1280" y="544" width="624" height="481" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.123667374" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12633263" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1084,13 +1026,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_112/src.zip!/javax/swing/border/Border.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
-          <caret line="63" column="17" lean-forward="false" selection-start-line="63" selection-start-column="17" selection-end-line="63" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_112/src.zip!/javax/swing/border/Border.java" />
     <entry file="file://$PROJECT_DIR$/StartingOutWithJava/src/chapter12/BorderPanelWindow.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -1119,13 +1055,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_112/jre/lib/rt.jar!/java/util/zip/ZipCoder.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_112/jre/lib/rt.jar!/java/util/zip/ZipCoder.class" />
     <entry file="file://$PROJECT_DIR$/StartingOutWithJava/src/chapter12/BrandisBagel/BagelPanel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="918">
@@ -1369,18 +1299,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/StartingOutWithJava/javascript/books/EJ/4.Data Structure/exercises/arrayToList/arrayToList.js">
+    <entry file="file://$PROJECT_DIR$/StartingOutWithJava/javascript/books/EJ/4.Data Structure/exercises/arrayToList/arrayToListTest.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="26" lean-forward="false" selection-start-line="27" selection-start-column="26" selection-end-line="27" selection-end-column="26" />
+        <state relative-caret-position="238">
+          <caret line="14" column="24" lean-forward="true" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/StartingOutWithJava/javascript/books/EJ/4.Data Structure/exercises/arrayToList/arrayToListTest.js">
+    <entry file="file://$PROJECT_DIR$/StartingOutWithJava/javascript/books/EJ/4.Data Structure/exercises/arrayToList/arrayToList.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="40" lean-forward="false" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
+        <state relative-caret-position="629">
+          <caret line="37" column="1" lean-forward="true" selection-start-line="37" selection-start-column="1" selection-end-line="37" selection-end-column="1" />
           <folding />
         </state>
       </provider>

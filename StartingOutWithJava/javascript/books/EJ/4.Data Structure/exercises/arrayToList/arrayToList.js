@@ -24,8 +24,6 @@ If you haven’t already, also write a recursive version of nth.
 */
 
 function arrayToList( arr, arrIndex ) {
-  // if arrLength is 0
-  console.log( arrIndex );
   if( arr.length === 0 ) {
     return {};
   } else if( arrIndex === arr.length - 1 ) {
