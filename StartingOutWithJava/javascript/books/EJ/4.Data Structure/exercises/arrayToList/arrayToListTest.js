@@ -15,6 +15,13 @@ function testArrayToListOfNumbers() {
   console.log( actual );
 }
 
+function testListToArrayOfNumbers() {
+  let objToTest = { "value" : 1, "rest" : { "value" : 2, "rest" : { "value" : 3, "rest" : null } } };
+  let actual = listToArray( );
+  let expected = [1, 2, 3];
+  assertArrayEquals( actual, expected, "it tests a list converted to an array");
+}
+
 
 ////////////////////////////////////////////////////////////////////////////////
 //ASSERTIONS
@@ -77,3 +84,4 @@ function assertObjectEquals( actual, expected, testName ) {
 //TEST CALLS
 ////////////////////////////////////////////////////////////////////////////////
 testArrayToListOfNumbers();
+testListToArrayOfNumbers();
