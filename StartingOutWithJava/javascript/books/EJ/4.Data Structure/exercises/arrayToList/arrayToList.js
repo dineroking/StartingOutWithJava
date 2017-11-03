@@ -35,12 +35,12 @@ function arrayToList( arr, arrIndex ) {
 
 function listToArray( obj ) {
   let resultArr = [];               // holds the array with the list values
-  let lastObj = false;
+  let lastObj = false;              // indicates if the last object in the list was reached
   while( !lastObj ) {
     for( let prop in obj ) {
       if( obj.hasOwnProperty( prop ) ) {
         // if the prop is a non-object value and it is not null, add it to resultArr
-        if( obj[prop] === "number" || obj[prop] === "string" || Array.isArray( obj[prop] ) ) {
+        if( typeof obj[prop] === "number" || typeof obj[prop] === "string" || Array.isArray( obj[prop] ) ) {
           resultArr.push( obj[prop] );
         }
         // if the prop is null, change the value of lastObj to true
