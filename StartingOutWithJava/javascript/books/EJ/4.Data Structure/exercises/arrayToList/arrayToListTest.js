@@ -11,15 +11,25 @@
 
 function testArrayToListOfNumbers() {
   let actual = arrayToList( [1, 2, 3], 0 );
-  let expected = { "value" : 1, "rest" : { "value" : 2, "rest" : { "value" : 3, "rest" : null } } };
-  console.log( actual );
+  let expected = { "value" : 1, "list" : { "value" : 2, "list" : { "value" : 3, "list" : null } } };
+  assertObjectEquals( actual, expected, "tests an array converted into an list" );
 }
 
 function testListToArrayOfNumbers() {
-  let objToTest = { "value" : 1, "rest" : { "value" : 2, "rest" : { "value" : 3, "rest" : { "value" : 4, "rest" : null } } } };
+  let objToTest = {
+    "value" : 1,
+    "list"  : { "value" : 2, "list" : { "value" : 3, "list" : { "value" : 4, "list" : null } } }
+  };
   let actual = listToArray( objToTest );
   let expected = [1, 2, 3, 4];
-  assertArrayEquals( actual, expected, "it tests a list converted to an array");
+  assertArrayEquals( actual, expected, "it tests a list converted to an array" );
+}
+
+function testPrependOfNumbers() {
+  let objToTest = { "value" : 1, "list" : { "value" : 2, "list" : null } };
+  let actual = prepend( 19, objToTest );
+  let expected = { "value" : 19, "list" : { "value" : 1, "list" : {"value" : 2, "list" : null } } };
+  assertObjectEquals( actual, expected, "it tests adding a value to the front of a list" );
 }
 
 
@@ -76,7 +86,29 @@ function assertArrayEquals( actual, expected, testName ) {
 }
 
 function assertObjectEquals( actual, expected, testName ) {
-
+  
+  let message = "Failed: " + testName + "\n";
+  let actualMessage = "Actual: \t";
+  let expectedMessage = "Expected: \t";
+  let areEqual = true;
+  
+  if( JSON.stringify( actual ) !== JSON.stringify( expected ) ) {
+    areEqual = false;
+  }
+  
+  actualMessage += JSON.stringify( actual );
+  expectedMessage += JSON.stringify( expected );
+  
+  if( areEqual ) {
+    message = "Passed: " + testName + "\n";
+    message += expectedMessage + "\n";
+    message += actualMessage + "\n";
+  } else {
+    message += expectedMessage + "\n";
+    message += actualMessage + "\n";
+  }
+  
+  console.log( message );
 }
 
 
@@ -85,3 +117,4 @@ function assertObjectEquals( actual, expected, testName ) {
 ////////////////////////////////////////////////////////////////////////////////
 testArrayToListOfNumbers();
 testListToArrayOfNumbers();
+testPrependOfNumbers();
