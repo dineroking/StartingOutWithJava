@@ -60,9 +60,15 @@ function listToArray( obj ) {
 
 function prepend( elem, list ) {
   
-  let tempObj = list;             // holds the list while the list is being modified
-  list["value"] = elem;           // adds the element to the beginning of the list
-  list["list"] = tempObj;         // assigns the original list to the list property
-  console.log("list", list);
-  return list;
+  let resultObj = {};
+  resultObj["value"] = elem;
+  resultObj["list"] = list;
+  
+  return resultObj;
+  
+}
+
+function nth( elem, list ) {
+
+
 }

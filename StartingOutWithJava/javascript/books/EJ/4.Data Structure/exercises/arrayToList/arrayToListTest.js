@@ -32,6 +32,24 @@ function testPrependOfNumbers() {
   assertObjectEquals( actual, expected, "it tests adding a value to the front of a list" );
 }
 
+function testNthWithElement() {
+  
+  let objToTest = { "value" : 1, "list" : { "value" : 2, "list" : { "value" : 3, "list" : null } } };
+  let actual = nth( 3, objToTest );
+  let expected = 3;
+  assertEquals( actual, expected, "it looks for an element in a list" );
+  
+}
+
+function testNthWithoutELement() {
+  
+  let objToTest = { "value" : 1, "list" : { "value" : 2, "list" : { "value" : 3, "list" : null } } };
+  let actual = nth( 3, objToTest );
+  let expected = undefined;
+  assertEquals( actual, expected, "it looks for an element in a list" );
+  
+}
+
 
 ////////////////////////////////////////////////////////////////////////////////
 //ASSERTIONS
@@ -118,3 +136,5 @@ function assertObjectEquals( actual, expected, testName ) {
 testArrayToListOfNumbers();
 testListToArrayOfNumbers();
 testPrependOfNumbers();
+testNthWithElement();
+testNthWithoutELement();
