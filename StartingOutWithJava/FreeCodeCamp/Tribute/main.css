@@ -11,9 +11,22 @@ body {
   background-color : #8fbbc6;
 }
 
+/*
+  #outer-container is the div that contains everything, it is a wrapper
+ */
+#outer-container {
+  position : absolute;
+  width    : 100%;
+  height   : 100%;
+}
+
+/*
+  #inner-container is the div that holds most of the content of the site
+ */
 #inner-container {
   width            : 80%;
-  min-height       : 200px;
+  min-height       : 50%;
+  max-height       : 80%;
   margin           : auto;
   background-color : #fff;
   border-radius    : 10px;
