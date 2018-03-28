@@ -3,63 +3,84 @@ html {
   height : 100%;
 }
 
-body {
-  width            : 100%;
-  height           : 100%;
-  background-image : url("http://www.victorianweb.org/science/darwin/images/galapagosmap.jpg"), url("assets/images/galapagosmap.jpg");
-  background-size  : cover;
-  background-color : #8fbbc6;
+@media screen and ( min-width: 1024px ) {
+  
+  body {
+    width            : 100%;
+    height           : 100%;
+    background-image : url("http://www.victorianweb.org/science/darwin/images/galapagosmap.jpg"), url("assets/images/galapagosmap.jpg");
+    background-size  : cover;
+    background-color : #8fbbc6;
+    font-family: "Quattrocento", serif;
+  }
+  
+  /*!**/
+  /*#outer-container is the div that contains everything, it is a wrapper*/
+  /**!*/
+  /*#outer-container {*/
+  /*position : absolute;*/
+  /*width    : 100%;*/
+  /*height   : 100%;*/
+  /*display  : table;*/
+  /*}*/
+  
+  /*!**/
+  /*#middle-container is for centering the container in the center of the page*/
+  /**!*/
+  /*#middle-container {*/
+  /*width          : 80%;*/
+  /*display        : table-cell;*/
+  /*vertical-align : middle;*/
+  /*}*/
+  
+  /*!**/
+  /*#inner-container is the div that holds most of the content of the site*/
+  /**!*/
+  /*#inner-container {*/
+  /*margin-left      : auto;*/
+  /*margin-right     : auto;*/
+  /*width            : 100%;*/
+  /*min-height       : 50%;*/
+  /*max-height       : 80%;*/
+  /*background-color : #fee;*/
+  /*border-radius    : 5px;*/
+  /*box-shadow       : 5px 5px 10px #797979;*/
+  /*}*/
+  
+  #outer-container {
+    width            : 100%;
+    height           : 100%;
+    background-color : rgba(255, 255, 255, .75);
+  }
+  
+  #middle-container {
+    width   : 100%;
+    height  : 100%;
+  }
+  
+  #inner-container {
+    width            : 80%;
+    min-height       : 80%;
+    background-color : #f9f9f9;
+    border-radius    : 5px;
+    box-shadow       : 5px 5px 10px #797979;
+    opacity          : .95;
+  }
+  
 }
 
-/*!**/
-/*#outer-container is the div that contains everything, it is a wrapper*/
-/**!*/
-/*#outer-container {*/
-/*position : absolute;*/
-/*width    : 100%;*/
-/*height   : 100%;*/
-/*display  : table;*/
-/*}*/
-
-/*!**/
-/*#middle-container is for centering the container in the center of the page*/
-/**!*/
-/*#middle-container {*/
-/*width          : 80%;*/
-/*display        : table-cell;*/
-/*vertical-align : middle;*/
-/*}*/
-
-/*!**/
-/*#inner-container is the div that holds most of the content of the site*/
-/**!*/
-/*#inner-container {*/
-/*margin-left      : auto;*/
-/*margin-right     : auto;*/
-/*width            : 100%;*/
-/*min-height       : 50%;*/
-/*max-height       : 80%;*/
-/*background-color : #fee;*/
-/*border-radius    : 5px;*/
-/*box-shadow       : 5px 5px 10px #797979;*/
-/*}*/
-
-#outer-container {
-  width            : 100%;
-  height           : 100%;
-  background-color : rgba(255, 255, 255, .75);
+@media screen and ( min-width: 480px ) and ( max-width: 1023px ){
+  body {
+    background-color: cyan;
+  }
 }
 
-#middle-container {
-  width   : 100%;
-  height  : 100%;
+@media screen and ( max-width: 479px ) {
+  body {
+    width: 100%;
+    height: 100%;
+  }
 }
 
-#inner-container {
-  width            : 80%;
-  min-height       : 80%;
-  background-color : #f9f9f9;
-  border-radius    : 5px;
-  box-shadow       : 5px 5px 10px #797979;
-  opacity          : .95;
-}
+
+
