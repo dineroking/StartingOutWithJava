@@ -74,3 +74,23 @@ allUsers.forEach( function( user ) {
 } );
 
 console.dir( joeyProfile );
+
+joeyProfile['family'].forEach( function( familyMember, familyMemberIndex, familyArray ) {
+  joeyProfile['friends'].forEach( function( friend, friendIndex, friendArray ) {
+    if( familyMember === friend ) {
+      joeyProfile['friends'].splice( friendIndex, 1 );
+    }
+  } );
+} );
+
+console.log( joeyProfile );
+
+joeyProfile['friends'].forEach( function( friend, friendIndex, friendArray ) {
+  joeyProfile['coworkers'].forEach( function( coworker, coworkerIndex, coworkerArray ) {
+    if( friend === coworker ) {
+      joeyProfile['coworkers'].splice( coworkerIndex, 1 );
+    }
+  } );
+} );
+
+console.log( joeyProfile );
