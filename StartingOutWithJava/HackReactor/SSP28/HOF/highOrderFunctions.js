@@ -46,6 +46,13 @@ let each = function( list, func ) {
   }
 };
 
+let abs = function( num ) {
+  if( num >= 0 ) {
+    return num;
+  }
+  return -num;
+};
+
 let sumSquares = function( numbers ) {
   let total = 0;
   each( numbers, function( num ) {
@@ -132,19 +139,23 @@ let upperCaseAll = function( strings ) {
   return upperCased;
 };
 
-let map = function( array, func ) {
+let map = function( list, func ) {
   let mapped = [];
-  each( array, function( elem ) {
-    mapped.push( func( elem ) );
+  if( !Array.isArray() ) {
+    mapped = {};
+  }
+  each( list, function( elem, key ) {
+    mapped[key] = func( elem, key );
   } );
   return mapped;
 };
 
 let people = [
-  {name: "Alyssa P. Hacker", age: 26},
-  {name: "Ben Bitdiddle", age: 34},
-  {name: "Eva Lu Ator", age: 19},
-  {name: "Lem E. Tweakit", age: 40}
+  {name: {first: "Alyssa", middle: "P.", last: "Hacker"}, age: 26},
+  {name: {first: "Ben", last: "Bitdiddle"}, age: 34},
+  {name: {first: "Eva", middle: "Lu", last: "Ator"}, age: 40},
+  {name: {first: "Lem", middle: "E.", last: "Tweakit"}, age: 45},
+  {name: {first: "Louis", last: "Reasoner"}, age: 21}
 ];
 
 let even = function( numbers ) {
@@ -251,6 +262,34 @@ let objPropertyType = function( obj, type ) {
   } );
 };
 
+let ages = function( people ) {
+  return map( people, function( person, personIndex ) {
+    return person.age;
+  } );
+};
+
+let max = function( numbers ) {
+  let highest = numbers[0];
+  each( numbers, function( number, index ) {
+    if( number > highest ) {
+      highest = number;
+    }
+  } );
+  return highest;
+};
+
+let maximus = function( numbersList ) {
+  return map( numbersList, function( numbers, numbersIndex ) {
+    return max( numbers );
+  } );
+};
+
+let sampleInput = [ // it's an array
+  [1, 3, 2], // of arrays of numbers
+  [4, 23, 100],
+  [7, 6, 3, -2]
+];
+
 //TODO: delete after test
 console.dir( map( [1,2,3], square ) );
 console.log( map(["hello", "world"], function( str ) {
@@ -274,3 +313,6 @@ console.dir( incrementValues( {'name' : 'ronny', 'age' : 34, 'sex' : 'male'} ) )
 console.log( evens( [1,2,3,4] ) );
 console.log( evenIndexedEvenLengths( ['rone', 'ronn', 'stevan', 'arggs', 'thats'] ) );
 console.dir( objPropertyType( { "name" : "Ronny", 'age' : 35, 'sex' : 'very male' }, 'number' ) );
+console.dir( ages( people ) );
+console.dir( map([1, -2, 37, -100, -8, 5], abs ) );
+console.log( maximus( sampleInput ) );
