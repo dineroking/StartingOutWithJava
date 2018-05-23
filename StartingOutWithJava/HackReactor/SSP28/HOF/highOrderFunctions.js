@@ -232,16 +232,13 @@ let keysLongerThan = function (list, propLength) {
     return filteredObj;
 };
 
-let incrementValues = function (list) {
-    let incremented = {};
-    each(list, function (value, prop) {
-        if (typeof value === 'number') {
-            incremented[prop] = ++value;
-        } else {
-            incremented[prop] = value;
+let incrementValues = function ( list ) {
+    return map( list, function( value, prop ) {
+        if( typeof value === 'number' ) {
+            return ++value;
         }
-    });
-    return incremented;
+        return value;
+    } );
 };
 
 let evens = function (array) {
@@ -338,33 +335,41 @@ let mapN = function( ) {
 
 };
 
-//TODO: delete after test
-console.dir(map([1, 2, 3], square));
-console.log(map(["hello", "world"], function (str) {
-    return str.toUpperCase();
-}));
-console.log(map(["the", "quick", "brown", "fox", "jumped"], function (str) {
-    return str.length;
-}));
-console.log(map(people, function (person) {
-    return person.name + ' is ' + person.age
-}));
+let upperCaseValues = function( list ) {
+    return map( list, function( value, prop ) {
+        if( typeof value === 'string' ) {
+            return value.toUpperCase();
+        }
+        return value;
+    } );
+};
 
-console.log(even([1, 2, 3, 4]));
-console.log(multiplesOfThree([1, 2, 3, 5, 6, 8, 9]));
-console.log(startsWithChar(['starts', 'other', 'special', 'zoo'], 's'));
-console.dir(indexedExponentials([2, 3, 4]));
-console.dir(evenIndexedOddNumbers([1, 2, 4, 3, 5, 6, 8]));
-console.dir(values({"name": "Ronny", 'age': 35, 'sex': 'very male'}));
-console.dir(keysLongerThan({"name": "Ronny", 'age': 35, 'sex': 'very male'}, 4));
-console.dir(incrementValues({'name': 'ronny', 'age': 34, 'sex': 'male'}));
-console.log(evens([1, 2, 3, 4]));
-console.log(evenIndexedEvenLengths(['rone', 'ronn', 'stevan', 'arggs', 'thats']));
-console.dir(objPropertyType({"name": "Ronny", 'age': 35, 'sex': 'very male'}, 'number'));
-console.dir(ages(people));
-console.dir(map([1, -2, 37, -100, -8, 5], abs));
-console.log(maximus(sampleInput));
-console.log(exponentials([3, 2, 5]));
-console.log(reverseWords('Hello world'));
-console.log(parseCSV(csvString));
-console.log( map2( [1, 2, 3], [4, 5, 6], function( a, b ) { return a * b; } ) );
+let countNestedKeys = function( list ) {
+    return map( list, function( obj, objProp ) {
+        return objProp = Object.keys( obj ).length;
+    } );
+};
+
+let reduce = function( arr, func, start ) {
+    let acc = start;
+    if( start === undefined ) {
+        acc = arr[0];
+        arr = arr.slide( 1 );
+    }
+    each( arr, function( elem, index ) {
+        acc = func( acc, elem, index );
+    } );
+    return acc;
+};
+
+let averageAge = function( people ) {
+    return reduce( people, function( sum, elem ) {
+        return sum + elem.age;
+    }, 0 ) / people.length;
+};
+//TODO: delete after test
+
+console.log( incrementValues( { 'first' : 1, 'two' : 2 , 'gender' : 'male' } ) );
+console.log( upperCaseValues( {'first' : 'ronny', 'last' : 'rosabal'} ) );
+console.log( countNestedKeys( {a: {b: 1, c: 7}, f: {h: 22, g: 12, i: 24}} ) );
+console.log( averageAge( people ) );
