@@ -327,51 +327,6 @@ let map2 = function ( numbers1, numbers2, func ) {
         return func( number, numbers2[index] );
     } )
 };
-
-<<<<<<< HEAD
-let mapN = function( ) {
-
-};
-
-let upperCaseValues = function( list ) {
-    return map( list, function( value, prop ) {
-        if( typeof value === 'string' ) {
-            return value.toUpperCase();
-        }
-        return value;
-    } );
-};
-
-let countNestedKeys = function( list ) {
-    return map( list, function( obj, objProp ) {
-        return objProp = Object.keys( obj ).length;
-    } );
-};
-
-let reduce = function( arr, func, start ) {
-    let acc = start;
-    if( start === undefined ) {
-        acc = arr[0];
-        arr = arr.slide( 1 );
-    }
-    each( arr, function( elem, index ) {
-        acc = func( acc, elem, index );
-    } );
-    return acc;
-};
-
-let averageAge = function( people ) {
-    return reduce( people, function( sum, elem ) {
-        return sum + elem.age;
-    }, 0 ) / people.length;
-};
-//TODO: delete after test
-
-console.log( incrementValues( { 'first' : 1, 'two' : 2 , 'gender' : 'male' } ) );
-console.log( upperCaseValues( {'first' : 'ronny', 'last' : 'rosabal'} ) );
-console.log( countNestedKeys( {a: {b: 1, c: 7}, f: {h: 22, g: 12, i: 24}} ) );
-console.log( averageAge( people ) );
-=======
 let mapN = function( func ) {
   let argumentsList = Array.from( arguments );                    // creates an array from the arguments list
   func = argumentsList.splice( argumentsList.length - 1, 1 );     // separates the function arg from the rest of arg
@@ -495,4 +450,3 @@ console.log( everyStringContains( ['hello', 'about', 'other', 'sexo'], 'o' ) );
 console.log( 'everyNumberEven', everyNumberEven( [2,6,100,2] ) );
 console.log( joinWith( 'this is a test', 'try me', ':') );
 console.log( join( ['hello', 'about', 'other', 'sex'], ' ') );
->>>>>>> refs/remotes/origin/master
