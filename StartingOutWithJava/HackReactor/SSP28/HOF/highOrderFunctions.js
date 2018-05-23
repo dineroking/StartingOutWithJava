@@ -100,11 +100,9 @@ let sumByAllElementsMultipliedByFour = function (numbers) {
 };
 
 let sumBy = function (numbers, func) {
-    let total = 0;
-    for (let i = 0; i < numbers.length; i++) {
-        total += func(numbers[i]);
-    }
-    return total;
+    return reduce( numbers, function( sum, elem, index ) {
+      return sum + func( elem );
+    }, 0 );
 };
 
 let productBy = function (numbers, func) {
@@ -141,7 +139,7 @@ let upperCaseAll = function (strings) {
 
 let map = function (list, func) {
     let mapped = [];
-    if (!Array.isArray()) {
+    if (!Array.isArray( list )) {
         mapped = {};
     }
     each(list, function (elem, key) {
@@ -266,13 +264,12 @@ let ages = function (people) {
 };
 
 let max = function (numbers) {
-    let highest = numbers[0];
-    each(numbers, function (number, index) {
-        if (number > highest) {
-            highest = number;
-        }
-    });
-    return highest;
+    return reduce( numbers, function( highest, elem, index ) {
+      if( elem > highest ) {
+        return elem;
+      }
+      return highest;
+    }, numbers[0] );
 };
 
 let maximus = function (numbersList) {
@@ -331,6 +328,7 @@ let map2 = function ( numbers1, numbers2, func ) {
     } )
 };
 
+<<<<<<< HEAD
 let mapN = function( ) {
 
 };
@@ -373,3 +371,128 @@ console.log( incrementValues( { 'first' : 1, 'two' : 2 , 'gender' : 'male' } ) )
 console.log( upperCaseValues( {'first' : 'ronny', 'last' : 'rosabal'} ) );
 console.log( countNestedKeys( {a: {b: 1, c: 7}, f: {h: 22, g: 12, i: 24}} ) );
 console.log( averageAge( people ) );
+=======
+let mapN = function( func ) {
+  let argumentsList = Array.from( arguments );                    // creates an array from the arguments list
+  func = argumentsList.splice( argumentsList.length - 1, 1 );     // separates the function arg from the rest of arg
+  let rearrangedList = [];                                        // first arr holds first elem from all arr and so on
+  each( argumentsList[0], function( number, numberIndex ) {
+    rearrangedList.push( map( argumentsList, function( numbers, numbersIndex ) {
+      return argumentsList[numbersIndex][numberIndex];
+    } ) );
+  });
+  return map( rearrangedList, function( numbers, index ) {
+    return func[0].apply( this, numbers );
+  });
+};
+
+let testMapN = function() {
+  return mapN([1, 2, 3], [4, 5, 6], [2, 2, 2], function( a, b, c ){
+    return (a * b) + c;
+  } );
+};
+let testMapN2 = function() {
+  return mapN( [1,2,3] , function( a ) {
+    return a * a;
+  } );
+};
+
+let reduce = function( arr, func, start ) {
+  let acc = start;
+  if( start === undefined ) {
+    acc = arr[0];
+    arr = arr.slice( 1 );
+  }
+  each( arr, function( elem, index ) {
+    acc = func( acc, elem, index );
+  } );
+  return acc;
+};
+
+let range = function( start, end ) {
+  let numberRange = [];
+  for( ; start <= end; start++ ) {
+    numberRange.push( start );
+  }
+  return numberRange;
+};
+
+let factorial = function( num ) {
+  return reduce( range( 1, num ), function( fact, elem, index ) {
+    return fact * elem;
+  } );
+};
+
+let countOccurrences = function( str, char ) {
+  return reduce( str.split(''), function( count, elem, index ) {
+    if( elem === char ) {
+      return ++count;
+    }
+    return count;
+  }, 0 )
+};
+
+let everyNumberOdd = function( numbers ) {
+  return reduce( numbers, function( areOdd, number, index ) {
+    return areOdd && number % 2 !== 0;
+  }, true );
+};
+
+let everyNumberPositive = function( numbers ) {
+  return reduce( numbers, function( arePositive, number, index ) {
+    return arePositive && number > -1;
+  }, true );
+};
+
+let everyStringGreaterThan = function( strings, number ) {
+  return reduce( strings, function( isGreater, str, index ) {
+    return isGreater && str.length > number;
+  }, true )
+};
+
+let everyStringContains = function( strings, char ) {
+  return reduce( strings, function( containsChar, str, index ) {
+    if( str.indexOf( char ) === -1 ) {
+      return false;
+    }
+    return containsChar;
+  }, true );
+};
+
+let every = function( arr, func ) {
+  return reduce( arr, function( isTrue, elem, index ) {
+    return isTrue && func( elem );
+  }, true );
+};
+
+let everyNumberEven = function( numbers ) {
+  return every( numbers, function( number ) {
+    return number % 2 === 0;
+  } );
+};
+
+let joinWith = function( onto, next, separator ) {
+  return onto + separator + next;
+};
+
+let join = function( strings, separator ) {
+  return reduce( strings, function( joined, str, index ) {
+    return joinWith( joined, str, separator );
+  } );
+};
+//TODO: delete after test
+
+console.log( map2( [1, 2, 3], [4, 5, 6], function( a, b ) { return a * b; } ) );
+console.log( testMapN() );
+console.log( testMapN2() );
+console.log( factorial( 3 ) );
+console.log( max( [2,5,100,2] ) );
+console.log( countOccurrences( 'hello', 'r') );
+console.log( 'everyNumberOdd', everyNumberOdd( [1,5,101,7] ) );
+console.log( everyNumberPositive( [7, 2, 4] ) );
+console.log( everyStringGreaterThan( ['hello', 'about', 'other', 'sex'], 3 ) );
+console.log( everyStringContains( ['hello', 'about', 'other', 'sexo'], 'o' ) );
+console.log( 'everyNumberEven', everyNumberEven( [2,6,100,2] ) );
+console.log( joinWith( 'this is a test', 'try me', ':') );
+console.log( join( ['hello', 'about', 'other', 'sex'], ' ') );
+>>>>>>> refs/remotes/origin/master
