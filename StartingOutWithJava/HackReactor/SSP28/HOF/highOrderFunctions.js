@@ -334,7 +334,9 @@ let map2 = function ( numbers1, numbers2, func ) {
     } )
 };
 
-let mapN = function( ) {};
+let mapN = function( ) {
+
+};
 
 //TODO: delete after test
 console.dir(map([1, 2, 3], square));
