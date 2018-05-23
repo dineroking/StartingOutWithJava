@@ -141,7 +141,7 @@ let upperCaseAll = function (strings) {
 
 let map = function (list, func) {
     let mapped = [];
-    if (!Array.isArray()) {
+    if (!Array.isArray( list )) {
         mapped = {};
     }
     each(list, function (elem, key) {
@@ -334,35 +334,33 @@ let map2 = function ( numbers1, numbers2, func ) {
     } )
 };
 
-let mapN = function( ) {};
+let mapN = function( func ) {
+  let argumentsList = Array.from( arguments );                    // creates an array from the arguments list
+  func = argumentsList.splice( argumentsList.length - 1, 1 );     // separates the function arg from the rest of arg
+  let rearrangedList = [];                                        // first arr holds first elem from all arr and so on
+  each( argumentsList[0], function( number, numberIndex ) {
+    rearrangedList.push( map( argumentsList, function( numbers, numbersIndex ) {
+      return argumentsList[numbersIndex][numberIndex];
+    } ) );
+  });
+  return map( rearrangedList, function( numbers, index ) {
+    return func[0].apply( this, numbers );
+  });
+};
+
+let testMapN = function() {
+  return mapN([1, 2, 3], [4, 5, 6], [2, 2, 2], function( a, b, c ){
+    return (a * b) + c;
+  } );
+};
+let testMapN2 = function() {
+  return mapN( [1,2,3] , function( a ) {
+    return a * a;
+  } );
+};
 
 //TODO: delete after test
-console.dir(map([1, 2, 3], square));
-console.log(map(["hello", "world"], function (str) {
-    return str.toUpperCase();
-}));
-console.log(map(["the", "quick", "brown", "fox", "jumped"], function (str) {
-    return str.length;
-}));
-console.log(map(people, function (person) {
-    return person.name + ' is ' + person.age
-}));
 
-console.log(even([1, 2, 3, 4]));
-console.log(multiplesOfThree([1, 2, 3, 5, 6, 8, 9]));
-console.log(startsWithChar(['starts', 'other', 'special', 'zoo'], 's'));
-console.dir(indexedExponentials([2, 3, 4]));
-console.dir(evenIndexedOddNumbers([1, 2, 4, 3, 5, 6, 8]));
-console.dir(values({"name": "Ronny", 'age': 35, 'sex': 'very male'}));
-console.dir(keysLongerThan({"name": "Ronny", 'age': 35, 'sex': 'very male'}, 4));
-console.dir(incrementValues({'name': 'ronny', 'age': 34, 'sex': 'male'}));
-console.log(evens([1, 2, 3, 4]));
-console.log(evenIndexedEvenLengths(['rone', 'ronn', 'stevan', 'arggs', 'thats']));
-console.dir(objPropertyType({"name": "Ronny", 'age': 35, 'sex': 'very male'}, 'number'));
-console.dir(ages(people));
-console.dir(map([1, -2, 37, -100, -8, 5], abs));
-console.log(maximus(sampleInput));
-console.log(exponentials([3, 2, 5]));
-console.log(reverseWords('Hello world'));
-console.log(parseCSV(csvString));
 console.log( map2( [1, 2, 3], [4, 5, 6], function( a, b ) { return a * b; } ) );
+console.log( testMapN() );
+console.log( testMapN2() );
