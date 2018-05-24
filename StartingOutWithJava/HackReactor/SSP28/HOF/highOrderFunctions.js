@@ -142,10 +142,10 @@ let map = function( list, func ) {
   if( !Array.isArray( list ) ) {
     mapped = {};
   }
-  each( list, function( elem, key ) {
-    mapped[key] = func( elem, key );
-  } );
-  return mapped;
+  return reduce( list, function( acc, value, index ) {
+    acc[index] = func( value, index );
+    return acc;
+  }, mapped );
 };
 
 let people = [
@@ -264,15 +264,13 @@ let keysLongerThan = function( list, propLength ) {
 };
 
 let incrementValues = function( list ) {
-  let incremented = {};
-  each( list, function( value, prop ) {
+
+  return map( list, function( value, prop ) {
     if( typeof value === 'number' ) {
-      incremented[prop] = ++value;
-    } else {
-      incremented[prop] = value;
+      return ++value;
     }
+    return value;
   } );
-  return incremented;
 };
 
 let evens = function( array ) {
@@ -305,7 +303,8 @@ let max = function( numbers ) {
       return elem;
     }
     return highest;
-  }, numbers[0] );
+
+  } );
 };
 
 let maximus = function( numbersList ) {
@@ -370,11 +369,11 @@ let map2 = function( numbers1, numbers2, func ) {
     return func( number, numbers2[index] );
   } );
 };
-
 let mapN = function( func ) {
   let argumentsList  = Array.from( arguments );                    // creates an array from the arguments list
   func               = argumentsList.splice( argumentsList.length - 1, 1 );     // separates the function arg from the rest of arg
-  let rearrangedList = [];                                        // first arr holds first elem from all arr and so on
+
+  let rearrangedList = [];                                      // first arr holds first elem from all arr and so on
   each( argumentsList[0], function( number, numberIndex ) {
     rearrangedList.push( map( argumentsList, function( numbers, numbersIndex ) {
       return argumentsList[numbersIndex][numberIndex];
@@ -409,11 +408,15 @@ let reduce = function( arr, func, start ) {
 };
 
 let range = function( start, end ) {
-  let numberRange = [];
-  for( ; start <= end; start++ ) {
-    numberRange.push( start );
+  if( end === undefined ) {
+    end   = start;
+    start = 0;
   }
-  return numberRange;
+  let rangeNumbers = [];
+  for( start; start <= end; start++ ) {
+    rangeNumbers.push( start );
+  }
+  return rangeNumbers;
 };
 
 let factorial = function( num ) {
@@ -479,20 +482,23 @@ let join = function( strings, separator ) {
     return joinWith( joined, str, separator );
   } );
 };
-//TODO: delete after test
 
-console.log( map2( [1, 2, 3], [4, 5, 6], function( a, b ) {
-  return a * b;
-} ) );
-console.log( testMapN() );
-console.log( testMapN2() );
-console.log( factorial( 3 ) );
-console.log( max( [2, 5, 100, 2] ) );
-console.log( countOccurrences( 'hello', 'r' ) );
-console.log( 'everyNumberOdd', everyNumberOdd( [1, 5, 101, 7] ) );
-console.log( everyNumberPositive( [7, 2, 4] ) );
-console.log( everyStringGreaterThan( ['hello', 'about', 'other', 'sex'], 3 ) );
-console.log( everyStringContains( ['hello', 'about', 'other', 'sexo'], 'o' ) );
-console.log( 'everyNumberEven', everyNumberEven( [2, 6, 100, 2] ) );
+let countWords = function( strings ) {
+  let words = strings.split( ' ' );
+  return reduce( words, function( counter, word, index ) {
+    if( counter.hasOwnProperty( word ) ) {
+      counter[word]++;
+      return counter;
+    }
+    counter[word] = 1;
+    return counter;
+  }, {} );
+};
+
+//TODO: delete after test
 console.log( joinWith( 'this is a test', 'try me', ':' ) );
 console.log( join( ['hello', 'about', 'other', 'sex'], ' ' ) );
+console.log( countWords( 'this is a string that has eight words and non of them repeat until this string repeat' ) );
+
+
+
