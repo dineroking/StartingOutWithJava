@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8a4d4ee6-7df9-4251-bb59-07ba44d7f746" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/StartingOutWithJava/HackReactor/SSP28/selfAssesments/assessment1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/StartingOutWithJava/HackReactor/SSP28/selfAssesments/assessment1.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/StartingOutWithJava/HackReactor/SSP28/selfAssesments/assessment1.js" beforeDir="false" afterPath="$PROJECT_DIR$/StartingOutWithJava/HackReactor/SSP28/selfAssesments/assessment1.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -44,30 +43,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/StartingOutWithJava/HackReactor/SSP28/HOF/index.html">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="highOrderFunctions.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/StartingOutWithJava/HackReactor/SSP28/HOF/highOrderFunctions.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="748">
-              <caret line="504" lean-forward="true" selection-start-line="504" selection-end-line="504" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="assessment1.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/StartingOutWithJava/HackReactor/SSP28/selfAssesments/assessment1.html">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="16" column="7" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file leaf-file-name="assessment1.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/StartingOutWithJava/HackReactor/SSP28/selfAssesments/assessment1.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="13" lean-forward="true" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+            <state relative-caret-position="816">
+              <caret line="110" column="64" selection-start-line="110" selection-start-column="64" selection-end-line="110" selection-end-column="64" />
             </state>
           </provider>
         </entry>
@@ -113,8 +102,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/StartingOutWithJava/src/chapter18/SortNSearch.java" />
-        <option value="$PROJECT_DIR$/StartingOutWithJava/src/chapter18/SortTypes.java" />
         <option value="$PROJECT_DIR$/StartingOutWithJava/src/chapter18/SortNSearchDemo.java" />
         <option value="$PROJECT_DIR$/StartingOutWithJava/src/chapter18/SortTypesDemo.java" />
         <option value="$PROJECT_DIR$/StartingOutWithJava/src/chapter18/Point.java" />
@@ -164,6 +151,8 @@
         <option value="$PROJECT_DIR$/StartingOutWithJava/HackReactor/SSP28/HOF/highOrderFunctions.js" />
         <option value="$PROJECT_DIR$/StartingOutWithJava/HackReactor/SSP28/selfAssesments/assesment1.html" />
         <option value="$PROJECT_DIR$/StartingOutWithJava/HackReactor/SSP28/selfAssesments/assesment1.js" />
+        <option value="$PROJECT_DIR$/StartingOutWithJava/HackReactor/SSP28/selfAssesments/assessment1.html" />
+        <option value="$PROJECT_DIR$/StartingOutWithJava/HackReactor/SSP28/selfAssesments/assessment1.js" />
       </list>
     </option>
   </component>
@@ -260,7 +249,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -290,6 +278,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -639,7 +628,8 @@
       <workItem from="1527113599709" duration="341000" />
       <workItem from="1527113956923" duration="37000" />
       <workItem from="1527114009057" duration="917000" />
-      <workItem from="1527128443000" duration="4124000" />
+      <workItem from="1527128443000" duration="7745000" />
+      <workItem from="1527539577434" duration="11000" />
     </task>
     <servers />
   </component>
@@ -676,7 +666,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="325680000" />
+    <option name="totallyTimeSpent" value="329312000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -689,7 +679,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -704,7 +693,7 @@
       <window_info anchor="bottom" x="1276" y="514" width="624" height="481" id="Terminal" order="11" type="FLOATING" weight="0.32286024" />
       <window_info id="Capture Tool" order="3" />
       <window_info id="Designer" order="4" />
-      <window_info active="true" content_ui="combo" x="21" y="75" width="398" height="1040" id="Project" order="0" side_tool="true" visible="true" weight="0.12686567" />
+      <window_info content_ui="combo" x="21" y="75" width="398" height="1040" id="Project" order="0" side_tool="true" visible="true" weight="0.12793177" />
       <window_info anchor="right" id="Database" order="7" weight="0.32995737" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -1028,12 +1017,16 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/StartingOutWithJava/HackReactor/SSP28/selfAssesments/assessment1.html">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="7" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/StartingOutWithJava/HackReactor/SSP28/selfAssesments/assessment1.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="13" lean-forward="true" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        <state relative-caret-position="816">
+          <caret line="110" column="64" selection-start-line="110" selection-start-column="64" selection-end-line="110" selection-end-column="64" />
         </state>
       </provider>
     </entry>
