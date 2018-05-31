@@ -5,7 +5,7 @@
  */
 'use strict';
 
-var currentInventory = [
+let currentInventory = [
   {
     name: 'Brunello Cucinelli',
     shoes: [
@@ -26,14 +26,14 @@ var currentInventory = [
 
 function renderInventory( inventoryList ) {
   
-  let designersInfo = '';
+  let designersInfo = [];
   inventoryList.forEach( function( designer ) {
     designer.shoes.forEach( function( shoe ) {
-      designersInfo += getDesignerName( designer ) + ', ' + getShoeName( shoe ) + ', ' + getShoePrice( shoe ) + '\n';
+      designersInfo.push( getDesignerName( designer ) + ', ' + getShoeName( shoe ) + ', ' + getShoePrice( shoe ) );
     } );
   } );
   
-  return designersInfo;
+  return designersInfo.join( '\n' );
 }
 
 //Create helper functions as needed
@@ -57,24 +57,6 @@ function getShoePrice( shoe ) {
 let assertEquals = function( actual, expected, testName ) {
   let message = '';
   if( actual === expected ) {
-    message = 'passed';
-  } else {
-    message = 'FAILED [' + testName + '] expected \"' + expected + '\" but got \"' + actual + '\"';
-  }
-  console.log( message );
-};
-
-let assertArrayEquals = function( actual, expected, testName ) {
-  let message = '';
-  let areEqual = true;
-  if( actual.length === expected.length ) {
-    areEqual = actual.every( function( elem, index ) {
-      return elem === expected[index];
-    } );
-  } else {
-    areEqual = false;
-  }
-  if( areEqual ) {
     message = 'passed';
   } else {
     message = 'FAILED [' + testName + '] expected \"' + expected + '\" but got \"' + actual + '\"';
