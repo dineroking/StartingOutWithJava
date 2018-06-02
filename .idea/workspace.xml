@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8a4d4ee6-7df9-4251-bb59-07ba44d7f746" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/StartingOutWithJava/HackReactor/SSP28/exercises/fashionPartD.js" beforeDir="false" afterPath="$PROJECT_DIR$/StartingOutWithJava/HackReactor/SSP28/exercises/fashionPartD.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -46,16 +46,34 @@
         <entry file="file://$PROJECT_DIR$/StartingOutWithJava/HackReactor/SSP28/exercises/fashionPartB.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="272">
+              <caret line="16" column="7" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="fashionPartB.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/StartingOutWithJava/HackReactor/SSP28/exercises/fashionPartB.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="442">
+              <caret line="69" selection-start-line="69" selection-end-line="77" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="fashionPartD.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/StartingOutWithJava/HackReactor/SSP28/exercises/fashionPartD.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
               <caret line="16" column="7" lean-forward="true" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="fashionPartB.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/StartingOutWithJava/HackReactor/SSP28/exercises/fashionPartB.js">
+      <file leaf-file-name="fashionPartD.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/StartingOutWithJava/HackReactor/SSP28/exercises/fashionPartD.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-459">
-              <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+            <state relative-caret-position="561">
+              <caret line="69" column="22" lean-forward="true" selection-start-line="69" selection-start-column="22" selection-end-line="69" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -101,8 +119,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/StartingOutWithJava/src/chapter17/NameReader.java" />
-        <option value="$PROJECT_DIR$/StartingOutWithJava/src/chapter20/LinkedList.java" />
         <option value="$PROJECT_DIR$/StartingOutWithJava/src/chapter20/LinkedListDemo.java" />
         <option value="$PROJECT_DIR$/StartingOutWithJava/src/chapter21/StackCollection.java" />
         <option value="$PROJECT_DIR$/StartingOutWithJava/src/chapter21/testFile.txt" />
@@ -152,6 +168,8 @@
         <option value="$PROJECT_DIR$/StartingOutWithJava/HackReactor/SSP28/exercises/fashionPartA.js" />
         <option value="$PROJECT_DIR$/StartingOutWithJava/HackReactor/SSP28/exercises/fashionPartB.html" />
         <option value="$PROJECT_DIR$/StartingOutWithJava/HackReactor/SSP28/exercises/fashionPartB.js" />
+        <option value="$PROJECT_DIR$/StartingOutWithJava/HackReactor/SSP28/exercises/fashionPartD.html" />
+        <option value="$PROJECT_DIR$/StartingOutWithJava/HackReactor/SSP28/exercises/fashionPartD.js" />
       </list>
     </option>
   </component>
@@ -176,7 +194,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="width" value="1280" />
     <option name="height" value="1040" />
   </component>
@@ -248,7 +266,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -278,6 +295,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -630,6 +648,7 @@
       <workItem from="1527128443000" duration="7745000" />
       <workItem from="1527539577434" duration="11000" />
       <workItem from="1527539604839" duration="13333000" />
+      <workItem from="1527963686283" duration="7212000" />
     </task>
     <servers />
   </component>
@@ -666,7 +685,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="342645000" />
+    <option name="totallyTimeSpent" value="349857000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -678,7 +697,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
@@ -691,10 +710,10 @@
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32900432" />
       <window_info anchor="bottom" x="1275" y="31" width="637" height="492" id="Run" order="2" weight="0.32903227" />
-      <window_info active="true" anchor="bottom" x="1276" y="512" width="624" height="481" id="Terminal" order="11" type="FLOATING" visible="true" weight="0.32286024" />
+      <window_info anchor="bottom" x="1276" y="512" width="624" height="481" id="Terminal" order="11" type="FLOATING" weight="0.32286024" />
       <window_info id="Capture Tool" order="3" />
       <window_info id="Designer" order="4" />
-      <window_info content_ui="combo" x="21" y="75" width="398" height="1040" id="Project" order="0" side_tool="true" visible="true" weight="0.12899786" />
+      <window_info content_ui="combo" x="21" y="75" width="398" height="1040" id="Project" order="0" side_tool="true" visible="true" weight="0.12260128" />
       <window_info anchor="right" id="Database" order="7" weight="0.32995737" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -730,20 +749,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/StartingOutWithJava/src/chapter12/BrandisBagel/GreetingsPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/StartingOutWithJava/src/chapter12/BrandisBagel/CoffeePanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/StartingOutWithJava/src/chapter12/ColorWindow.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2312">
@@ -1022,14 +1027,28 @@
     <entry file="file://$PROJECT_DIR$/StartingOutWithJava/HackReactor/SSP28/exercises/fashionPartB.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
-          <caret line="16" column="7" lean-forward="true" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
+          <caret line="16" column="7" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/StartingOutWithJava/HackReactor/SSP28/exercises/fashionPartB.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-459">
-          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+        <state relative-caret-position="442">
+          <caret line="69" selection-start-line="69" selection-end-line="77" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StartingOutWithJava/HackReactor/SSP28/exercises/fashionPartD.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="7" lean-forward="true" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StartingOutWithJava/HackReactor/SSP28/exercises/fashionPartD.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="69" column="22" lean-forward="true" selection-start-line="69" selection-start-column="22" selection-end-line="69" selection-end-column="22" />
         </state>
       </provider>
     </entry>
