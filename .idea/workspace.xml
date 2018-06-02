@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8a4d4ee6-7df9-4251-bb59-07ba44d7f746" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/StartingOutWithJava/HackReactor/SSP28/exercises/fashionPartB.js" beforeDir="false" afterPath="$PROJECT_DIR$/StartingOutWithJava/HackReactor/SSP28/exercises/fashionPartB.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -54,7 +54,7 @@
       <file leaf-file-name="fashionPartB.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/StartingOutWithJava/HackReactor/SSP28/exercises/fashionPartB.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
+            <state relative-caret-position="-459">
               <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
             </state>
           </provider>
@@ -176,7 +176,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="width" value="1280" />
     <option name="height" value="1040" />
   </component>
@@ -629,7 +629,7 @@
       <workItem from="1527114009057" duration="917000" />
       <workItem from="1527128443000" duration="7745000" />
       <workItem from="1527539577434" duration="11000" />
-      <workItem from="1527539604839" duration="10304000" />
+      <workItem from="1527539604839" duration="13333000" />
     </task>
     <servers />
   </component>
@@ -666,7 +666,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="339616000" />
+    <option name="totallyTimeSpent" value="342645000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -678,7 +678,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
@@ -691,7 +691,7 @@
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32900432" />
       <window_info anchor="bottom" x="1275" y="31" width="637" height="492" id="Run" order="2" weight="0.32903227" />
-      <window_info anchor="bottom" x="1276" y="514" width="624" height="481" id="Terminal" order="11" type="FLOATING" weight="0.32286024" />
+      <window_info active="true" anchor="bottom" x="1276" y="512" width="624" height="481" id="Terminal" order="11" type="FLOATING" visible="true" weight="0.32286024" />
       <window_info id="Capture Tool" order="3" />
       <window_info id="Designer" order="4" />
       <window_info content_ui="combo" x="21" y="75" width="398" height="1040" id="Project" order="0" side_tool="true" visible="true" weight="0.12899786" />
@@ -1028,7 +1028,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/StartingOutWithJava/HackReactor/SSP28/exercises/fashionPartB.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
+        <state relative-caret-position="-459">
           <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
         </state>
       </provider>
